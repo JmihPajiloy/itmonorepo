@@ -1,0 +1,59 @@
+ok   неверный пароль отклонён [HTTP 401]
+ok   postgres (trust) не допускается [HTTP 401]
+ok   несуществующий пользователь [HTTP 401]
+ok   вход без CSRF-токена [HTTP 400]
+ok   блокировка после 5 неудач [HTTP 401, затем 401]
+ok   вход reception_orlova [HTTP 302]
+ok   вход restorer_smirnov [HTTP 302]
+ok   вход workshop_admin [HTTP 302]
+ok   заголовки безопасности
+ok   cookie HttpOnly, SameSite=Strict
+ok   отношений у приёмщика [8]
+ok   отношений у реставратора [9]
+ok   отношений у администратора [15]
+ok   фильтр и сортировка customer [4 строк]
+ok   скрыт instrument.customer_id у реставратора
+ok   реставратор /t/payment [HTTP 404]
+ok   реставратор /t/change_log [HTTP 404]
+ok   реставратор /t/customer%3B-- [HTTP 404]
+ok   реставратор /r/payments [HTTP 404]
+ok   попытка SQL-инъекции в фильтре [0 строк]
+ok   приёмщик добавил заказчика
+ok   приёмщик не может удалить
+      Ошибка СУБД (42501): permission denied for table
+      customer
+ok   POST с чужим CSRF-токеном [HTTP 400]
+ok   реставратор изменил свою работу
+ok   чужая работа не изменена (RLS)
+ok   цена недоступна для изменения [HTTP 400]
+ok   осмотр от чужого имени (RLS)
+      Ошибка СУБД (42501): new row violates row-level
+      security policy for table "inspection"
+ok   осмотр от своего имени
+ok   администратор удалил заказчика
+ok   удаление связанной строки (FK)
+      Ошибка СУБД (23503): update or delete on table
+      "customer" violates foreign key constraint
+      "instrument_customer_fk" on table "instrument"
+ok   отчёт payments [7 групп]
+ok   отчёт workload [10 групп]
+ok   отчёт employees [8 групп]
+ok   отчёт audit [4 групп]
+ok   отчёт payments: фильтр и сортировка [4 групп]
+ok   отчёт workload: только мои [2 групп]
+ok   приёмщику отчёт audit недоступен [HTTP 404]
+ok   регистрация reception_petrova
+ok   регистрация restorer_kozlov
+ok   регистрация в admin_role отклонена
+      Ошибка СУБД (P0001): недопустимая роль: admin_role
+ok   приёмщику регистрация недоступна [HTTP 403]
+ok   вход reception_petrova [HTTP 302]
+ok   вход restorer_kozlov [HTTP 302]
+ok   restorer_kozlov изменил свою работу
+ok   функция регистрации закрыта [42501]
+ok   пароли хранятся как SCRAM
+ok   журнал: роли входа из веб-сеансов [6 записей]
+ok   старая cookie после выхода [HTTP 302]
+ok   истечение сеанса (15 мин) [HTTP 302]
+
+Проверок: 49, успешно: 49

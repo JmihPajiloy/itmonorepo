@@ -1,0 +1,8 @@
+rmgr: XLOG len (rec/tot): 98/ 98, tx: 0, lsn: 0/04000028, 
+prev 0/03000100, desc: RESTORE_POINT lab5_before_changes
+rmgr: Heap len (rec/tot): 65/ 1333, tx: 759, lsn: 0/04000090, 
+prev 0/04000028, desc: UPDATE off 10 xmax 759 flags 0x00 ; 
+new off 11 xmax 0, blkref #0: rel 1663/16384/16386 blk 0 FPW
+rmgr: Heap len (rec/tot): 54/ 3798, tx: 759, lsn: 0/04000BE8, 
+prev 0/04000B80, desc: INSERT off 10 flags 0x00, blkref #0: 
+rel 1663/16384/16643 blk 0 FPW

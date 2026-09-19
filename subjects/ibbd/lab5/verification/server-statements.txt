@@ -1,0 +1,46 @@
+12:56:14 postgres@workshop LOG: statement: UPDATE customer
+  SET phone = '+7 999 ' || lpad((random() * 
+9999999)::int::text,
+                                7, '0')
+  WHERE customer_id = (SELECT customer_id FROM customer
+                       ORDER BY random() LIMIT 1)
+  RETURNING customer_id, phone;
+12:56:14 postgres@workshop LOG: statement: UPDATE service
+  SET base_price_kopecks = (base_price_kopecks
+                            * (1 + random()))::int
+  WHERE service_id IN (SELECT service_id FROM service
+                       ORDER BY random() LIMIT 2)
+  RETURNING service_id, base_price_kopecks;
+12:56:14 postgres@workshop LOG: statement: UPDATE order_work 
+SET status = 'cancelled'
+  WHERE (order_id, line_no) = (
+    SELECT order_id, line_no FROM order_work
+    WHERE status IN ('planned', 'in_progress')
+    ORDER BY random() LIMIT 1)
+  RETURNING order_id, line_no, status;
+12:56:14 postgres@workshop LOG: statement: DELETE FROM 
+inspection
+  WHERE inspection_id = (SELECT inspection_id FROM inspection
+                         ORDER BY random() LIMIT 1)
+  RETURNING inspection_id, order_id, inspected_on;
+12:56:14 reception_orlova@workshop LOG: statement: INSERT 
+INTO customer (full_name, phone, email)
+  VALUES ('Случайный Клиент ' || (random() * 100)::int,
+          '+7 900 555-00-00', NULL)
+  RETURNING customer_id, full_name;
+12:56:14 reception_orlova@workshop LOG: statement: UPDATE 
+restoration_order
+  SET due_on = due_on + (1 + random() * 30)::int
+  WHERE order_id = (SELECT order_id FROM restoration_order
+                    WHERE status <> 'closed'
+                    ORDER BY random() LIMIT 1)
+  RETURNING order_id, due_on;
+12:56:14 reception_orlova@workshop LOG: statement: INSERT 
+INTO payment (order_id, paid_on, amount_kopecks,
+                       method, receipt_no)
+  SELECT order_id, current_date,
+         (1000 + random() * 9000)::int * 100, 'card',
+         'RND-' || (random() * 1e6)::int
+  FROM restoration_order WHERE status <> 'closed'
+  ORDER BY random() LIMIT 1
+  RETURNING payment_id, order_id, amount_kopecks;

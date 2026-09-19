@@ -1,0 +1,9 @@
+
+# lab5: непрерывное архивирование WAL (@LAB5@ -> путь ЛР5)
+wal_level = replica
+archive_mode = on
+archive_command = '"@LAB5@/archive_wal.sh" "%p" "%f"'
+# Незаполненный сегмент архивируется не реже раза в 5 мин.
+archive_timeout = 300
+# Журнал сервера: время, роль, БД и операторы изменения.
+log_line_prefix = '%m [%p] %u@%d '

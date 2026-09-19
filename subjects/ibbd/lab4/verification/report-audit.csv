@@ -1,0 +1,5 @@
+db_role,table_name,ins,upd,del,total
+restorer_smirnov,inspection,1,0,0,1
+restorer_smirnov,order_work,0,1,0,1
+workshop_admin,customer,0,0,1,1
+reception_orlova,customer,1,0,0,1

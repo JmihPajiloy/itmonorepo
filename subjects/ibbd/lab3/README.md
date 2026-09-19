@@ -6,7 +6,7 @@
 
 ## Результаты
 
-- `report.pdf` / `report.typ` — отчёт, `references.bib` — источники, `task.pdf` — задание.
+- `report.pdf` / `report.typ` — отчёт, `task.pdf` — задание.
 - `sql/01_audit.sql` — журнал `change_log`, функция `log_change()` (SECURITY DEFINER), триггеры на 9 таблиц.
 - `sql/02_secrets.sql` — таблица `access_secret`, pgcrypto `pgp_sym_encrypt` AES-256,
   ключ = SHA-256 от индивидуального пароля (в БД не хранится).

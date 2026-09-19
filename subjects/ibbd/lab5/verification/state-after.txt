@@ -1,0 +1,14 @@
+    table_name     | rows |               md5                
+-------------------+------+----------------------------------
+ change_log        |   17 | 713670eb5376e01dd20f55f707a15e8c
+ customer          |   10 | 4d1664efe321f2ae5ab065b06ced46ac
+ employee          |    8 | 8629e8b79c995656747f3038f5ff923f
+ inspection        |    8 | 6ce7558a157edb41afac43b1b061c7a8
+ instrument        |    9 | c98e72e52aca9192f404215674ccfff9
+ instrument_type   |    8 | 9c2f71742db467466baf3f1b7ae8e1ac
+ order_work        |   11 | b6f3284b552002fd57480009e36b3527
+ payment           |    9 | 9299a051a3415bd2482871772298e79f
+ restoration_order |    9 | 6440bda10b4a5075669125d09e8f0c90
+ service           |    8 | 243200efae33dbea3f4e7715b89a542f
+(10 rows)
+

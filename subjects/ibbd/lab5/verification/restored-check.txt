@@ -1,0 +1,10 @@
+ in_recovery | timeline 
+-------------+----------
+ f           |        2
+(1 row)
+
+ rnd_customers | rnd_payments | new_log_rows 
+---------------+--------------+--------------
+             0 |            0 |            0
+(1 row)
+

@@ -1,0 +1,9 @@
+Отношение,Вид,Чтение,Вставка,Изменение,Удаление
+customer,TABLE,S,I,U,
+instrument,TABLE,S,I,U,
+instrument_type,TABLE,S,,,
+payment,TABLE,S,I,U,
+restoration_order,TABLE,S,I,U,
+service,TABLE,S,,,
+v_reception_balances,VIEW,S,,,
+v_reception_orders,VIEW,S,,,

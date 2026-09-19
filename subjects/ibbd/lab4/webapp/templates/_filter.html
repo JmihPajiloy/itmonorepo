@@ -1,0 +1,41 @@
+{# Общая форма фильтра и сортировки. #}
+<form method="get" class="bar">
+  {% for p in extra %}
+  <label>{{ p.label }}
+    <select name="{{ p.name }}">
+    {% for v, t in p.choices %}
+      <option value="{{ v }}"
+        {{ 'selected' if params[p.name] == v }}>{{ t }}
+      </option>
+    {% endfor %}
+    </select></label>
+  {% endfor %}
+  <label>Фильтр
+    <select name="fcol">
+      <option value="">—</option>
+      {% for n in names %}
+      <option {{ 'selected' if args.fcol == n }}>
+        {{- n -}}</option>
+      {% endfor %}
+    </select></label>
+  <select name="fop">
+    <option value="like">содержит</option>
+    <option value="eq" {{ 'selected'
+      if args.fop == 'eq' }}>равно</option>
+  </select>
+  <input name="fval" value="{{ args.fval }}">
+  <label>Сортировка
+    <select name="sort">
+      <option value="">—</option>
+      {% for n in names %}
+      <option {{ 'selected' if args.sort == n }}>
+        {{- n -}}</option>
+      {% endfor %}
+    </select></label>
+  <select name="dir">
+    <option value="asc">по возрастанию</option>
+    <option value="desc" {{ 'selected'
+      if args.dir == 'desc' }}>по убыванию</option>
+  </select>
+  <button>Показать</button>
+</form>

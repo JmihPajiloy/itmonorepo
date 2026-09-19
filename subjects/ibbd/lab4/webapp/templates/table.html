@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}{{ rel.name }}{% endblock %}
+{% block body %}
+<h1>{{ rel.name }}</h1>
+{% set names = visible | map(attribute='name') | list %}
+{% set extra = [] %}
+{% set params = {} %}
+{% include "_filter.html" %}
+<p>Строк: {{ rows | length }} (не более {{ limit }}).
+{% if cols | length > visible | length %}
+Скрыты столбцы без права чтения:
+{{ cols | rejectattr('can_select')
+   | map(attribute='name') | join(', ') }}.
+{% endif %}</p>
+<div class="scroll"><table>
+<tr>{% for c in visible %}<th>{{ c.name }}</th>{% endfor %}
+    {% if deletable %}<th></th>{% endif %}</tr>
+{% for row in rows %}
+<tr>{% for v in row %}<td>{{ '' if v is none else v }}</td>
+    {% endfor %}
+  {% if deletable %}<td>
+  <form method="post"
+        action="{{ url_for('delete', name=rel.name) }}">
+    <input type="hidden" name="csrf" value="{{ csrf }}">
+    {% for i in key_idx %}
+    <input type="hidden" name="key_{{ keys[loop.index0] }}"
+           value="{{ row[i] }}">
+    {% endfor %}
+    <button class="danger">Удалить</button>
+  </form></td>{% endif %}
+</tr>
+{% endfor %}
+</table></div>
+
+{% if rel.can_insert %}
+<h2>Добавить строку</h2>
+<form method="post" class="card"
+      action="{{ url_for('insert', name=rel.name) }}">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  {% for c in cols if c.can_insert %}
+  <label>{{ c.name }} <small>{{ c.type }}
+    {{- ', по умолчанию' if c.has_default }}</small>
+    <input name="col_{{ c.name }}"></label>
+  {% endfor %}
+  <button>Добавить</button>
+</form>
+{% endif %}
+
+{% if rel.can_update and keys %}
+<h2>Изменить значение</h2>
+<form method="post" class="card"
+      action="{{ url_for('update', name=rel.name) }}">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  {% for k in keys %}
+  <label>{{ k }} (ключ)
+    <input name="key_{{ k }}" required></label>
+  {% endfor %}
+  <label>Столбец
+    <select name="column">
+    {% for c in cols if c.can_update %}
+      <option>{{ c.name }}</option>
+    {% endfor %}
+    </select></label>
+  <label>Новое значение <input name="value"></label>
+  <button>Изменить</button>
+</form>
+{% endif %}
+{% endblock %}

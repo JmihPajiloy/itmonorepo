@@ -1,0 +1,11 @@
+== запуск 1
+12:56:11 base backup -> 20260919-125611/data
+12:56:12 manifest verified
+12:56:12 pg_dump: 11 tables
+12:56:12 WAL archive kept from 000000010000000000000002
+== запуск 2
+12:56:13 base backup -> 20260919-125613/data
+12:56:13 manifest verified
+12:56:13 pg_dump: 11 tables
+12:56:13 removed old backup 20260919-125611
+12:56:13 WAL archive kept from 000000010000000000000003

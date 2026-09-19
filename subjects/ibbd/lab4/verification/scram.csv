@@ -1,0 +1,4 @@
+rolname,rolpassword
+reception_petrova,SCRAM-SHA-256$4096:
+restorer_kozlov,SCRAM-SHA-256$4096:
+workshop_admin,SCRAM-SHA-256$4096:

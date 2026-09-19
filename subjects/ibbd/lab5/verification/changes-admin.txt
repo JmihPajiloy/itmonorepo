@@ -1,0 +1,32 @@
+ setseed 
+---------
+ 
+(1 row)
+
+BEGIN
+ customer_id |     phone      
+-------------+----------------
+           9 | +7 999 0764774
+(1 row)
+
+UPDATE 1
+ service_id | base_price_kopecks 
+------------+--------------------
+          1 |             914486
+          2 |             353834
+(2 rows)
+
+UPDATE 2
+ order_id | line_no |  status   
+----------+---------+-----------
+        2 |       1 | cancelled
+(1 row)
+
+UPDATE 1
+ inspection_id | order_id | inspected_on 
+---------------+----------+--------------
+             1 |        1 | 2026-09-01
+(1 row)
+
+DELETE 1
+COMMIT

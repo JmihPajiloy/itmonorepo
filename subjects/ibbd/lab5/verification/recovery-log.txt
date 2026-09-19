@@ -1,0 +1,25 @@
+12:56:14 LOG: database system was interrupted; last known up 
+at 2026-09-19 12:56:13 MSK
+cp: …/lab5/work/wal_archive/00000002.history: No such file or 
+directory
+12:56:14 LOG: starting point-in-time recovery to 
+"lab5_before_changes"
+12:56:15 LOG: restored log file "000000010000000000000003" 
+from archive
+12:56:15 LOG: redo starts at 0/3000028
+12:56:15 LOG: consistent recovery state reached at 0/3000100
+12:56:15 LOG: database system is ready to accept read-only 
+connections
+12:56:15 LOG: restored log file "000000010000000000000004" 
+from archive
+12:56:15 LOG: recovery stopping at restore point 
+"lab5_before_changes", time 2026-09-19 12:56:13.960148+03
+12:56:15 LOG: redo done at 0/4000028 system usage: CPU: user: 
+0.00 s, system: 0.00 s, elapsed: 0.02 s
+cp: …/lab5/work/wal_archive/00000002.history: No such file or 
+directory
+12:56:15 LOG: selected new timeline ID: 2
+12:56:15 LOG: archive recovery complete
+cp: …/lab5/work/wal_archive/00000001.history: No such file or 
+directory
+12:56:15 LOG: database system is ready to accept connections

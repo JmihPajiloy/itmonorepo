@@ -1,0 +1,13 @@
+     relation      |     op     | records 
+-------------------+------------+---------
+ change_log        | INSERT     |       8
+ customer          | INSERT     |       1
+ customer          | UPDATE     |       1
+ inspection        | DELETE     |       1
+ order_work        | UPDATE     |       1
+ payment           | INSERT     |       1
+ restoration_order | LOCK       |       1
+ restoration_order | UPDATE     |       1
+ service           | HOT_UPDATE |       2
+(9 rows)
+

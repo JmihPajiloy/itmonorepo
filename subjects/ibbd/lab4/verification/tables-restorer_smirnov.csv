@@ -1,0 +1,10 @@
+Отношение,Вид,Чтение,Вставка,Изменение,Удаление
+employee,TABLE,S*,,,
+inspection,TABLE,S,I,,
+instrument,TABLE,S*,,,
+instrument_type,TABLE,S,,,
+order_work,TABLE,S*,,U,
+restoration_order,TABLE,S*,,,
+service,TABLE,S*,,,
+v_restorer_inspections,VIEW,S,,,
+v_restorer_tasks,VIEW,S,,,

@@ -1,0 +1,24 @@
+ id |    at    | tx  |     db_role      |       change        
+----+----------+-----+------------------+---------------------
+ 10 | 12:56:14 | 759 | postgres         | U customer
+ 11 | 12:56:14 | 759 | postgres         | U service
+ 12 | 12:56:14 | 759 | postgres         | U service
+ 13 | 12:56:14 | 759 | postgres         | U order_work
+ 14 | 12:56:14 | 759 | postgres         | D inspection
+ 15 | 12:56:14 | 760 | reception_orlova | I customer
+ 16 | 12:56:14 | 760 | reception_orlova | U restoration_order
+ 17 | 12:56:14 | 760 | reception_orlova | I payment
+(8 rows)
+
+ id |       field        |       old        |      new       
+----+--------------------+------------------+----------------
+ 10 | phone              | +7 900 000-00-09 | +7 999 0764774
+ 11 | base_price_kopecks | 500000           | 914486
+ 12 | base_price_kopecks | 200000           | 353834
+ 13 | status             | planned          | cancelled
+ 14 | inspection_id      | 1                | 
+ 15 | customer_id        |                  | 10
+ 16 | due_on             | 2026-09-05       | 2026-09-10
+ 17 | payment_id         |                  | 11
+(8 rows)
+

@@ -1,0 +1,9 @@
+      name       |              setting              
+-----------------+-----------------------------------
+ archive_command | "…/lab5/archive_wal.sh" "%p" "%f"
+ archive_mode    | on
+ archive_timeout | 300
+ log_statement   | mod
+ wal_level       | replica
+(5 rows)
+

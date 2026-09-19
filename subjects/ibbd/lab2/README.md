@@ -6,7 +6,7 @@
 
 ## Результаты
 
-- `report.pdf` / `report.typ` — отчёт (Typst Gost `modern-g7-32` 0.2.0), `references.bib` — источники.
+- `report.pdf` / `report.typ` — отчёт (Typst Gost `modern-g7-32` 0.2.0).
 - `task.pdf` — исходное задание, `report.example.pdf` — пример отчёта из методички.
 - `sql/01_tables.sql` — 9 таблиц; `02_relations.sql` — внешние ключи; `03_indexes.sql` — индексы;
   `04_alter.sql` — модификация структуры (`closed_on`); `05_data.sql` — данные (по 8 кортежей);

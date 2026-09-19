@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Таблицы{% endblock %}
+{% block body %}
+<h1>Доступные отношения</h1>
+<p>Список построен по привилегиям роли {{ us.login }}
+в СУБД. S* — чтение части столбцов.</p>
+<table>
+<tr><th>Отношение</th><th>Вид</th><th>Чтение</th>
+    <th>Вставка</th><th>Изменение</th><th>Удаление</th></tr>
+{% for r in relations %}
+<tr>
+  <td><a href="{{ url_for('table', name=r.name) }}">
+      {{ r.name }}</a></td>
+  <td>{{ 'VIEW' if r.is_view else 'TABLE' }}</td>
+  <td>{{ 'S' if r.full_select else 'S*' }}</td>
+  <td>{{ 'I' if r.can_insert }}</td>
+  <td>{{ 'U' if r.can_update }}</td>
+  <td>{{ 'D' if r.can_delete }}</td>
+</tr>
+{% endfor %}
+</table>
+<h2>Отчёты</h2>
+<ul>
+{% for r in reports %}
+  <li><a href="{{ url_for('report', key=r.key) }}">
+      {{ r.title }}</a> — {{ r.about }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

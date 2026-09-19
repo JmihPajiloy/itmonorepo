@@ -1,0 +1,16 @@
+Отношение,Вид,Чтение,Вставка,Изменение,Удаление
+access_secret,TABLE,S,,,
+change_log,TABLE,S,,,
+customer,TABLE,S,I,U,D
+employee,TABLE,S,I,U,D
+inspection,TABLE,S,I,U,D
+instrument,TABLE,S,I,U,D
+instrument_type,TABLE,S,I,U,D
+order_work,TABLE,S,I,U,D
+payment,TABLE,S,I,U,D
+restoration_order,TABLE,S,I,U,D
+service,TABLE,S,I,U,D
+v_reception_balances,VIEW,S,,,
+v_reception_orders,VIEW,S,,,
+v_restorer_inspections,VIEW,S,,,
+v_restorer_tasks,VIEW,S,,,

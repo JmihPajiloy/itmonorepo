@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Вход{% endblock %}
+{% block body %}
+<h1>Вход</h1>
+<p>Имя и пароль учётной записи PostgreSQL.</p>
+<form method="post" action="{{ url_for('login') }}"
+      class="card">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <label>Пользователь
+    <input name="username" value="{{ username }}"
+           autocomplete="username" required></label>
+  <label>Пароль
+    <input name="password" type="password"
+           autocomplete="current-password" required></label>
+  <button>Войти</button>
+</form>
+{% endblock %}

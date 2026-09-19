@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Пользователи{% endblock %}
+{% block body %}
+<h1>Пользователи приложения</h1>
+<table>
+<tr><th>Учётная запись</th><th>Групповая роль</th></tr>
+{% for u, grp in users %}
+<tr><td>{{ u }}</td><td>{{ grp }}</td></tr>
+{% endfor %}
+</table>
+<h2>Регистрация</h2>
+<p>Пароль преобразуется в SCRAM-верификатор в
+приложении; СУБД получает только верификатор.</p>
+<form method="post" class="card">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <label>Имя (a–z, 0–9, _)
+    <input name="login" required
+           pattern="[a-z][a-z0-9_]{2,39}"></label>
+  <label>Роль
+    <select name="group">
+      <option value="reception_role">приёмщик</option>
+      <option value="restorer_role">реставратор</option>
+    </select></label>
+  <label>Сотрудник (для реставратора)
+    <select name="employee_id">
+      <option value="">—</option>
+      {% for id, name in free %}
+      <option value="{{ id }}">{{ id }}. {{ name }}
+      </option>
+      {% endfor %}
+    </select></label>
+  <label>Пароль (не короче 12 символов)
+    <input name="password" type="password" required
+           autocomplete="new-password"></label>
+  <button>Создать</button>
+</form>
+{% endblock %}

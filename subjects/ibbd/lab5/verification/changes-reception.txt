@@ -1,0 +1,25 @@
+ setseed 
+---------
+ 
+(1 row)
+
+BEGIN
+ customer_id |      full_name      
+-------------+---------------------
+          10 | Случайный Клиент 25
+(1 row)
+
+INSERT 0 1
+ order_id |   due_on   
+----------+------------
+        6 | 2026-09-10
+(1 row)
+
+UPDATE 1
+ payment_id | order_id | amount_kopecks 
+------------+----------+----------------
+         11 |        2 |         240500
+(1 row)
+
+INSERT 0 1
+COMMIT

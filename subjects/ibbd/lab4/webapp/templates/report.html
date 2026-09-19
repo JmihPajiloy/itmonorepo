@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ rep.title }}{% endblock %}
+{% block body %}
+<h1>{{ rep.title }}</h1>
+<p>{{ rep.about }}</p>
+{% set extra = rep.params %}
+{% include "_filter.html" %}
+<div class="scroll"><table>
+<tr>{% for n in names %}<th>{{ n }}</th>{% endfor %}</tr>
+{% for row in rows %}
+<tr>{% for v in row %}<td>{{ '' if v is none else v }}</td>
+    {% endfor %}</tr>
+{% endfor %}
+</table></div>
+<p>Групп: {{ rows | length }}.</p>
+{% endblock %}
