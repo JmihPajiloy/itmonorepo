@@ -1,0 +1,10 @@
+erDiagram
+ CUSTOMER ||--o{ INSTRUMENT : owns
+ INSTRUMENT_TYPE ||--o{ INSTRUMENT : classifies
+ INSTRUMENT ||--o{ RESTORATION_ORDER : serviced_under
+ RESTORATION_ORDER ||--o{ PAYMENT : receives
+ RESTORATION_ORDER ||--o{ INSPECTION : has
+ EMPLOYEE ||--o{ INSPECTION : performs
+ RESTORATION_ORDER ||--o{ ORDER_WORK : contains
+ SERVICE ||--o{ ORDER_WORK : specifies
+ EMPLOYEE ||--o{ ORDER_WORK : executes

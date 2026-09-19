@@ -1,0 +1,17 @@
+# Local operating-system and editor files
+.DS_Store
+.idea/
+
+# Python environments and caches, at any depth
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Temporary report previews; keep final PDFs and small verification results
+**/verification/page-*.png
+**/verification/report-text.txt
+
+# Reproducible demonstration database, not arbitrary input databases
+/subjects/ibbd/lab1/lab1.sqlite3

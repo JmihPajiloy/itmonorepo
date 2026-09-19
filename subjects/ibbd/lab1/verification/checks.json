@@ -1,0 +1,82 @@
+{
+  "sqlite_version": "3.51.0",
+  "passed": 19,
+  "checks": [
+    {
+      "test": "9 tables, including 8 non-associative entities",
+      "result": "PASS"
+    },
+    {
+      "test": "Every table has at least 3 attributes",
+      "result": "PASS"
+    },
+    {
+      "test": "Foreign key integrity",
+      "result": "PASS"
+    },
+    {
+      "test": "Two works and two payments do not multiply totals",
+      "result": "PASS"
+    },
+    {
+      "test": "Unpaid order remains visible",
+      "result": "PASS"
+    },
+    {
+      "test": "Task queue contains only 3 unfinished works",
+      "result": "PASS"
+    },
+    {
+      "test": "All 3 inspections are available",
+      "result": "PASS"
+    },
+    {
+      "test": "Dangling foreign key rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Duplicate inventory number rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Second active order rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Text instead of integer money rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Negative payment rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Invalid order interval rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Unknown status rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Referenced customer deletion rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Duplicate order line rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "Order without works and payments has zero balance",
+      "result": "PASS"
+    },
+    {
+      "test": "Cancelled work excluded from price",
+      "result": "PASS"
+    },
+    {
+      "test": "Restorer views do not expose customer contacts or money",
+      "result": "PASS"
+    }
+  ]
+}

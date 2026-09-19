@@ -1,0 +1,100 @@
+{
+  "message": "Шибаев И.Д.",
+  "source_hex": "D8 E8 E1 E0 E5 E2 20 C8 2E C4 2E",
+  "source_bits": "11011000 11101000 11100001 11100000 11100101 11100010 00100000 11001000 00101110 11000100 00101110",
+  "source_length_bits": 88,
+  "4b5b_bits": "11011100 10111001 00101110 00100111 10011110 11100010 11111001 01001010 01111011 01010010 10100111 00110100 10101010 011100",
+  "4b5b_hex": "DCB92E279EE2F94A7B52A734AA70",
+  "4b5b_hex_right_padding_bits": 2,
+  "4b5b_length_bits": 110,
+  "scrambled_bits": "11000110 00011011 01010001 01000010 10100100 01001001 01000010 10001101 11111110 11101110 10001011",
+  "scrambled_hex": "C61B5142A449428DFEEE8B",
+  "scrambled_hex_right_padding_bits": 0,
+  "checks": {
+    "descrambling_restores_source": true,
+    "redundancy_percent": 25
+  },
+  "characteristics": {
+    "source": {
+      "NRZ": {
+        "f_min_mhz": 100.0,
+        "f_avg_mhz": 215.9090909090909,
+        "f_max_mhz": 500.0
+      },
+      "AMI": {
+        "f_min_mhz": 83.33333333333333,
+        "f_avg_mhz": 221.5909090909091,
+        "f_max_mhz": 500.0
+      },
+      "MLT-3": {
+        "f_min_mhz": 41.666666666666664,
+        "f_avg_mhz": 110.79545454545455,
+        "f_max_mhz": 250.0
+      },
+      "Manchester": {
+        "f_min_mhz": 500.0,
+        "f_avg_mhz": 789.7727272727273,
+        "f_max_mhz": 1000.0
+      },
+      "DiffManchester": {
+        "f_min_mhz": 500.0,
+        "f_avg_mhz": 784.0909090909091,
+        "f_max_mhz": 1000.0
+      }
+    },
+    "4b5b": {
+      "NRZ": {
+        "f_min_mhz": 100.0,
+        "f_avg_mhz": 290.90909090909093,
+        "f_max_mhz": 500.0
+      },
+      "AMI": {
+        "f_min_mhz": 125.0,
+        "f_avg_mhz": 272.72727272727275,
+        "f_max_mhz": 500.0
+      },
+      "MLT-3": {
+        "f_min_mhz": 62.5,
+        "f_avg_mhz": 136.36363636363637,
+        "f_max_mhz": 250.0
+      },
+      "Manchester": {
+        "f_min_mhz": 500.0,
+        "f_avg_mhz": 713.6363636363636,
+        "f_max_mhz": 1000.0
+      },
+      "DiffManchester": {
+        "f_min_mhz": 500.0,
+        "f_avg_mhz": 731.8181818181819,
+        "f_max_mhz": 1000.0
+      }
+    },
+    "scrambled": {
+      "NRZ": {
+        "f_min_mhz": 62.5,
+        "f_avg_mhz": 278.40909090909093,
+        "f_max_mhz": 500.0
+      },
+      "AMI": {
+        "f_min_mhz": 100.0,
+        "f_avg_mhz": 238.63636363636363,
+        "f_max_mhz": 500.0
+      },
+      "MLT-3": {
+        "f_min_mhz": 50.0,
+        "f_avg_mhz": 119.31818181818181,
+        "f_max_mhz": 250.0
+      },
+      "Manchester": {
+        "f_min_mhz": 500.0,
+        "f_avg_mhz": 727.2727272727273,
+        "f_max_mhz": 1000.0
+      },
+      "DiffManchester": {
+        "f_min_mhz": 500.0,
+        "f_avg_mhz": 767.0454545454545,
+        "f_max_mhz": 1000.0
+      }
+    }
+  }
+}
