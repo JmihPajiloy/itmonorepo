@@ -1,0 +1,24 @@
+$ systemctl is-active ssh auditd apparmor nftables systemd-journald
+active
+active
+active
+active
+active
+
+$ sudo sshd -T | grep -E "^(permitrootlogin|passwordauthentication|maxauthtries) "
+maxauthtries 3
+permitrootlogin no
+passwordauthentication no
+
+$ sudo nft list chain inet paszi_filter input
+table inet paszi_filter {
+	chain input {
+		type filter hook input priority filter; policy drop;
+		iifname "lo" accept
+		ct state established,related accept
+		ip protocol icmp accept
+		ip6 nexthdr ipv6-icmp accept
+		ip saddr 192.168.64.0/24 tcp dport 22 ct state new accept
+		udp sport 67 udp dport 68 accept
+	}
+}

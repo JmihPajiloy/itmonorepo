@@ -1,0 +1,269 @@
+
+===== Дата и узел =====
+2026-09-19T13:33:40+00:00
+ Static hostname: parrot
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: a7744c0342ce46db87651c9cccdeef1f
+         Boot ID: 8a0dea576705449b840a9363a7c7ee30
+    Product UUID: 47e2a118-b8ae-4d66-b716-bb20ce4b9b0a
+  Virtualization: qemu
+Operating System: Parrot Security 7.3 (echo)
+          Kernel: Linux 7.0.7+parrot7-arm64
+    Architecture: arm64
+ Hardware Vendor: QEMU
+  Hardware Model: QEMU Virtual Machine
+Firmware Version: 0.0.0
+   Firmware Date: Fri 2015-02-06
+    Firmware Age: 11y 7month 1w 5d
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s1           UP             192.168.64.3/24 fd74:10b3:2955:e1f4:73c6:d0ec:fb87:4861/64 fe80::9d72:f3f2:7b82:e7e/64 
+enx94e6ba6b117b  DOWN           
+
+===== Операционная система =====
+PRETTY_NAME="Parrot Security 7.3 (echo)"
+NAME="Parrot Security"
+VERSION_ID="7.3"
+VERSION="7.3 (echo)"
+VERSION_CODENAME=echo
+DEBIAN_VERSION_FULL=13.5
+ID=parrot
+ID_LIKE=debian
+HOME_URL="https://www.parrotsec.org/"
+SUPPORT_URL="https://www.parrotsec.org/docs"
+BUG_REPORT_URL="https://gitlab.com/parrotsec/"
+Linux parrot 7.0.7+parrot7-arm64 #1 SMP PREEMPT Parrot 7.0.7-1parrot1 (2026-05-20) aarch64 GNU/Linux
+arm64
+qemu
+
+===== Учетные записи и полномочия =====
+uid=0(root) gid=0(root) groups=0(root)
+sudo:x:27:user
+uid=0(root) gid=0(root) groups=0(root)
+
+===== Службы до настройки =====
+ssh                active
+auditd             inactive
+apparmor           active
+nftables           inactive
+systemd-journald   active
+
+===== Установленные защитные пакеты =====
+acl	2.3.2-2+b1
+aide	
+apparmor	4.1.0-1
+apparmor-utils	4.1.0-1
+attr	1:2.5.2-3
+libpam-pwquality:arm64	1.4.5-5
+nftables	1.1.3-1
+openssh-server	1:10.0p1-7+deb13u4
+
+===== AppArmor =====
+Y
+apparmor module is loaded.
+153 profiles are loaded.
+30 profiles are in enforce mode.
+   /usr/bin/man
+   /usr/bin/pidgin
+   /usr/bin/pidgin//sanitized_helper
+   /usr/bin/totem
+   /usr/bin/totem-audio-preview
+   /usr/bin/totem-video-thumbnailer
+   /usr/bin/totem//sanitized_helper
+   /usr/lib/aarch64-linux-gnu/lightdm/lightdm-guest-session
+   /usr/lib/aarch64-linux-gnu/lightdm/lightdm-guest-session//chromium
+   /usr/lib/cups/backend/cups-pdf
+   /usr/libexec/geoclue
+   /usr/sbin/cups-browsed
+   /usr/sbin/cupsd
+   /usr/sbin/cupsd//third_party
+   /usr/sbin/dhcpd
+   /usr/sbin/haveged
+   /usr/sbin/ntpd
+   apt-cacher-ng
+   libreoffice-senddoc
+   libreoffice-soffice//gpg
+   libreoffice-xpdfimport
+   lsb_release
+   man_filter
+   man_groff
+   nvidia_modprobe
+   nvidia_modprobe//kmod
+   passt
+   pasta
+   system_tor
+   tcpdump
+47 profiles are in complain mode.
+   /usr/bin/irssi
+   Xorg
+   avahi-daemon
+   dnsmasq
+   dnsmasq//libvirt_leaseshelper
+   identd
+   klogd
+   libreoffice-oosplash
+   libreoffice-soffice
+   mdnsd
+   nmbd
+   nscd
+   php-fpm
+   ping
+   plasmashell
+   plasmashell//QtWebEngineProcess
+   samba-bgqd
+   samba-dcerpcd
+   samba-rpcd
+   samba-rpcd-classic
+   samba-rpcd-spoolss
+   sbuild
+   sbuild-abort
+   sbuild-adduser
+   sbuild-apt
+   sbuild-checkpackages
+   sbuild-clean
+   sbuild-createchroot
+   sbuild-destroychroot
+   sbuild-distupgrade
+   sbuild-hold
+   sbuild-shell
+   sbuild-unhold
+   sbuild-update
+   sbuild-upgrade
+   smbd
+   smbldap-useradd
+   smbldap-useradd///etc/init.d/nscd
+   syslog-ng
+   syslogd
+   traceroute
+   transmission-cli
+   transmission-daemon
+   transmission-gtk
+   transmission-qt
+   unix-chkpwd
+   unprivileged_userns
+0 profiles are in prompt mode.
+0 profiles are in kill mode.
+76 profiles are in unconfined mode.
+   1password
+   Discord
+   MongoDB Compass
+   QtWebEngineProcess
+   balena-etcher
+   brave
+   buildah
+   busybox
+   cam
+   ch-checkns
+   ch-run
+   chrome
+   chromium
+   crun
+   devhelp
+   element-desktop
+   epiphany
+   evolution
+   firefox
+   flatpak
+   foliate
+   geary
+   github-desktop
+   goldendict
+   ipa_verify
+   kchmviewer
+   keybase
+   lc-compliance
+   libcamerify
+   linux-sandbox
+   loupe
+   lxc-attach
+   lxc-create
+   lxc-destroy
+   lxc-execute
+   lxc-stop
+   lxc-unshare
+   lxc-usernsexec
+   mmdebstrap
+   msedge
+   nautilus
+   notepadqq
+   obsidian
+   opam
+   opera
+   pageedit
+   polypane
+   privacybrowser
+   qcam
+   qmapshack
+   qutebrowser
+   rootlesskit
+   rpm
+   rssguard
+   runc
+   scide
+   signal-desktop
+   slack
+   slirp4netns
+   steam
+   stress-ng
+   surfshark
+   systemd-coredump
+   toybox
+   trinity
+   tup
+   tuxedo-control-center
+   userbindmount
+   uwsgi-core
+   vdens
+   virtiofsd
+   vivaldi-bin
+   vpnns
+   vscode
+   wike
+   wpcom
+17 processes have profiles defined.
+2 processes are in enforce mode.
+   /usr/sbin/haveged (683) 
+   /usr/sbin/ntpd (956) 
+1 processes are in complain mode.
+   /usr/bin/plasmashell (1303) plasmashell
+0 processes are in prompt mode.
+0 processes are in kill mode.
+14 processes are unconfined but have a profile defined.
+   /usr/lib/firefox-esr/firefox-esr (2188) firefox
+   /usr/lib/firefox-esr/crashhelper (2193) firefox
+   /usr/lib/firefox-esr/firefox-esr (2237) firefox
+   /usr/lib/firefox-esr/firefox-esr (2299) firefox
+   /usr/lib/firefox-esr/firefox-esr (2306) firefox
+   /usr/lib/firefox-esr/firefox-esr (2333) firefox
+   /usr/bin/plasma-browser-integration-host (2417) firefox
+   /usr/lib/firefox-esr/firefox-esr (2419) firefox
+   /usr/lib/firefox-esr/firefox-esr (2430) firefox
+   /usr/lib/firefox-esr/firefox-esr (2451) firefox
+   /usr/lib/firefox-esr/firefox-esr (3078) firefox
+   /usr/lib/firefox-esr/firefox-esr (3170) firefox
+   /usr/lib/firefox-esr/firefox-esr (3215) firefox
+   /usr/lib/firefox-esr/firefox-esr (3345) firefox
+0 processes are in mixed mode.
+
+===== PAM и политика паролей =====
+/etc/pam.d/common-auth:17:auth	[success=2 default=ignore]	pam_unix.so nullok
+/etc/pam.d/common-auth:28:auth required pam_faillock.so preauth silent deny=5 unlock_time=600
+/etc/pam.d/common-auth:29:auth [default=die] pam_faillock.so authfail deny=5 unlock_time=600
+/etc/pam.d/common-auth:30:auth sufficient pam_unix.so try_first_pass
+/etc/pam.d/common-auth:31:auth [default=die] pam_faillock.so authsucc
+/etc/pam.d/common-password:26:password requisite pam_pwquality.so retry=3 minlen=6 ucredit=-1 lcredit=-1 dcredit=-1
+/etc/pam.d/common-password:27:password	[success=2 default=ignore]	pam_unix.so obscure use_authtok try_first_pass yescrypt
+
+===== SSH =====
+maxauthtries 6
+permitrootlogin without-password
+pubkeyauthentication yes
+passwordauthentication yes
+kbdinteractiveauthentication no
+x11forwarding yes
+
+===== Аудит =====
+
+===== Межсетевой экран =====
+
+===== Защищаемый каталог =====

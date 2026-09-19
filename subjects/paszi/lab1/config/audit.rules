@@ -1,0 +1,11 @@
+-w /etc/passwd -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/shadow -p wa -k identity
+-w /etc/sudoers -p wa -k privilege
+-w /etc/sudoers.d -p wa -k privilege
+-w /etc/ssh/sshd_config -p wa -k ssh_config
+-w /etc/ssh/sshd_config.d -p wa -k ssh_config
+-w /srv/paszi-lab1/protected -p rwxa -k protected_data
+-a always,exit -F arch=b64 -S execve -F euid=0 -k privileged_exec
+-a always,exit -F arch=b64 -S mount,umount2 -k mounts
+

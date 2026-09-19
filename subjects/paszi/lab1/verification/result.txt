@@ -1,0 +1,395 @@
+
+===== Система =====
+2026-09-19T13:47:23+00:00
+PRETTY_NAME="Parrot Security 7.3 (echo)"
+Linux 7.0.7+parrot7-arm64 aarch64 GNU/Linux
+qemu
+
+===== Службы =====
+PASS: ssh active
+PASS: auditd active
+PASS: apparmor active
+PASS: nftables active
+PASS: systemd-journald active
+
+===== Парольная аутентификация =====
+25:password	requisite			pam_pwquality.so retry=3
+# Учебная политика строже минимального требования РД: 8 вместо 6 символов.
+minlen = 8
+ucredit = -1
+lcredit = -1
+dcredit = -1
+difok = 4
+retry = 3
+
+PASS: PAM uses pam_pwquality
+PASS: pwquality accepts compliant test password
+PASS: pwquality rejects short test password
+
+===== Контроль целостности до тестового изменения =====
+PASS: AIDE baseline exists
+Start timestamp: 2026-09-19 13:47:23 +0000 (AIDE 0.19.1)
+AIDE found NO differences between database and filesystem. Looks okay!!
+
+Number of entries:	47
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/paszi-lab1.db
+ SHA256    : d8I/CsG6U0jTt0iivYY3F8oiTiom6iJx
+             DkG3skpgfgU=
+ SHA512    : SciV6kiLWzEvbugDc+RcblZoj++gIDBT
+             zElEkSqdYLIWGyXciKu+Y6Kdw53I15An
+             xDpA6fgqEkDIOT+SA4gVOw==
+ STRIBOG256: E4H4dnvPkVp31Xi3885t6GmBP6hWeZwS
+             +PXgacGiZ1Y=
+ STRIBOG512: lASD6l2Z0a8fqL0NeHyukPr75LIR2iJ2
+             OFkFcHVaooimwkdblqmQQjCMeqVmYb96
+             nlN9VH2/2CYTmdBclOnAIg==
+ SHA512/256: kIeHaMfLPbZqbg4nC/I1j+dT1vZNieDe
+             pOHsH0EP3Us=
+ SHA3-256  : vyLN1O+mE3Zy5mCF80dUYGfqm22/d0t4
+             q4dPrXc1yTE=
+ SHA3-512  : gRNzV3K4zAmoM1fsndB3tAj3mpMcoJbO
+             UTMd4B/nuO2uSbcWH/0+PfRTAKrDMO9K
+             h/V8oC4js4JuW0TGoTCZqQ==
+
+
+End timestamp: 2026-09-19 13:47:23 +0000 (run time: 0m 0s)
+PASS: AIDE baseline initially matches
+
+===== Матрица доступа и маркировка =====
+# file: /srv/paszi-lab1/protected
+# owner: root
+# group: paszi_editors
+# flags: -s-
+user::rwx
+group::rwx
+group:paszi_readers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:group::r-x
+default:group:paszi_editors:rwx
+default:group:paszi_readers:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/paszi-lab1/protected/sample.txt
+# owner: root
+# group: paszi_editors
+user::rw-
+group::rw-
+group:paszi_readers:r--
+mask::rw-
+other::---
+
+# file: srv/paszi-lab1/protected
+user.confidentiality="confidential"
+
+# file: srv/paszi-lab1/protected/sample.txt
+user.confidentiality="confidential"
+
+Учебные защищаемые данные ПАСЗИ
+Проверка записи
+PASS: reader can read
+PASS: writer can append
+PASS: unrelated subject is denied
+
+===== SSH =====
+maxauthtries 3
+permitrootlogin no
+pubkeyauthentication yes
+passwordauthentication no
+kbdinteractiveauthentication no
+x11forwarding no
+PASS: root SSH login disabled
+PASS: SSH password authentication disabled
+
+===== Аудит =====
+enabled 1
+failure 1
+pid 25809
+rate_limit 0
+backlog_limit 8192
+lost 0
+backlog 0
+backlog_wait_time 60000
+backlog_wait_time_actual 0
+loginuid_immutable 0 unlocked
+-w /etc/passwd -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/shadow -p wa -k identity
+-w /etc/sudoers -p wa -k privilege
+-w /etc/sudoers.d -p wa -k privilege
+-w /etc/ssh/sshd_config -p wa -k ssh_config
+-w /etc/ssh/sshd_config.d -p wa -k ssh_config
+-w /srv/paszi-lab1/protected -p rwxa -k protected_data
+-a always,exit -F arch=b64 -S execve -F euid=0 -F key=privileged_exec
+-a always,exit -F arch=b64 -S umount2,mount -F key=mounts
+-w /tmp/paszi-audit-test -p wa -k temp_test
+PASS: identity audit rule loaded
+PASS: protected directory audit rule loaded
+----
+type=PROCTITLE msg=audit(09/19/26 13:37:26.913:637) : proctitle=sh -c printf '%s\n' 'Проверка записи' >> /srv/paszi-lab1/protected/sample.txt 
+type=PATH msg=audit(09/19/26 13:37:26.913:637) : item=0 name=/srv/paszi-lab1/protected/sample.txt inode=591527 dev=00:1e mode=file,660 ouid=root ogid=paszi_editors rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(09/19/26 13:37:26.913:637) : cwd=/home/user 
+type=SYSCALL msg=audit(09/19/26 13:37:26.913:637) : arch=aarch64 syscall=openat success=no exit=EACCES(Permission denied) a0=AT_FDCWD a1=0xaaaaee74d630 a2=O_WRONLY|O_CREAT|O_APPEND a3=0x1b6 items=1 ppid=24815 pid=24816 auid=user uid=paszi_writer gid=paszi_writer euid=paszi_writer suid=paszi_writer fsuid=paszi_writer egid=paszi_writer sgid=paszi_writer fsgid=paszi_writer tty=(none) ses=14 comm=sh exe=/usr/bin/dash subj=unconfined key=protected_data 
+
+===== Межсетевой экран =====
+table inet paszi_filter {
+	chain input {
+		type filter hook input priority filter; policy drop;
+		iifname "lo" accept
+		ct state established,related accept
+		ip protocol icmp accept
+		ip6 nexthdr ipv6-icmp accept
+		ip saddr 192.168.64.0/24 tcp dport 22 ct state new accept
+		udp sport 67 udp dport 68 accept
+	}
+
+	chain forward {
+		type filter hook forward priority filter; policy drop;
+	}
+
+	chain output {
+		type filter hook output priority filter; policy accept;
+	}
+}
+PASS: nftables input policy is drop
+PASS: SSH limited to UTM subnet
+
+===== AppArmor =====
+apparmor module is loaded.
+153 profiles are loaded.
+30 profiles are in enforce mode.
+   /usr/bin/man
+   /usr/bin/pidgin
+   /usr/bin/pidgin//sanitized_helper
+   /usr/bin/totem
+   /usr/bin/totem-audio-preview
+   /usr/bin/totem-video-thumbnailer
+   /usr/bin/totem//sanitized_helper
+   /usr/lib/aarch64-linux-gnu/lightdm/lightdm-guest-session
+   /usr/lib/aarch64-linux-gnu/lightdm/lightdm-guest-session//chromium
+   /usr/lib/cups/backend/cups-pdf
+   /usr/libexec/geoclue
+   /usr/sbin/cups-browsed
+   /usr/sbin/cupsd
+   /usr/sbin/cupsd//third_party
+   /usr/sbin/dhcpd
+   /usr/sbin/haveged
+   /usr/sbin/ntpd
+   apt-cacher-ng
+   libreoffice-senddoc
+   libreoffice-soffice//gpg
+   libreoffice-xpdfimport
+   lsb_release
+   man_filter
+   man_groff
+   nvidia_modprobe
+   nvidia_modprobe//kmod
+   passt
+   pasta
+   system_tor
+   tcpdump
+47 profiles are in complain mode.
+   /usr/bin/irssi
+   Xorg
+   avahi-daemon
+   dnsmasq
+   dnsmasq//libvirt_leaseshelper
+   identd
+   klogd
+   libreoffice-oosplash
+   libreoffice-soffice
+   mdnsd
+   nmbd
+   nscd
+   php-fpm
+   ping
+   plasmashell
+   plasmashell//QtWebEngineProcess
+   samba-bgqd
+   samba-dcerpcd
+   samba-rpcd
+   samba-rpcd-classic
+   samba-rpcd-spoolss
+   sbuild
+   sbuild-abort
+   sbuild-adduser
+   sbuild-apt
+   sbuild-checkpackages
+   sbuild-clean
+   sbuild-createchroot
+   sbuild-destroychroot
+   sbuild-distupgrade
+   sbuild-hold
+   sbuild-shell
+   sbuild-unhold
+   sbuild-update
+   sbuild-upgrade
+   smbd
+   smbldap-useradd
+   smbldap-useradd///etc/init.d/nscd
+   syslog-ng
+   syslogd
+   traceroute
+   transmission-cli
+   transmission-daemon
+   transmission-gtk
+   transmission-qt
+   unix-chkpwd
+   unprivileged_userns
+0 profiles are in prompt mode.
+0 profiles are in kill mode.
+76 profiles are in unconfined mode.
+   1password
+   Discord
+   MongoDB Compass
+   QtWebEngineProcess
+   balena-etcher
+   brave
+   buildah
+   busybox
+   cam
+   ch-checkns
+   ch-run
+   chrome
+   chromium
+   crun
+   devhelp
+   element-desktop
+   epiphany
+   evolution
+   firefox
+   flatpak
+   foliate
+   geary
+   github-desktop
+   goldendict
+   ipa_verify
+   kchmviewer
+   keybase
+   lc-compliance
+   libcamerify
+   linux-sandbox
+   loupe
+   lxc-attach
+   lxc-create
+   lxc-destroy
+   lxc-execute
+   lxc-stop
+   lxc-unshare
+   lxc-usernsexec
+   mmdebstrap
+   msedge
+   nautilus
+   notepadqq
+   obsidian
+   opam
+   opera
+   pageedit
+   polypane
+   privacybrowser
+   qcam
+   qmapshack
+   qutebrowser
+   rootlesskit
+   rpm
+   rssguard
+   runc
+   scide
+   signal-desktop
+   slack
+   slirp4netns
+   steam
+   stress-ng
+   surfshark
+   systemd-coredump
+   toybox
+   trinity
+   tup
+   tuxedo-control-center
+   userbindmount
+   uwsgi-core
+   vdens
+   virtiofsd
+   vivaldi-bin
+   vpnns
+   vscode
+   wike
+   wpcom
+17 processes have profiles defined.
+2 processes are in enforce mode.
+   /usr/sbin/haveged (683) 
+   /usr/sbin/ntpd (956) 
+1 processes are in complain mode.
+   /usr/bin/plasmashell (1303) plasmashell
+0 processes are in prompt mode.
+0 processes are in kill mode.
+14 processes are unconfined but have a profile defined.
+   /usr/lib/firefox-esr/firefox-esr (2188) firefox
+   /usr/lib/firefox-esr/crashhelper (2193) firefox
+   /usr/lib/firefox-esr/firefox-esr (2237) firefox
+   /usr/lib/firefox-esr/firefox-esr (2299) firefox
+   /usr/lib/firefox-esr/firefox-esr (2306) firefox
+   /usr/lib/firefox-esr/firefox-esr (2333) firefox
+   /usr/bin/plasma-browser-integration-host (2417) firefox
+   /usr/lib/firefox-esr/firefox-esr (2419) firefox
+   /usr/lib/firefox-esr/firefox-esr (2430) firefox
+   /usr/lib/firefox-esr/firefox-esr (2451) firefox
+   /usr/lib/firefox-esr/firefox-esr (26294) firefox
+   /usr/lib/firefox-esr/firefox-esr (26360) firefox
+   /usr/lib/firefox-esr/firefox-esr (26436) firefox
+   /usr/lib/firefox-esr/firefox-esr (26492) firefox
+0 processes are in mixed mode.
+PASS: AppArmor kernel module enabled
+
+===== Обнаружение изменения средствами AIDE =====
+PASS: AIDE detects the controlled file change
+Changed entries:
+File: /srv/paszi-lab1/protected/sample.txt
+Start timestamp: 2026-09-19 13:47:23 +0000 (AIDE 0.19.1)
+AIDE found NO differences between database and filesystem. Looks okay!!
+
+Number of entries:	47
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/paszi-lab1.db
+ SHA256    : QPn8vvohESWNW507sfF99m1wltof+qx5
+             14udNQ2b0qk=
+ SHA512    : kiMGe4U7Zkc9QSyTbFIAnv+I7q4n1jbw
+             AV0RTG+lOJasL1F8YM2GxuF2zEORRyiC
+             gxbJsGQ1YFhpdWemSUJbaw==
+ STRIBOG256: nByx71NDrzYvb/5zSjaUlCQ2dv+RKz3Y
+             36dMgqhOzHc=
+ STRIBOG512: W2v7Z0IXpDEhASK9n9ftTIwrqcxxalmX
+             P8YDVNZzZ969PyCIn2wTR/cwroOjII5x
+             wt7AfWDV7tuxvLe2pbHiOw==
+ SHA512/256: /vgEjblh42TsgFJnfnsNuQxZuqo0qD9L
+             6V3WaSUomEE=
+ SHA3-256  : YgJ1ISBr0XKxp0asDAhbaAqaSkO+Aurl
+             iib6oPqMBiY=
+ SHA3-512  : fRsZeAMm5tmkUidb3CyUcXeUmkybUl0T
+             ki7cC7PsCQrJ/ppYtp4zoBxWE8xKYxnP
+             FflLZ51xrbOihVVMiJxKsA==
+
+
+End timestamp: 2026-09-19 13:47:23 +0000 (run time: 0m 0s)
+PASS: AIDE baseline updated and clean
+
+===== Восстановление =====
+9e3eddbf28cb8f9c289d78fd3c1da97c64c2ae4e1ac99bbfd9624d522688c832  /var/backups/paszi-lab1/security-config.tar.gz
+9e3eddbf28cb8f9c289d78fd3c1da97c64c2ae4e1ac99bbfd9624d522688c832  /home/user/paszi-lab1-security-config.tar.gz
+PASS: first backup exists
+PASS: second backup exists
+PASS: backup copies match
+
+===== Итог =====
+ALL IMPLEMENTED CHECKS PASSED

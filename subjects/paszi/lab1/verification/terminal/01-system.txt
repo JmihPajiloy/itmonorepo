@@ -1,0 +1,16 @@
+$ cat /etc/os-release | head -6
+PRETTY_NAME="Parrot Security 7.3 (echo)"
+NAME="Parrot Security"
+VERSION_ID="7.3"
+VERSION="7.3 (echo)"
+VERSION_CODENAME=echo
+DEBIAN_VERSION_FULL=13.5
+
+$ uname -srmo
+Linux 7.0.7+parrot7-arm64 aarch64 GNU/Linux
+
+$ systemd-detect-virt
+qemu
+
+$ hostname -I
+192.168.64.3 fd74:10b3:2955:e1f4:73c6:d0ec:fb87:4861 

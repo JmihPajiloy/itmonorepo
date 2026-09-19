@@ -1,0 +1,25 @@
+$ sudo auditctl -l | grep -E "identity|protected_data|privileged_exec"
+-w /etc/passwd -p wa -k identity
+-w /etc/group -p wa -k identity
+-w /etc/shadow -p wa -k identity
+-w /srv/paszi-lab1/protected -p rwxa -k protected_data
+-a always,exit -F arch=b64 -S execve -F euid=0 -F key=privileged_exec
+
+$ sudo aide --config=/etc/aide/paszi-lab1.conf --check | head -8
+Start timestamp: 2026-09-19 14:01:53 +0000 (AIDE 0.19.1)
+AIDE found NO differences between database and filesystem. Looks okay!!
+
+Number of entries:	47
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+$ sha256sum /var/backups/paszi-lab1/security-config.tar.gz /home/user/paszi-lab1-security-config.tar.gz
+9e3eddbf28cb8f9c289d78fd3c1da97c64c2ae4e1ac99bbfd9624d522688c832  /var/backups/paszi-lab1/security-config.tar.gz
+9e3eddbf28cb8f9c289d78fd3c1da97c64c2ae4e1ac99bbfd9624d522688c832  /home/user/paszi-lab1-security-config.tar.gz
+
+$ sudo /tmp/paszi-lab1/scripts/verify.sh | tail -3
+
+===== Итог =====
+ALL IMPLEMENTED CHECKS PASSED

@@ -1,0 +1,22 @@
+$ sudo getfacl -p /srv/paszi-lab1/protected/sample.txt
+# file: /srv/paszi-lab1/protected/sample.txt
+# owner: root
+# group: paszi_editors
+user::rw-
+group::rw-
+group:paszi_readers:r--
+mask::rw-
+other::---
+
+
+$ sudo getfattr -d -m user.confidentiality /srv/paszi-lab1/protected/sample.txt
+# file: /srv/paszi-lab1/protected/sample.txt
+user.confidentiality="confidential"
+
+
+$ sudo runuser -u paszi_reader -- cat /srv/paszi-lab1/protected/sample.txt | head -1
+Учебные защищаемые данные ПАСЗИ
+
+$ sudo runuser -u paszi_denied -- cat /srv/paszi-lab1/protected/sample.txt
+cat: /srv/paszi-lab1/protected/sample.txt: Permission denied
+ACCESS DENIED: expected result
