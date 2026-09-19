@@ -2,14 +2,10 @@
 #import "/templates/title-page.typ": title-page
 
 #show: gost.with(hide-title: true)
-#title-page(
-  "Информационная безопасность баз данных",
-  1,
-  [Инфологическое моделирование баз данных по методу «сущность–связь»],
-  "Шибаев Иван Дмитриевич",
-  "Ярцева Наталия Андреевна",
-  coauthors: ("Малышев Григорий Игоревич",),
-)
+#[
+  #set page(margin: 0mm)
+  #image("title.pdf")
+]
 #outline()
 
 #show table: set text(size: 10pt)

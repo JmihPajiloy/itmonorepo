@@ -2,14 +2,10 @@
 #import "/templates/title-page.typ": title-page
 
 #show: gost.with(hide-title: true)
-#title-page(
-  "Информационная безопасность баз данных",
-  2,
-  [Реализация БД в рамках СУБД],
-  "Шибаев Иван Дмитриевич",
-  "Ярцева Наталия Андреевна",
-  coauthors: ("Малышев Григорий Игоревич",),
-)
+#[
+  #set page(margin: 0mm)
+  #image("title.pdf")
+]
 #outline()
 
 #show table: set text(size: 10pt)
