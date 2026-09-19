@@ -6,8 +6,6 @@
   instructor,
   group: "N3352",
   coauthors: (),
-  city: none,
-  year: none,
 ) = page(footer: none)[
   #align(center)[
     #set text(12pt)
@@ -54,11 +52,6 @@
         #line(length: 50%, stroke: 1pt)
         #align(center)[#move(dx: 25%, dy: -14pt)[#text(size: 8pt)[(подпись)]]]
       ]
-    ]
-  ]
-  #if city != none and year != none [
-    #place(bottom + center, dy: -1em)[
-      #align(center)[#city — #year]
     ]
   ]
 ]
