@@ -1,0 +1,13 @@
+        relation        | sel | ins | upd | del 
+------------------------+-----+-----+-----+-----
+ employee               | S*  |     |     | 
+ inspection             | S   | I*  |     | 
+ instrument             | S*  |     |     | 
+ instrument_type        | S   |     |     | 
+ order_work             | S*  |     | U*  | 
+ restoration_order      | S*  |     |     | 
+ service                | S*  |     |     | 
+ v_restorer_inspections | S   |     |     | 
+ v_restorer_tasks       | S   |     |     | 
+(9 rows)
+

@@ -1,0 +1,13 @@
+    table_name     | rows 
+-------------------+------
+ customer          |    8
+ instrument_type   |    8
+ instrument        |    8
+ employee          |    8
+ restoration_order |    8
+ service           |    8
+ order_work        |   11
+ inspection        |    8
+ payment           |    8
+(9 rows)
+

@@ -1,0 +1,13 @@
+        conname         |      parent       | on_delete 
+------------------------+-------------------+-----------
+ inspection_employee_fk | employee          | RESTRICT
+ inspection_order_fk    | restoration_order | RESTRICT
+ instrument_customer_fk | customer          | RESTRICT
+ instrument_type_fk     | instrument_type   | RESTRICT
+ work_employee_fk       | employee          | RESTRICT
+ work_order_fk          | restoration_order | RESTRICT
+ work_service_fk        | service           | RESTRICT
+ payment_order_fk       | restoration_order | RESTRICT
+ order_instrument_fk    | instrument        | RESTRICT
+(9 rows)
+

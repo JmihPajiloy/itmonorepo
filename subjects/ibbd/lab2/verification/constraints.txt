@@ -1,0 +1,10 @@
+         probe         |            rejected_by             
+-----------------------+------------------------------------
+ второй активный заказ | 23505 order_one_active_uq
+ удаление заказчика    | 23503 instrument_customer_fk
+ несуществующий тип    | 23503 instrument_type_fk
+ закрытие без даты     | 23514 order_closed_on_check
+ срок раньше приёма    | 23514 restoration_order_check
+ отрицательная оплата  | 23514 payment_amount_kopecks_check
+(6 rows)
+

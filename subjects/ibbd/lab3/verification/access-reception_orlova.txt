@@ -1,0 +1,12 @@
+       relation       | sel | ins | upd | del 
+----------------------+-----+-----+-----+-----
+ customer             | S   | I   | U   | 
+ instrument           | S   | I   | U   | 
+ instrument_type      | S   |     |     | 
+ payment              | S   | I   | U   | 
+ restoration_order    | S   | I   | U   | 
+ service              | S   |     |     | 
+ v_reception_balances | S   |     |     | 
+ v_reception_orders   | S   |     |     | 
+(8 rows)
+

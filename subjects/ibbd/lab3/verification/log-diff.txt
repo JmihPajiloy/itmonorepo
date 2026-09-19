@@ -1,0 +1,19 @@
+ id | field  |   old_value   |       new_value       
+----+--------+---------------+-----------------------
+  5 | email  | null          | "belova@example.test"
+  6 | due_on | "2026-10-03"  | "2026-10-01"
+  7 | status | "in_progress" | "done"
+(3 rows)
+
+ id |          deleted_row          
+----+-------------------------------
+  9 | {                            +
+    |     "method": "card",        +
+    |     "paid_on": "2026-09-19", +
+    |     "order_id": 10,          +
+    |     "payment_id": 10,        +
+    |     "receipt_no": "DEMO-009",+
+    |     "amount_kopecks": 100000 +
+    | }
+(1 row)
+

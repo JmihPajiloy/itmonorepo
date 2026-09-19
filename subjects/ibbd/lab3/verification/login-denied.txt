@@ -1,0 +1,3 @@
+error: connection to server at "127.0.0.1", port 55432 
+failed: FATAL:  password authentication failed for user 
+"restorer_smirnov"

@@ -1,0 +1,45 @@
+SELECT current_user, current_employee_id();
+   current_user   | current_employee_id 
+------------------+---------------------
+ restorer_smirnov |                   1
+(1 row)
+
+SELECT order_id, line_no, service_name, work_status
+FROM v_restorer_tasks WHERE employee_id = 1;
+ order_id | line_no |     service_name     | work_status 
+----------+---------+----------------------+-------------
+        1 |       1 | Склейка трещины деки | in_progress
+(1 row)
+
+UPDATE order_work SET status = 'done'
+WHERE order_id = 1 AND line_no = 1;
+UPDATE 1
+INSERT INTO inspection (order_id, employee_id, inspected_on,
+                        conclusion)
+VALUES (1, 1, '2026-09-19', 'Склейка завершена');
+INSERT 0 1
+UPDATE order_work SET status = 'done'
+WHERE order_id = 2 AND line_no = 1;
+UPDATE 0
+INSERT INTO inspection (order_id, employee_id, inspected_on,
+                        conclusion)
+VALUES (2, 2, '2026-09-19', 'Попытка подписи чужим именем');
+ERROR:  new row violates row-level security policy for table 
+"inspection"
+SELECT full_name, phone FROM customer;
+ERROR:  permission denied for table customer
+SELECT agreed_price_kopecks FROM order_work;
+ERROR:  permission denied for table order_work
+SELECT customer_id FROM instrument;
+ERROR:  permission denied for table instrument
+SELECT * FROM payment;
+ERROR:  permission denied for table payment
+SELECT * FROM v_reception_balances;
+ERROR:  permission denied for view v_reception_balances
+SELECT count(*) FROM change_log;
+ERROR:  permission denied for table change_log
+SELECT count(*) FROM access_secret;
+ERROR:  permission denied for table access_secret
+UPDATE order_work SET agreed_price_kopecks = 0
+WHERE order_id = 1 AND line_no = 1;
+ERROR:  permission denied for table order_work

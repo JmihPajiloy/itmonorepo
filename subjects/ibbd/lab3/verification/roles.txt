@@ -1,0 +1,10 @@
+     rolname      | login | super |   member_of    
+------------------+-------+-------+----------------
+ postgres         | t     | t     | 
+ reception_orlova | t     | f     | reception_role
+ reception_role   | f     | f     | 
+ restorer_role    | f     | f     | 
+ restorer_smirnov | t     | f     | restorer_role
+ restorer_volkova | t     | f     | restorer_role
+(6 rows)
+

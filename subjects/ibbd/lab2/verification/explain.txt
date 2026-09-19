@@ -1,0 +1,26 @@
+                        QUERY PLAN                        
+----------------------------------------------------------
+ Sort
+   Sort Key: due_on
+   ->  Bitmap Heap Scan on restoration_order
+         Recheck Cond: (status = 'in_progress'::text)
+         ->  Bitmap Index Scan on order_status_due_idx
+               Index Cond: (status = 'in_progress'::text)
+(6 rows)
+
+                  QUERY PLAN                  
+----------------------------------------------
+ Bitmap Heap Scan on payment
+   Recheck Cond: (order_id = 1)
+   ->  Bitmap Index Scan on payment_order_idx
+         Index Cond: (order_id = 1)
+(4 rows)
+
+                       QUERY PLAN                       
+--------------------------------------------------------
+ Bitmap Heap Scan on customer
+   Recheck Cond: (phone = '+7 900 000-00-04'::text)
+   ->  Bitmap Index Scan on customer_phone_idx
+         Index Cond: (phone = '+7 900 000-00-04'::text)
+(4 rows)
+

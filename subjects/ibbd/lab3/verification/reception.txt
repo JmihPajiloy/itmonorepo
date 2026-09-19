@@ -1,0 +1,50 @@
+SELECT current_user, session_user;
+   current_user   |   session_user   
+------------------+------------------
+ reception_orlova | reception_orlova
+(1 row)
+
+INSERT INTO customer (full_name, phone)
+VALUES ('Белова Ксения Олеговна', '+7 900 000-00-09')
+RETURNING customer_id AS cust 
+INSERT 0 1
+INSERT INTO instrument (customer_id, type_id,
+                        inventory_no, name)
+VALUES (9, 2, 'INS-009', 'Гитара концертная')
+RETURNING instrument_id AS inst 
+INSERT 0 1
+INSERT INTO restoration_order (instrument_id, accepted_on,
+                               due_on, status, complaint)
+VALUES (10, '2026-09-19', '2026-10-03', 'accepted',
+        'Отклеилась подставка')
+RETURNING order_id AS ord 
+INSERT 0 1
+INSERT INTO payment (order_id, paid_on, amount_kopecks,
+                     method, receipt_no)
+VALUES (10, '2026-09-19', 100000, 'card', 'DEMO-009');
+INSERT 0 1
+UPDATE customer SET email = 'belova@example.test'
+WHERE customer_id = 9;
+UPDATE 1
+UPDATE restoration_order SET due_on = '2026-10-01'
+WHERE order_id = 10;
+UPDATE 1
+SELECT order_id, customer_name, due_on, status
+FROM v_reception_orders WHERE order_id = 10;
+ order_id |     customer_name      |   due_on   |  status  
+----------+------------------------+------------+----------
+       10 | Белова Ксения Олеговна | 2026-10-01 | accepted
+(1 row)
+
+SELECT full_name, work_email FROM employee;
+ERROR:  permission denied for table employee
+SELECT * FROM order_work;
+ERROR:  permission denied for table order_work
+SELECT * FROM v_restorer_tasks;
+ERROR:  permission denied for view v_restorer_tasks
+SELECT count(*) FROM change_log;
+ERROR:  permission denied for table change_log
+SELECT count(*) FROM access_secret;
+ERROR:  permission denied for table access_secret
+DELETE FROM payment WHERE order_id = 10;
+ERROR:  permission denied for table payment

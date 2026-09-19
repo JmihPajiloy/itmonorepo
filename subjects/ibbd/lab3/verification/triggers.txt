@@ -1,0 +1,13 @@
+        trigger        |        after_events        
+-----------------------+----------------------------
+ customer_log          | INSERT OR DELETE OR UPDATE
+ employee_log          | INSERT OR DELETE OR UPDATE
+ inspection_log        | INSERT OR DELETE OR UPDATE
+ instrument_log        | INSERT OR DELETE OR UPDATE
+ instrument_type_log   | INSERT OR DELETE OR UPDATE
+ order_work_log        | INSERT OR DELETE OR UPDATE
+ payment_log           | INSERT OR DELETE OR UPDATE
+ restoration_order_log | INSERT OR DELETE OR UPDATE
+ service_log           | INSERT OR DELETE OR UPDATE
+(9 rows)
+

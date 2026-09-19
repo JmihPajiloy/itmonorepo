@@ -15,3 +15,7 @@ __pycache__/
 
 # Reproducible demonstration database, not arbitrary input databases
 /subjects/ibbd/lab1/lab1.sqlite3
+
+# Local PostgreSQL clusters of the IBBD labs
+/subjects/ibbd/.pgdata/
+/subjects/ibbd/lab5/work/
