@@ -2,13 +2,10 @@
 #import "/templates/title-page.typ": title-page
 
 #show: gost.with(hide-title: true)
-#title-page(
-  "Программно-аппаратные средства защиты информации",
-  1,
-  [Механизмы защиты Unix-систем],
-  "Шибаев Иван Дмитриевич",
-  none,
-)
+#[
+  #set page(margin: 0mm)
+  #image("title.pdf")
+]
 
 #outline()
 
