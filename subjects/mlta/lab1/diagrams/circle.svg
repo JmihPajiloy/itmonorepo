@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="471.6pt" height="345.6pt" viewBox="0 0 471.6 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-04T00:12:48.070186</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6 
+L 471.6 345.6 
+L 471.6 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 101.328511 202.837787 
+C 109.294625 202.837787 116.93554 199.672816 122.568434 194.039923 
+C 128.201327 188.40703 131.366298 180.766114 131.366298 172.8 
+C 131.366298 164.833886 128.201327 157.19297 122.568434 151.560077 
+C 116.93554 145.927184 109.294625 142.762213 101.328511 142.762213 
+C 93.362396 142.762213 85.721481 145.927184 80.088588 151.560077 
+C 74.455694 157.19297 71.290723 164.833886 71.290723 172.8 
+C 71.290723 180.766114 74.455694 188.40703 80.088588 194.039923 
+C 85.721481 199.672816 93.362396 202.837787 101.328511 202.837787 
+z
+" clip-path="url(#p32e1187268)" style="fill: #f1f4f6; stroke: #1d2d3d; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 101.328511 106.437447 
+C 83.734817 106.437447 66.843719 113.433969 54.403099 125.874589 
+C 41.962479 138.315208 34.965957 155.206307 34.965957 172.8 
+C 34.965957 190.393693 41.962479 207.284792 54.403099 219.725411 
+C 66.843719 232.166031 83.734817 239.162553 101.328511 239.162553 
+L 101.328511 204.933447 
+C 92.809459 204.933447 84.630612 201.545657 78.606732 195.521778 
+C 72.582853 189.497899 69.195064 181.319051 69.195064 172.8 
+C 69.195064 164.280949 72.582853 156.102101 78.606732 150.078222 
+C 84.630612 144.054343 92.809459 140.666553 101.328511 140.666553 
+z
+" clip-path="url(#p32e1187268)" style="fill: #e7f1fc; stroke: #286fbd; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 101.328511 239.162553 
+C 118.922204 239.162553 135.813302 232.166031 148.253922 219.725411 
+C 160.694542 207.284792 167.691064 190.393693 167.691064 172.8 
+C 167.691064 155.206307 160.694542 138.315208 148.253922 125.874589 
+C 135.813302 113.433969 118.922204 106.437447 101.328511 106.437447 
+L 101.328511 140.666553 
+C 109.847562 140.666553 118.02641 144.054343 124.050289 150.078222 
+C 130.074168 156.102101 133.461957 164.280949 133.461957 172.8 
+C 133.461957 181.319051 130.074168 189.497899 124.050289 195.521778 
+C 118.02641 201.545657 109.847562 204.933447 101.328511 204.933447 
+z
+" clip-path="url(#p32e1187268)" style="fill: #d5e8fa; stroke: #286fbd; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 204.714383 172.8 
+C 204.714383 145.390878 193.814538 119.076325 174.433362 99.695149 
+C 155.052186 80.313972 128.737633 69.414128 101.328511 69.414128 
+L 101.328511 103.643234 
+C 119.662991 103.643234 137.265293 110.934346 150.229729 123.898782 
+C 163.194164 136.863217 170.485277 154.46552 170.485277 172.8 
+z
+" clip-path="url(#p32e1187268)" style="fill: #ffe9d2; stroke: #cc7425; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 101.328511 276.185872 
+C 128.737633 276.185872 155.052186 265.286028 174.433362 245.904851 
+C 193.814538 226.523675 204.714383 200.209122 204.714383 172.8 
+L 170.485277 172.8 
+C 170.485277 191.13448 163.194164 208.736783 150.229729 221.701218 
+C 137.265293 234.665654 119.662991 241.956766 101.328511 241.956766 
+z
+" clip-path="url(#p32e1187268)" style="fill: #fff0df; stroke: #cc7425; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 241.737702 172.8 
+C 241.737702 160.529517 240.12921 148.311804 236.953375 136.459427 
+C 233.77754 124.607051 229.061679 113.221954 222.926437 102.595404 
+L 193.283162 119.709957 
+C 197.922747 127.745955 201.488971 136.355581 203.890597 145.318572 
+C 206.292223 154.281563 207.508596 163.520829 207.508596 172.8 
+z
+" clip-path="url(#p32e1187268)" style="fill: #e9f5ed; stroke: #238451; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 222.926437 102.595404 
+C 216.791196 91.968854 209.289344 82.19225 200.612802 73.515709 
+C 191.93626 64.839167 182.159656 57.337315 171.533106 51.202073 
+L 154.418553 80.845349 
+C 162.454551 85.484935 169.847804 91.157977 176.409169 97.719342 
+C 182.970534 104.280707 188.643576 111.673959 193.283162 119.709957 
+z
+" clip-path="url(#p32e1187268)" style="fill: #d8ebdf; stroke: #238451; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 171.533106 51.202073 
+C 160.906556 45.066832 149.52146 40.35097 137.669084 37.175136 
+C 125.816707 33.999301 113.598994 32.390809 101.328511 32.390809 
+L 101.328511 66.619915 
+C 110.607682 66.619915 119.846948 67.836287 128.809939 70.237914 
+C 137.77293 72.63954 146.382555 76.205763 154.418553 80.845349 
+z
+" clip-path="url(#p32e1187268)" style="fill: #c8e3d0; stroke: #238451; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 259.201532 299.936681 
+L 271.775489 299.936681 
+" clip-path="url(#p32e1187268)" style="fill: none; stroke: #286fbd; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 259.201532 312.510638 
+L 271.775489 312.510638 
+" clip-path="url(#p32e1187268)" style="fill: none; stroke: #cc7425; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 259.201532 325.084596 
+L 271.775489 325.084596 
+" clip-path="url(#p32e1187268)" style="fill: none; stroke: #238451; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #1d2d3d; font: 700 13px 'Times New Roman'; text-anchor: middle" x="227.068085" y="23.467826" transform="rotate(-0 227.068085 23.467826)">Круговая схема классификации</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #1d2d3d; font: 700 13px 'Times New Roman'; text-anchor: middle" x="101.328511" y="175.713828" transform="rotate(-0 101.328511 175.713828)">1</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #286fbd; font: 700 11px 'Times New Roman'; text-anchor: middle" x="52.429787" y="175.265547" transform="rotate(-0 52.429787 175.265547)">3</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #286fbd; font: 700 11px 'Times New Roman'; text-anchor: middle" x="150.227234" y="175.265547" transform="rotate(-0 150.227234 175.265547)">2</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #cc7425; font: 700 11px 'Times New Roman'; text-anchor: middle" x="162.08457" y="114.509488" transform="rotate(-0 162.08457 114.509488)">4</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #cc7425; font: 700 11px 'Times New Roman'; text-anchor: middle" x="162.08457" y="236.021606" transform="rotate(-0 162.08457 236.021606)">5</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #238451; font: 700 11px 'Times New Roman'; text-anchor: middle" x="132.968313" y="57.184197" transform="rotate(-0 132.968313 57.184197)">6</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #238451; font: 700 11px 'Times New Roman'; text-anchor: middle" x="187.770058" y="88.824" transform="rotate(-0 187.770058 88.824)">7</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #238451; font: 700 11px 'Times New Roman'; text-anchor: middle" x="219.40986" y="143.625745" transform="rotate(-0 219.40986 143.625745)">8</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #1d2d3d; font: 700 10.5px 'Times New Roman'; text-anchor: start" x="259.201532" y="52.208115" transform="rotate(-0 259.201532 52.208115)">Понятия</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="75.141073" transform="rotate(-0 259.201532 75.141073)">1  Карты колоды (52)</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="101.686095" transform="rotate(-0 259.201532 101.686095)">2  Красные масти</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="128.231116" transform="rotate(-0 259.201532 128.231116)">3  Чёрные масти</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="154.776137" transform="rotate(-0 259.201532 154.776137)">4  Черви</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="181.31244" transform="rotate(-0 259.201532 181.31244)">5  Бубны</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="207.86618" transform="rotate(-0 259.201532 207.86618)">6  Числовые 2–10</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="234.393763" transform="rotate(-0 259.201532 234.393763)">7  Фигурные J–K</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #1d2d3d; font: 9.3px 'Times New Roman'; text-anchor: start" x="259.201532" y="260.947503" transform="rotate(-0 259.201532 260.947503)">8  Туз (A)</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #1d2d3d; font: 700 9.5px 'Times New Roman'; text-anchor: start" x="259.201532" y="285.30074" transform="rotate(-0 259.201532 285.30074)">Основания деления</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #526273; font: 7.8px 'Times New Roman'; text-anchor: start" x="276.665362" y="301.810509" transform="rotate(-0 276.665362 301.810509)">1  цвет масти</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #526273; font: 7.8px 'Times New Roman'; text-anchor: start" x="276.665362" y="314.384466" transform="rotate(-0 276.665362 314.384466)">2  масть красной карты</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #526273; font: 7.8px 'Times New Roman'; text-anchor: start" x="276.665362" y="326.943799" transform="rotate(-0 276.665362 326.943799)">3  группа достоинств</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p32e1187268">
+   <rect x="24.48766" y="8.64" width="422.624681" height="328.32"/>
+  </clipPath>
+ </defs>
+</svg>

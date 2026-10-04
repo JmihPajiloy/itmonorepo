@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="471.6pt" height="417.6pt" viewBox="0 0 471.6 417.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-04T00:12:48.042888</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 417.6 
+L 471.6 417.6 
+L 471.6 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 235.8 80.42976 
+L 235.8 88.44768 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #286fbd; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 235.8 120.51936 
+L 235.8 124.52832 
+L 114.8346 124.52832 
+L 114.8346 132.54624 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #286fbd; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 235.8 124.52832 
+L 356.7654 124.52832 
+L 356.7654 132.54624 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #286fbd; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 356.7654 172.63584 
+L 356.7654 180.65376 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #cc7425; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 356.7654 208.71648 
+L 356.7654 212.72544 
+L 289.5624 212.72544 
+L 289.5624 222.74784 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #cc7425; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 356.7654 212.72544 
+L 406.0476 212.72544 
+L 406.0476 222.74784 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #cc7425; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 289.5624 262.83744 
+L 289.5624 268.85088 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #238451; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 289.5624 300.92256 
+L 289.5624 304.93152 
+L 213.399 304.93152 
+L 213.399 314.95392 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #238451; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 289.5624 304.93152 
+L 311.9634 304.93152 
+L 311.9634 314.95392 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #238451; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 311.9634 304.93152 
+L 410.5278 304.93152 
+L 410.5278 314.95392 
+" clip-path="url(#pcf022ad416)" style="fill: none; stroke: #238451; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #1d2d3d; font: 700 13px 'Times New Roman'; text-anchor: middle" x="235.8" y="21.255489" transform="rotate(-0 235.8 21.255489)">Классификация игральных карт</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 169.000218 80.46985 
+L 302.599782 80.46985 
+Q 309.768102 80.46985 309.768102 74.055514 
+L 309.768102 50.723366 
+Q 309.768102 44.30903 302.599782 44.30903 
+L 169.000218 44.30903 
+Q 161.831898 44.30903 161.831898 50.723366 
+L 161.831898 74.055514 
+Q 161.831898 80.46985 169.000218 80.46985 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #f1f4f6; stroke: #1d2d3d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 32.354118 172.67593 
+L 197.315082 172.67593 
+Q 204.483402 172.67593 204.483402 166.261594 
+L 204.483402 138.920486 
+Q 204.483402 132.50615 197.315082 132.50615 
+L 32.354118 132.50615 
+Q 25.185798 132.50615 25.185798 138.920486 
+L 25.185798 166.261594 
+Q 25.185798 172.67593 32.354118 172.67593 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #e8f2fc; stroke: #286fbd; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 274.284918 172.67593 
+L 439.245882 172.67593 
+Q 446.414202 172.67593 446.414202 166.261594 
+L 446.414202 138.920486 
+Q 446.414202 132.50615 439.245882 132.50615 
+L 274.284918 132.50615 
+Q 267.116598 132.50615 267.116598 138.920486 
+L 267.116598 166.261594 
+Q 267.116598 172.67593 274.284918 172.67593 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #e8f2fc; stroke: #286fbd; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 245.163618 262.87753 
+L 333.961182 262.87753 
+Q 341.129502 262.87753 341.129502 256.463194 
+L 341.129502 229.122086 
+Q 341.129502 222.70775 333.961182 222.70775 
+L 245.163618 222.70775 
+Q 237.995298 222.70775 237.995298 229.122086 
+L 237.995298 256.463194 
+Q 237.995298 262.87753 245.163618 262.87753 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #fff0e0; stroke: #cc7425; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 361.648818 262.87753 
+L 450.446382 262.87753 
+Q 457.614702 262.87753 457.614702 256.463194 
+L 457.614702 229.122086 
+Q 457.614702 222.70775 450.446382 222.70775 
+L 361.648818 222.70775 
+Q 354.480498 222.70775 354.480498 229.122086 
+L 354.480498 256.463194 
+Q 354.480498 262.87753 361.648818 262.87753 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #fff0e0; stroke: #cc7425; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 175.720518 355.08361 
+L 251.077482 355.08361 
+Q 258.245802 355.08361 258.245802 348.669274 
+L 258.245802 321.328166 
+Q 258.245802 314.91383 251.077482 314.91383 
+L 175.720518 314.91383 
+Q 168.552198 314.91383 168.552198 321.328166 
+L 168.552198 348.669274 
+Q 168.552198 355.08361 175.720518 355.08361 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #e6f3ea; stroke: #238451; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 274.284918 355.08361 
+L 349.641882 355.08361 
+Q 356.810202 355.08361 356.810202 348.669274 
+L 356.810202 321.328166 
+Q 356.810202 314.91383 349.641882 314.91383 
+L 274.284918 314.91383 
+Q 267.116598 314.91383 267.116598 321.328166 
+L 267.116598 348.669274 
+Q 267.116598 355.08361 274.284918 355.08361 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #e6f3ea; stroke: #238451; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 372.849318 355.08361 
+L 448.206282 355.08361 
+Q 455.374602 355.08361 455.374602 348.669274 
+L 455.374602 321.328166 
+Q 455.374602 314.91383 448.206282 314.91383 
+L 372.849318 314.91383 
+Q 365.680998 314.91383 365.680998 321.328166 
+L 365.680998 348.669274 
+Q 365.680998 355.08361 372.849318 355.08361 
+z
+" clip-path="url(#pcf022ad416)" style="fill: #e6f3ea; stroke: #238451; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: #1d2d3d; font: 11px 'Times New Roman'; text-anchor: middle" x="235.8" y="65.032018" transform="rotate(-0 235.8 65.032018)">1  Карты колоды (52)</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #1d2d3d; font: 10px 'Times New Roman'; text-anchor: middle" x="114.8346" y="154.993384" transform="rotate(-0 114.8346 154.993384)">3  Чёрные масти</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #1d2d3d; font: 10px 'Times New Roman'; text-anchor: middle" x="356.7654" y="154.993384" transform="rotate(-0 356.7654 154.993384)">2  Красные масти</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #1d2d3d; font: 9.5px 'Times New Roman'; text-anchor: middle" x="289.5624" y="245.074867" transform="rotate(-0 289.5624 245.074867)">4  Черви</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #1d2d3d; font: 9.5px 'Times New Roman'; text-anchor: middle" x="406.0476" y="245.06596" transform="rotate(-0 406.0476 245.06596)">5  Бубны</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #1d2d3d; font: 8.5px 'Times New Roman'; text-anchor: middle" x="213.399" y="337.040712" transform="rotate(-0 213.399 337.040712)">6  Числовые 2–10</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #1d2d3d; font: 8.5px 'Times New Roman'; text-anchor: middle" x="311.9634" y="337.024775" transform="rotate(-0 311.9634 337.024775)">7  Фигурные J–K</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #1d2d3d; font: 9px 'Times New Roman'; text-anchor: middle" x="410.5278" y="337.152392" transform="rotate(-0 410.5278 337.152392)">8  Туз (A)</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #286fbd; font: 700 8.7px 'Times New Roman'; text-anchor: middle" x="235.8" y="106.433543" transform="rotate(-0 235.8 106.433543)">Шаг 1 · цвет масти · дихотомическое деление</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #cc7425; font: 700 8.7px 'Times New Roman'; text-anchor: middle" x="347.805" y="196.694276" transform="rotate(-0 347.805 196.694276)">Шаг 2 · масть · видоизменение признака</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #238451; font: 700 8.7px 'Times New Roman'; text-anchor: middle" x="352.2852" y="288.900356" transform="rotate(-0 352.2852 288.900356)">Шаг 3 · достоинство · видоизменение признака</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcf022ad416">
+   <rect x="11.79" y="6.264" width="448.02" height="400.896"/>
+  </clipPath>
+ </defs>
+</svg>
