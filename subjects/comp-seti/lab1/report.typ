@@ -2,13 +2,10 @@
 #import "/templates/title-page.typ": title-page
 
 #show: gost.with(hide-title: true)
-#title-page(
-  "Компьютерные сети",
-  1,
-  [Кодирование данных в телекоммуникационных сетях],
-  "Шибаев Иван Дмитриевич",
-  "Есипов Дмитрий Андреевич",
-)
+#[
+  #set page(margin: 0mm)
+  #image("title.pdf")
+]
 
 #outline()
 

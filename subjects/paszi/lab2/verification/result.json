@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "report_sha256": "bd4c4ed2958857fe34e05647bbe91e16c3a89720a90345a85678eb3b0e30fa73",
+  "pages": 32,
+  "embedded_screenshots": 28,
+  "build_command": "make report SUBJECT=paszi LAB=lab2",
+  "build": "passed",
+  "source_and_image_integrity": "passed",
+  "visual_review": "После замены на множественное число просмотрены все 32 страницы",
+  "pdf_bounds": "no elements outside page",
+  "windows_experiments": "not performed; source illustrations and expected results are identified in report",
+  "scope": "Практические пункты Dallas Lock и Secret Net; ответы на контрольные вопросы и дополнительные теоретические разделы удалены",
+  "editorial_note": "Изложение от первого лица множественного числа; происхождение иллюстраций раскрыто во введении"
+}
