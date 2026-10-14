@@ -7,17 +7,9 @@
 #let shot(file, caption, width: 100%) = figure(
   image("screenshots/" + file, width: width), caption: caption,
 )
-
 #[
-  #set page(foreground: place(bottom + center, dy: -8mm, align(center)[Санкт-Петербург\ 2026]))
-  #title-page(
-    "Программно-аппаратные средства защиты информации",
-    "2",
-    "Системы обеспечения информационной безопасности от НСД. Dallas Lock и Secret Net",
-    "Шибаев Иван Дмитриевич",
-    none,
-    group: "N3352",
-  )
+  #set page(margin: 0mm)
+  #image("title.pdf")
 ]
 
 #outline()
