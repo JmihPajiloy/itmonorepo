@@ -1,4 +1,8 @@
 PYTHON ?= python3
-.PHONY: check
+TYPST ?= typst
+.PHONY: check report
 check:
 	$(PYTHON) check.py
+
+report: check
+	$(TYPST) compile --root ../../.. report.typ report.pdf

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <g fill="#eee" stroke="#444" stroke-width="2">
+    <path d="M145 20v25m22-25v25m22-25v25m22-25v25m22-25v25m22-25v25M145 175v25m22-25v25m22-25v25m22-25v25m22-25v25m22-25v25M110 65h25m-25 22h25m-25 22h25m-25 22h25m-25 22h25M265 65h25m-25 22h25m-25 22h25m-25 22h25m-25 22h25"/>
+    <rect x="135" y="45" width="130" height="130"/>
+    <rect x="155" y="65" width="90" height="90" fill="white"/>
+  </g>
+  <text x="200" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="22">CPU</text>
+</svg>

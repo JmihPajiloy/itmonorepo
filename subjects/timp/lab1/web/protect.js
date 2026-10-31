@@ -7,7 +7,6 @@ const verifier = {
 const storageKey = "timp-copy-unlocked-v2";
 const decode = value => Uint8Array.from(atob(value), c => c.charCodeAt(0));
 let unlocked = sessionStorage.getItem(storageKey) === "yes";
-let screenshotBlurTimer;
 
 async function validPassword(password) {
   try {
@@ -26,7 +25,6 @@ async function validPassword(password) {
 function setProtection() {
   document.documentElement.classList.toggle("protected", !unlocked);
   if (unlocked) {
-    clearTimeout(screenshotBlurTimer);
     document.documentElement.classList.remove("screenshot-blur");
   }
   document.getElementById("mode").textContent = unlocked ? "Копирование разрешено" : "Копирование ограничено";
@@ -35,6 +33,7 @@ function setProtection() {
 
 document.addEventListener("DOMContentLoaded", () => {
   setProtection();
+  document.getElementById("toggle").disabled = false;
   document.getElementById("toggle").addEventListener("click", async () => {
     if (unlocked) {
       unlocked = false;
@@ -58,15 +57,25 @@ for (const type of ["copy", "cut", "contextmenu", "dragstart", "selectstart"]) {
     if (!unlocked) event.preventDefault();
   }, true);
 }
+function updateBlur(event) {
+  document.documentElement.classList.toggle("screenshot-blur", !unlocked && Boolean(event.metaKey && event.shiftKey));
+}
+
+function clearBlur() {
+  document.documentElement.classList.remove("screenshot-blur");
+}
+
+// Modifier flags reflect the current state on both keydown and keyup.
+document.addEventListener("keyup", updateBlur, true);
+// Key releases outside the page may not reach it; avoid leaving the page blurred.
+window.addEventListener("blur", clearBlur);
+window.addEventListener("focus", clearBlur);
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) clearBlur();
+});
+
 document.addEventListener("keydown", event => {
-  const screenshotKey = /^Digit[3456]$/.test(event.code) || /^[3456]$/.test(event.key);
-  if (!unlocked && event.metaKey && event.shiftKey && screenshotKey) {
-    event.preventDefault();
-    document.documentElement.classList.add("screenshot-blur");
-    clearTimeout(screenshotBlurTimer);
-    screenshotBlurTimer = setTimeout(() => document.documentElement.classList.remove("screenshot-blur"), 8000);
-    return;
-  }
+  updateBlur(event);
   if (!unlocked && (event.ctrlKey || event.metaKey) && ["c", "x", "s", "a", "u"].includes(event.key.toLowerCase())) {
     event.preventDefault();
   }

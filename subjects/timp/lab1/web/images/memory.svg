@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <g fill="#eee" stroke="#444" stroke-width="2">
+    <rect x="30" y="30" width="340" height="60"/>
+    <path d="M45 90v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m40-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10m15-10v10"/>
+    <rect x="50" y="45" width="55" height="30" fill="#aaa"/>
+    <rect x="130" y="45" width="55" height="30" fill="#aaa"/>
+    <rect x="210" y="45" width="55" height="30" fill="#aaa"/>
+    <rect x="290" y="45" width="55" height="30" fill="#aaa"/>
+    <rect x="125" y="125" width="150" height="80" rx="4"/>
+  </g>
+  <text x="200" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="22">SSD</text>
+</svg>

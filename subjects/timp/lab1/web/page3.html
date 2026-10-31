@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Страница 3</title>
+  <title>Память и накопитель</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="protect.js"></script>
 </head>
 <body>
-  <header><span>Пример сайта</span><span id="mode" aria-live="polite"></span><button id="toggle" type="button"></button></header>
+  <header>
+    <p>Лабораторная работа № 1. ТИМП</p>
+    <p id="mode" aria-live="polite">Проверка режима защиты…</p>
+    <button id="toggle" type="button" disabled>Отключить по паролю</button>
+  </header>
+  <noscript><p>Для демонстрации защиты включите JavaScript.</p></noscript>
   <main>
-    <small>3 / 3</small>
-    <h1>Страница 3</h1>
-    <p>Donec euismod, magna vel facilisis congue, erat urna varius leo, nec viverra tellus sapien non nisi. Phasellus eu nisl ac mi vehicula congue.</p>
-    <p>Suspendisse potenti. Sed lacinia nulla non massa bibendum, in tincidunt libero vulputate. Quisque et arcu vitae lorem volutpat interdum.</p>
-    <img src="vendor/photo-3.jpg" alt="Фотография здания" width="960" height="1280">
-    <nav><a href="page2.html">← Назад</a><a href="index.html">К первой странице</a></nav>
+    <h1>Память и накопитель</h1>
+    <p>Оперативная память хранит данные запущенных программ. Она работает быстро, но после выключения питания её содержимое теряется.</p>
+    <p>Накопитель сохраняет файлы после выключения компьютера. Например, на SSD находятся операционная система, установленные программы и документы пользователя.</p>
+    <img src="images/memory.svg" width="400" height="220" alt="Модуль оперативной памяти и накопитель SSD">
+    <p>При запуске программы нужные данные загружаются с накопителя в оперативную память, после чего их обрабатывает процессор.</p>
+    <nav aria-label="Переходы между страницами"><a href="page2.html">← Процессор</a> | <a href="index.html">На главную</a></nav>
   </main>
 </body>
 </html>

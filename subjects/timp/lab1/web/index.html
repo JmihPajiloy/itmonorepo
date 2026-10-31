@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Страница 1</title>
+  <title>Устройство компьютера</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="protect.js"></script>
 </head>
 <body>
-  <header><span>Пример сайта</span><span id="mode" aria-live="polite"></span><button id="toggle" type="button"></button></header>
+  <header>
+    <p>Лабораторная работа № 1. ТИМП</p>
+    <p id="mode" aria-live="polite">Проверка режима защиты…</p>
+    <button id="toggle" type="button" disabled>Отключить по паролю</button>
+  </header>
+  <noscript><p>Для демонстрации защиты включите JavaScript.</p></noscript>
   <main>
-    <small>1 / 3</small>
-    <h1>Страница 1</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo sed neque porta consequat. Donec non est quis lectus cursus posuere.</p>
-    <p>Morbi tincidunt, libero in gravida gravida, nibh dui facilisis purus, vitae pretium arcu sapien ut neque. Aliquam erat volutpat.</p>
-    <img src="vendor/photo-1.jpg" alt="Фотография цветка" width="500" height="477">
-    <nav><a href="page2.html">Следующая страница →</a></nav>
+    <h1>Устройство компьютера</h1>
+    <p>Компьютер обрабатывает данные и выполняет программы. В его состав входят процессор, оперативная память, накопитель и устройства ввода и вывода.</p>
+    <p>Клавиатура и мышь нужны для ввода данных. Монитор показывает результат работы. В системном блоке находятся основные компоненты компьютера.</p>
+    <img src="images/computer.svg" width="400" height="220" alt="Монитор, системный блок и клавиатура">
+    <p>На следующих страницах кратко описаны процессор и память.</p>
+    <nav aria-label="Переходы между страницами"><a href="page2.html">Далее: процессор →</a></nav>
   </main>
 </body>
 </html>

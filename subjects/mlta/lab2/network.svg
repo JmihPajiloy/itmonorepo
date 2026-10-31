@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1250">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 1 L 11 6 L 0 11 Z" fill="#345c7e"/></marker></defs>
+<rect width="1400" height="1250" fill="white"/>
+<style>text{font-family:"Times New Roman",serif}.node{fill:#edf4f8;stroke:#345c7e;stroke-width:2.4}.center{fill:#dcebf5}.edge{fill:none;stroke:#345c7e;stroke-width:2.7;marker-end:url(#arrow)}.id{font-size:28px;font-weight:bold;fill:#193b56}.name{font-size:28px;fill:#183850}.label{font-size:24px;fill:#193b56}</style>
+<path class="edge" d="M 1080 215 C 960 230 860 360 780 565"/>
+<path class="edge" d="M 1080 555 C 950 530 865 550 800 580"/>
+<path class="edge" d="M 790 575 C 960 465 1030 340 1080 230"/>
+<path class="edge" d="M 800 625 C 900 655 970 640 1080 605"/>
+<path class="edge" d="M 620 565 C 505 420 400 290 315 205"/>
+<path class="edge" d="M 600 600 C 470 555 390 515 325 485"/>
+<path class="edge" d="M 625 635 C 505 800 375 930 250 990"/>
+<path class="edge" d="M 665 645 C 600 805 535 920 445 990"/>
+<path class="edge" d="M 700 650 L 700 990"/>
+<path class="edge" d="M 735 645 C 800 805 865 920 955 990"/>
+<path class="edge" d="M 775 635 C 895 800 1025 930 1150 990"/>
+<rect x="812.5" y="274" width="225.0" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="925" y="303" text-anchor="middle">R1 угрожает съесть</text>
+<rect x="822.5" y="489" width="225.0" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="935" y="518" text-anchor="middle">R1 угрожает съесть</text>
+<rect x="950.0" y="384" width="200.0" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="1050" y="413" text-anchor="middle">R2 обещает спеть</text>
+<rect x="845.0" y="664" width="200.0" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="945" y="693" text-anchor="middle">R2 обещает спеть</text>
+<rect x="387.5" y="329" width="135.0" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="455" y="358" text-anchor="middle">R3 ушёл от</text>
+<rect x="377.5" y="514" width="135.0" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="445" y="543" text-anchor="middle">R3 ушёл от</text>
+<rect x="268.8" y="784" width="162.5" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="350" y="813" text-anchor="middle">R4 скребен по</text>
+<rect x="451.2" y="829" width="137.5" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="520" y="858" text-anchor="middle">R5 метен по</text>
+<rect x="631.2" y="809" width="137.5" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="700" y="838" text-anchor="middle">R6 мешон на</text>
+<rect x="811.2" y="829" width="137.5" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="880" y="858" text-anchor="middle">R7 пряжон в</text>
+<rect x="975.0" y="784" width="150.0" height="42" rx="7" fill="white" stroke="#c8dce8"/>
+<text class="label" x="1050" y="813" text-anchor="middle">R8 стужон на</text>
+<rect class="node center" x="600.0" y="554" width="200" height="92" rx="14"/>
+<text class="id" x="700" y="593" text-anchor="middle">S1</text>
+<text class="name" x="700" y="628" text-anchor="middle">Колобок</text>
+<rect class="node" x="1085.0" y="174" width="190" height="92" rx="14"/>
+<text class="id" x="1180" y="213" text-anchor="middle">S2</text>
+<text class="name" x="1180" y="248" text-anchor="middle">Заяц</text>
+<rect class="node" x="1085.0" y="534" width="190" height="92" rx="14"/>
+<text class="id" x="1180" y="573" text-anchor="middle">S3</text>
+<text class="name" x="1180" y="608" text-anchor="middle">Волк</text>
+<rect class="node" x="135.0" y="134" width="190" height="92" rx="14"/>
+<text class="id" x="230" y="173" text-anchor="middle">S4</text>
+<text class="name" x="230" y="208" text-anchor="middle">Дедушка</text>
+<rect class="node" x="135.0" y="424" width="190" height="92" rx="14"/>
+<text class="id" x="230" y="463" text-anchor="middle">S5</text>
+<text class="name" x="230" y="498" text-anchor="middle">Бабушка</text>
+<rect class="node" x="75.0" y="984" width="190" height="92" rx="14"/>
+<text class="id" x="170" y="1023" text-anchor="middle">S6</text>
+<text class="name" x="170" y="1058" text-anchor="middle">Короб</text>
+<rect class="node" x="340.0" y="984" width="190" height="92" rx="14"/>
+<text class="id" x="435" y="1023" text-anchor="middle">S7</text>
+<text class="name" x="435" y="1058" text-anchor="middle">Сусек</text>
+<rect class="node" x="605.0" y="984" width="190" height="92" rx="14"/>
+<text class="id" x="700" y="1023" text-anchor="middle">S8</text>
+<text class="name" x="700" y="1058" text-anchor="middle">Сметана</text>
+<rect class="node" x="870.0" y="984" width="190" height="92" rx="14"/>
+<text class="id" x="965" y="1023" text-anchor="middle">S9</text>
+<text class="name" x="965" y="1058" text-anchor="middle">Масло</text>
+<rect class="node" x="1135.0" y="984" width="190" height="92" rx="14"/>
+<text class="id" x="1230" y="1023" text-anchor="middle">S10</text>
+<text class="name" x="1230" y="1058" text-anchor="middle">Окошко</text>
+</svg>

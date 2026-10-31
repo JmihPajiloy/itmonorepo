@@ -99,8 +99,10 @@ def change(args, enabled):
         print("Защита выключена. Файлы и заглушки сохранены.")
 
 
-def status(_args):
-    _, protected = names()
+def status(args):
+    encoded, protected = names()
+    if not verify(secret(args), encoded):
+        raise ValueError("Неверный пароль")
     print("Имена:", ", ".join(protected))
     subprocess.run(["ls", "-lO", str(TABLE), *[str(ROOT / name) for name in protected]], check=False)
 
@@ -115,7 +117,8 @@ def main():
     for command in ("init", "on", "off"):
         action = create if command == "init" else sub.add_parser(command)
         action.add_argument("--password", help="для автоматической проверки; в обычной работе не указывать")
-    sub.add_parser("status")
+    status_command = sub.add_parser("status")
+    status_command.add_argument("--password", help="для автоматической проверки; в обычной работе не указывать")
     args = parser.parse_args()
     try:
         if args.command == "init":

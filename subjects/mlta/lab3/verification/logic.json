@@ -1,0 +1,35 @@
+{
+  "method": "Перебор заполненности областей для непустого универсума",
+  "task20": {
+    "checked_models": 65535,
+    "premise_models_with_complement_assumption": 15,
+    "equivalent_normalization": true,
+    "conclusion": "S e P",
+    "valid_under_assumption": true,
+    "counterexample_without_assumption": {
+      "term_order": [
+        "хохочущие",
+        "счастливые",
+        "стонущие",
+        "несчастные"
+      ],
+      "occupied_regions": [
+        [
+          true,
+          false,
+          true,
+          false
+        ]
+      ]
+    },
+    "models_refuting_conclusion_without_assumption": 256
+  },
+  "task21": {
+    "checked_models": 255,
+    "premise_models": 15,
+    "equivalent_normalization": true,
+    "conclusion": "S a P",
+    "valid": true
+  },
+  "task22": "Разобрана в отчёте: нет общего среднего термина; автоматическая проверка естественного языка не выполняется"
+}

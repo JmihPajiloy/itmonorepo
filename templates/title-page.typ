@@ -6,7 +6,8 @@
   instructor,
   group: "N3352",
   coauthors: (),
-) = page(footer: none)[
+  footer: none,
+) = page(footer: footer)[
   #align(center)[
     #set text(12pt)
     #set par(justify: false)

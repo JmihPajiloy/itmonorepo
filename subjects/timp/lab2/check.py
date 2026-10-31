@@ -23,22 +23,34 @@ with tempfile.TemporaryDirectory(prefix="timp-trial-") as temp:
     installed = Path(temp) / "bin" / "itmo-timp-trial"
     registry = Path(temp) / "Library" / "Preferences" / "ru.itmo.timp.trial.plist"
     names = Path(temp) / "Library" / "Application Support" / "itmo-timp-trial" / "names.txt"
-    assert "Первая установка" in call(ROOT / "install.py", env)
+    installation = call(ROOT / "install.py", env)
+    assert "Первая установка" in installation
+    assert "Осталось запусков: 5 из 5" in installation
+    assert installed.exists() and registry.exists()
     for index in range(5):
         output = call(installed, env, "--name", "Иван Шибаев")
         assert ("ФИО записано" if index == 0 else "ФИО уже есть") in output
     assert names.read_text(encoding="utf-8").splitlines() == ["Иван Шибаев"]
     assert "Пробный период окончен" in call(installed, env, "--name", "Анна Иванова", expected=2)
     call(ROOT / "uninstall.py", env)
-    assert "предыдущая установка" in call(ROOT / "install.py", env)
+    assert not installed.exists() and registry.exists() and names.exists()
+    with registry.open("rb") as file:
+        assert plistlib.load(file)["installed"] is False
+    reinstallation = call(ROOT / "install.py", env)
+    assert "предыдущая установка" in reinstallation
+    assert "Осталось запусков: 0 из 5" in reinstallation
     assert "Пробный период окончен" in call(installed, env, "--name", "Анна Иванова", expected=2)
     with registry.open("rb") as file:
         state = plistlib.load(file)
     assert state["starts"] == 5
+    assert names.read_text(encoding="utf-8").splitlines() == ["Иван Шибаев"]
     # Simulate an expired 90-second period for the time-limit branch.
     state["starts"] = 0
     state["first_installed"] -= 91
     with registry.open("wb") as file:
         plistlib.dump(state, file)
     assert "Пробный период окончен" in call(installed, env, "--name", "Анна Иванова", expected=2)
-print("Проверены повторы ФИО, 5 запусков, переустановка и ветка истечения времени через изменение метки в тестовом plist.")
+    with registry.open("rb") as file:
+        assert plistlib.load(file)["starts"] == 0
+    assert names.read_text(encoding="utf-8").splitlines() == ["Иван Шибаев"]
+print("Проверены повторы ФИО, 5 запусков, сохранение регистрации при переустановке и ветка истечения времени через изменение метки в тестовом plist.")
