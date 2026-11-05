@@ -1,0 +1,8 @@
+{
+  "finished_utc": "2026-11-02T15:33:25.591333+00:00",
+  "interface": "utun4",
+  "target": "77.234.212.21",
+  "hostname": "isu.ifmo.ru",
+  "resolver": "172.19.0.2",
+  "note": "Actual macOS traffic via the current VPN tunnel; no TLS keys saved."
+}

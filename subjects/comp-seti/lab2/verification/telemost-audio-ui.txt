@@ -1,0 +1,13 @@
+							50 text https://telemost.yandex.ru/private-join/82042462514055?mic=off&camera=off&lang=ru [ rid: 1280, lid: 3, pid: 23194 ]
+							51 text https://telemost.yandex.ru/private-join/82042462514055?mic=off&camera=off&lang=ru [ rid: 1280, lid: 4, pid: 23194 ]
+							52 text https://telemost.yandex.ru/private-join/82042462514055?mic=off&camera=off&lang=ru [ rid: 1286, lid: 3, pid: 23271 ]
+							53 text https://telemost.yandex.ru/private-join/82042462514055?mic=off&camera=off&lang=ru [ rid: 1286, lid: 4, pid: 23271 ]
+								55 text https://telemost.yandex.ru/private-join/82042462514055?mic=off&camera=off&lang=ru ,  {"iceServers":[{"urls":["stun:stun.rtc.yandex.net","stun:turn.tel.yandex.net"]},{"urls":["turn:turn.tel.yandex.net:443"]},{"urls":["turn:turn.tel.yandex.net:443"]},{"urls":["turn:turn.tel.yandex.net:443?transport=tcp"]}],"alwaysNegotiateDataChannels":false} ,
+							57 text Connection state: new => "connecting" => "connected"
+								60 text ICE Candidate pair:  176.53.212.110:50846 <=>77.88.42.81:22335
+								274 disclosure triangle inbound-rtp (kind=audio, mid=audio_AA, ssrc=4006203395, [codec]=opus (111, minptime=10;useinbandfec=1), id=ITvideo_AA1A4006203395)
+									275 text inbound-rtp (kind=audio, mid=audio_AA, ssrc=4006203395, [codec]=opus (111, minptime=10;useinbandfec=1), id=ITvideo_AA1A4006203395)
+								282 disclosure triangle codec (mimeType=audio/opus, payloadType=111, id=CITvideo_AA1_111_minptime=10;useinbandfec=1)
+									283 text codec (mimeType=audio/opus, payloadType=111, id=CITvideo_AA1_111_minptime=10;useinbandfec=1)
+								305 disclosure triangle Stats graphs for inbound-rtp (kind=audio, mid=audio_AA, ssrc=4006203395, [codec]=opus (111, minptime=10;useinbandfec=1), id=ITvideo_AA1A4006203395)
+									306 text Stats graphs for inbound-rtp (kind=audio, mid=audio_AA, ssrc=4006203395, [codec]=opus (111, minptime=10;useinbandfec=1), id=ITvideo_AA1A4006203395)

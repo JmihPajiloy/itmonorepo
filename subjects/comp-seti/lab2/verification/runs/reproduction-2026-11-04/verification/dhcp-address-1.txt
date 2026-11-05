@@ -1,0 +1,6 @@
+$ ip -4 addr show dev eth0
+11: eth0@if3488: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default  link-netnsid 0
+    inet 172.28.23.107/24 brd 172.28.23.255 scope global dynamic eth0
+       valid_lft 600sec preferred_lft 600sec
+
+exit_code=0

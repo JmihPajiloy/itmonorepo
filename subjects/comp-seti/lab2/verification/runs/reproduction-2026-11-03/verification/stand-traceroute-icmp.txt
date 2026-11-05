@@ -1,0 +1,7 @@
+$ traceroute -n -I -q 1 -w 1 -m 5 172.28.22.10
+traceroute to 172.28.22.10 (172.28.22.10), 5 hops max, 60 byte packets
+ 1  172.28.20.254  0.576 ms
+ 2  172.28.21.20  0.356 ms
+ 3  172.28.22.10  0.193 ms
+
+exit_code=0

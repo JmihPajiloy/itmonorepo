@@ -1,0 +1,21 @@
+{
+  "reviewed_utc": "2026-11-04T11:44:06.592323+00:00",
+  "report": "report.pdf",
+  "report_pages": 33,
+  "report_sha256": "47fda6bd427a055ff1e6ef0dae1cf51d8f0f80846c84e54c17643da4014b5546",
+  "build": "typst compile --root ../../.. report.typ report.pdf",
+  "capture_checks": {
+    "core": 48,
+    "audio": 4,
+    "text": 6,
+    "reproduction": 40
+  },
+  "reproduction_run": "verification/runs/reproduction-2026-11-04",
+  "input_guards_checked": [
+    "missing evidence rejected before writing outputs",
+    "run outside the lab rejected",
+    "stand-only run rejected as a full evidence bundle"
+  ],
+  "layout_review": "All 33 pages rendered with macOS PDFKit and visually reviewed in five contact sheets. Topology and table layout additionally inspected at full rendered size; no clipped or overlapping content observed. Table text 14 pt, cell inset 0 pt; zero-width typographic struts reserve row height.",
+  "containers": "All five lab containers stopped after the repeated experiments"
+}

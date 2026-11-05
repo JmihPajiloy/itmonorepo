@@ -1,0 +1,10 @@
+[I 2026-11-04 11:33:27] concurrency model: async
+[I 2026-11-04 11:33:27] masquerade (NAT) address: None
+[I 2026-11-04 11:33:27] passive ports: 30000->30009
+[I 2026-11-04 11:33:27] >>> starting FTP server on 0.0.0.0:21, pid=13 <<<
+172.28.20.10 - - [04/Nov/2026 11:33:31] "GET / HTTP/1.1" 200 -
+172.28.20.10 - - [04/Nov/2026 11:33:31] "GET / HTTP/1.1" 304 -
+[I 2026-11-04 11:33:33] 172.28.20.10:49464-[] FTP session opened (connect)
+[I 2026-11-04 11:33:33] 172.28.20.10:49464-[anonymous] USER 'anonymous' logged in.
+[I 2026-11-04 11:33:33] 172.28.20.10:49464-[anonymous] RETR /lab/stand/www/index.html completed=1 bytes=476 seconds=0.001
+[I 2026-11-04 11:33:33] 172.28.20.10:49464-[anonymous] FTP session closed (disconnect).

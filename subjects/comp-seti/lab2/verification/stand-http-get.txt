@@ -1,0 +1,3 @@
+$ curl --noproxy * -sS -D /lab/verification/http-first.headers http://172.28.22.10:8000/ -o /lab/verification/http-first.html
+
+exit_code=0

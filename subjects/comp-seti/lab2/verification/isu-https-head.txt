@@ -1,0 +1,18 @@
+$ curl -sS -I --max-time 15 https://isu.ifmo.ru/
+HTTP/2 403 
+server: nginx
+date: Mon, 02 Nov 2026 15:33:25 GMT
+content-type: text/html; charset=UTF-8
+content-length: 1479
+vary: Accept-Encoding
+last-modified: Mon, 17 Mar 2025 13:24:57 GMT
+etag: "c059610-5c7-63089b6df3c40"
+accept-ranges: bytes
+content-language: en
+access-control-allow-origin: https://isu.itmo.su
+access-control-allow-methods: GET, POST, OPTIONS, DELETE, PUT
+access-control-allow-headers: Origin, Content-Type, Accept, Authorization, DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Range,x-api-key
+access-control-allow-credentials: true
+
+
+exit_code=0

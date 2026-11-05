@@ -1,0 +1,7 @@
+$ ping -n -c 1 -W 1500 -s 4000 77.234.212.21
+PING 77.234.212.21 (77.234.212.21): 4000 data bytes
+
+--- 77.234.212.21 ping statistics ---
+1 packets transmitted, 0 packets received, 100.0% packet loss
+
+exit_code=2

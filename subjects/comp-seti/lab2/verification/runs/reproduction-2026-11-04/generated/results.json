@@ -1,0 +1,659 @@
+{
+  "analysis_scope": "stand-only",
+  "run_root": "verification/runs/reproduction-2026-11-04",
+  "tshark_version": "TShark (Wireshark) 4.6.9 (v4.6.9-0-g2d548b197c75).",
+  "fragmentation": [
+    {
+      "data_bytes": 100,
+      "fragments": 1,
+      "ip_id": "0x7c33",
+      "frames": [
+        1
+      ],
+      "offset_units": [
+        0
+      ],
+      "ip_lengths": [
+        128
+      ]
+    },
+    {
+      "data_bytes": 1000,
+      "fragments": 1,
+      "ip_id": "0x7c35",
+      "frames": [
+        3
+      ],
+      "offset_units": [
+        0
+      ],
+      "ip_lengths": [
+        1028
+      ]
+    },
+    {
+      "data_bytes": 1472,
+      "fragments": 1,
+      "ip_id": "0x7c36",
+      "frames": [
+        5
+      ],
+      "offset_units": [
+        0
+      ],
+      "ip_lengths": [
+        1500
+      ]
+    },
+    {
+      "data_bytes": 1473,
+      "fragments": 2,
+      "ip_id": "0x7c37",
+      "frames": [
+        7,
+        8
+      ],
+      "offset_units": [
+        0,
+        185
+      ],
+      "ip_lengths": [
+        1500,
+        21
+      ]
+    },
+    {
+      "data_bytes": 2000,
+      "fragments": 2,
+      "ip_id": "0x7c3a",
+      "frames": [
+        11,
+        12
+      ],
+      "offset_units": [
+        0,
+        185
+      ],
+      "ip_lengths": [
+        1500,
+        548
+      ]
+    },
+    {
+      "data_bytes": 3000,
+      "fragments": 3,
+      "ip_id": "0x7c3b",
+      "frames": [
+        15,
+        16,
+        17
+      ],
+      "offset_units": [
+        0,
+        185,
+        370
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        68
+      ]
+    },
+    {
+      "data_bytes": 4000,
+      "fragments": 3,
+      "ip_id": "0x7c3c",
+      "frames": [
+        21,
+        22,
+        23
+      ],
+      "offset_units": [
+        0,
+        185,
+        370
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        1068
+      ]
+    },
+    {
+      "data_bytes": 5000,
+      "fragments": 4,
+      "ip_id": "0x7c3d",
+      "frames": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "offset_units": [
+        0,
+        185,
+        370,
+        555
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        1500,
+        588
+      ]
+    },
+    {
+      "data_bytes": 6000,
+      "fragments": 5,
+      "ip_id": "0x7c3f",
+      "frames": [
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "offset_units": [
+        0,
+        185,
+        370,
+        555,
+        740
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        1500,
+        1500,
+        108
+      ]
+    },
+    {
+      "data_bytes": 7000,
+      "fragments": 5,
+      "ip_id": "0x7c40",
+      "frames": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "offset_units": [
+        0,
+        185,
+        370,
+        555,
+        740
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        1500,
+        1500,
+        1108
+      ]
+    },
+    {
+      "data_bytes": 8000,
+      "fragments": 6,
+      "ip_id": "0x7c41",
+      "frames": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "offset_units": [
+        0,
+        185,
+        370,
+        555,
+        740,
+        925
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        1500,
+        1500,
+        1500,
+        628
+      ]
+    },
+    {
+      "data_bytes": 9000,
+      "fragments": 7,
+      "ip_id": "0x7c42",
+      "frames": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "offset_units": [
+        0,
+        185,
+        370,
+        555,
+        740,
+        925,
+        1110
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        1500,
+        1500,
+        1500,
+        1500,
+        148
+      ]
+    },
+    {
+      "data_bytes": 10000,
+      "fragments": 7,
+      "ip_id": "0x7c44",
+      "frames": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "offset_units": [
+        0,
+        185,
+        370,
+        555,
+        740,
+        925,
+        1110
+      ],
+      "ip_lengths": [
+        1500,
+        1500,
+        1500,
+        1500,
+        1500,
+        1500,
+        1148
+      ]
+    }
+  ],
+  "traceroute_icmp_ttls": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "http": [
+    {
+      "frame.number": "7",
+      "http.request.method": "GET",
+      "http.response.code": "",
+      "http.content_length": "",
+      "http.request.line": "Host: 172.28.22.10:8000\\r\\n"
+    },
+    {
+      "frame.number": "11",
+      "http.request.method": "",
+      "http.response.code": "200",
+      "http.content_length": "476",
+      "http.request.line": ""
+    },
+    {
+      "frame.number": "19",
+      "http.request.method": "GET",
+      "http.response.code": "",
+      "http.content_length": "",
+      "http.request.line": "Host: 172.28.22.10:8000\\r\\n"
+    },
+    {
+      "frame.number": "21",
+      "http.request.method": "",
+      "http.response.code": "304",
+      "http.content_length": "",
+      "http.request.line": ""
+    }
+  ],
+  "http_conditional_frames": [
+    "19"
+  ],
+  "arp": [
+    {
+      "frame.number": "1",
+      "arp.opcode": "1",
+      "eth.src": "1a:6e:73:44:68:61",
+      "eth.dst": "ff:ff:ff:ff:ff:ff",
+      "arp.src.proto_ipv4": "172.28.20.10",
+      "arp.dst.proto_ipv4": "172.28.20.254"
+    },
+    {
+      "frame.number": "2",
+      "arp.opcode": "1",
+      "eth.src": "1a:6e:73:44:68:61",
+      "eth.dst": "ff:ff:ff:ff:ff:ff",
+      "arp.src.proto_ipv4": "172.28.20.10",
+      "arp.dst.proto_ipv4": "172.28.20.254"
+    },
+    {
+      "frame.number": "3",
+      "arp.opcode": "2",
+      "eth.src": "1a:53:f2:fb:f7:6d",
+      "eth.dst": "1a:6e:73:44:68:61",
+      "arp.src.proto_ipv4": "172.28.20.254",
+      "arp.dst.proto_ipv4": "172.28.20.10"
+    }
+  ],
+  "ftp_data_bytes": 476,
+  "ftp_data_frames": [
+    24
+  ],
+  "dhcp_dora": [
+    {
+      "xid": "0x399d7d0f",
+      "frames": [
+        1,
+        6,
+        7,
+        9
+      ],
+      "address": "172.28.23.107",
+      "server": "172.28.23.2"
+    },
+    {
+      "xid": "0x5d409819",
+      "frames": [
+        14,
+        16,
+        17,
+        19
+      ],
+      "address": "172.28.23.107",
+      "server": "172.28.23.2"
+    }
+  ],
+  "telemost": {},
+  "captures": {
+    "stand-ping.pcap": {
+      "packets": 96,
+      "duration_s": 0.032565,
+      "frame_bytes": 119778,
+      "mean_frame_bytes": 1247.69,
+      "bitrate_kbit_s": 29424.86,
+      "udp_flows": []
+    },
+    "stand-traceroute.pcap": {
+      "packets": 20,
+      "duration_s": 0.002483,
+      "frame_bytes": 1676,
+      "mean_frame_bytes": 83.8,
+      "bitrate_kbit_s": 5400.156,
+      "udp_flows": [
+        {
+          "endpoints": "172.28.20.10:48017 ↔ 172.28.22.10:33434",
+          "packets": 1,
+          "bytes": 74
+        },
+        {
+          "endpoints": "172.28.20.10:49981 ↔ 172.28.22.10:33435",
+          "packets": 1,
+          "bytes": 74
+        },
+        {
+          "endpoints": "172.28.20.10:39175 ↔ 172.28.22.10:33436",
+          "packets": 1,
+          "bytes": 74
+        },
+        {
+          "endpoints": "172.28.20.10:36431 ↔ 172.28.22.10:33437",
+          "packets": 1,
+          "bytes": 74
+        },
+        {
+          "endpoints": "172.28.20.10:37230 ↔ 172.28.22.10:33438",
+          "packets": 1,
+          "bytes": 74
+        }
+      ]
+    },
+    "stand-http-arp.pcap": {
+      "packets": 25,
+      "duration_s": 0.011124,
+      "frame_bytes": 2590,
+      "mean_frame_bytes": 103.6,
+      "bitrate_kbit_s": 1862.617,
+      "udp_flows": []
+    },
+    "stand-dns.pcap": {
+      "packets": 6,
+      "duration_s": 0.020542,
+      "frame_bytes": 619,
+      "mean_frame_bytes": 103.17,
+      "bitrate_kbit_s": 241.065,
+      "udp_flows": [
+        {
+          "endpoints": "172.28.20.10:33643 ↔ 172.28.22.10:53",
+          "packets": 2,
+          "bytes": 233
+        },
+        {
+          "endpoints": "172.28.20.10:49132 ↔ 172.28.22.10:53",
+          "packets": 2,
+          "bytes": 201
+        },
+        {
+          "endpoints": "172.28.20.10:47294 ↔ 172.28.22.10:53",
+          "packets": 2,
+          "bytes": 185
+        }
+      ]
+    },
+    "stand-ftp.pcap": {
+      "packets": 36,
+      "duration_s": 0.003528,
+      "frame_bytes": 3277,
+      "mean_frame_bytes": 91.03,
+      "bitrate_kbit_s": 7430.59,
+      "udp_flows": []
+    },
+    "stand-dhcp.pcap": {
+      "packets": 23,
+      "duration_s": 6.137913,
+      "frame_bytes": 5166,
+      "mean_frame_bytes": 224.61,
+      "bitrate_kbit_s": 6.733,
+      "udp_flows": [
+        {
+          "endpoints": "0.0.0.0:68 ↔ 255.255.255.255:67",
+          "packets": 8,
+          "bytes": 2736
+        },
+        {
+          "endpoints": "172.28.23.107:68 ↔ 172.28.23.2:67",
+          "packets": 6,
+          "bytes": 2052
+        }
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "ping-100: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-100: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-1000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-1000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-1472: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-1472: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-1473: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-1473: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-2000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-2000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-3000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-3000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-4000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-4000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-5000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-5000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-6000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-6000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-7000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-7000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-8000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-8000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-9000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-9000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping-10000: fragmentation matches MTU 1500",
+      "passed": true
+    },
+    {
+      "name": "ping-10000: final MF is zero",
+      "passed": true
+    },
+    {
+      "name": "ping: sizes cover 100–10000 bytes",
+      "passed": true
+    },
+    {
+      "name": "traceroute: increasing ICMP TTL starts with 1, 2, 3",
+      "passed": true
+    },
+    {
+      "name": "traceroute: destination sends Echo Reply",
+      "passed": true
+    },
+    {
+      "name": "traceroute: Time Exceeded from both routers",
+      "passed": true
+    },
+    {
+      "name": "HTTP: responses are 200 then 304",
+      "passed": true
+    },
+    {
+      "name": "HTTP: conditional GET contains If-Modified-Since",
+      "passed": true
+    },
+    {
+      "name": "ARP: request and reply observed",
+      "passed": true
+    },
+    {
+      "name": "DNS: authoritative A response",
+      "passed": true
+    },
+    {
+      "name": "DNS: NS response names ns.shibaev.test",
+      "passed": true
+    },
+    {
+      "name": "FTP: data stream contains exactly source-file length",
+      "passed": true
+    },
+    {
+      "name": "FTP: downloaded content is identical",
+      "passed": true
+    },
+    {
+      "name": "FTP: transfer completes with 226",
+      "passed": true
+    },
+    {
+      "name": "DHCP: two actual DORA transactions",
+      "passed": true
+    },
+    {
+      "name": "DHCP: two releases",
+      "passed": true
+    }
+  ],
+  "sha256": {
+    "stand-dhcp.pcap": "817788edd6873200d6c22be6f47b91297281e8d7ef5f7337d719b14806e9f5c9",
+    "stand-dns.pcap": "492f818d4b38b63b3ddaf5bfad8aa5077115b07a5829c9f95fc0f9d3ced4bf27",
+    "stand-ftp.pcap": "b810450094d98490f1aca3d9df01e979a9c2f537c038e236196fff3408abfac3",
+    "stand-http-arp.pcap": "16612383b350363171747311114618bc95bf88b5a237a70d40bfb31ef2d93147",
+    "stand-ping.pcap": "8ece85b134d899e3394ce556624d49d454b28197e9b181dfe14a2350112e9962",
+    "stand-traceroute.pcap": "83630fd30bf0a83f1b582085fea59b694932e62ad3172c6e564b1adb3b18f58f"
+  }
+}

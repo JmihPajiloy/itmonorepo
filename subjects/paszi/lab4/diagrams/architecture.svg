@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="240" viewBox="0 0 820 240">
+  <rect width="820" height="240" fill="white"/>
+  <g fill="white" stroke="#222" stroke-width="1.5">
+    <rect x="5" y="25" width="235" height="185" rx="4"/>
+    <rect x="292" y="25" width="235" height="185" rx="4"/>
+    <rect x="579" y="25" width="235" height="185" rx="4"/>
+  </g>
+  <g fill="#111" font-family="Times New Roman,serif" font-size="23" text-anchor="middle">
+    <text x="122" y="60">Frontend</text><text x="410" y="60">Backend</text><text x="697" y="60">База данных</text>
+  </g>
+  <g fill="#111" font-family="Times New Roman,serif" font-size="20" text-anchor="middle">
+    <text x="122" y="99">React + TypeScript</text><text x="122" y="130">Сборка Vite</text><text x="122" y="161">Раздача Nginx</text><text x="122" y="191">127.0.0.1:8084</text>
+    <text x="410" y="99">FastAPI</text><text x="410" y="130">Вход и Argon2id</text><text x="410" y="161">Проверка прав DAC</text><text x="410" y="191">SQLAlchemy / Alembic</text>
+    <text x="697" y="99">PostgreSQL 18</text><text x="697" y="130">users</text><text x="697" y="161">resources</text><text x="697" y="191">resource_permissions</text>
+  </g>
+  <g fill="none" stroke="#222" stroke-width="2">
+    <path d="M240 120H286m-9-6 9 6-9 6"/><path d="M527 120H573m-9-6 9 6-9 6"/>
+  </g>
+</svg>

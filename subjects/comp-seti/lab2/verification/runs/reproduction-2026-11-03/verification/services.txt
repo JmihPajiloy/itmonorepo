@@ -1,0 +1,14 @@
+[I 2026-11-03 11:40:16] concurrency model: async
+[I 2026-11-03 11:40:16] masquerade (NAT) address: None
+[I 2026-11-03 11:40:16] passive ports: 30000->30009
+[I 2026-11-03 11:40:16] >>> starting FTP server on 0.0.0.0:21, pid=13 <<<
+172.28.20.10 - - [03/Nov/2026 11:40:20] "GET / HTTP/1.1" 200 -
+172.28.20.10 - - [03/Nov/2026 11:40:20] "GET / HTTP/1.1" 304 -
+[I 2026-11-03 11:40:22] 172.28.20.10:35586-[] FTP session opened (connect)
+[I 2026-11-03 11:40:22] 172.28.20.10:35586-[anonymous] USER 'anonymous' logged in.
+[I 2026-11-03 11:40:22] 172.28.20.10:35586-[anonymous] RETR /lab/stand/www/index.html completed=1 bytes=476 seconds=0.001
+[I 2026-11-03 11:40:22] 172.28.20.10:35586-[anonymous] FTP session closed (disconnect).
+172.28.23.1 - - [03/Nov/2026 13:08:15] "GET / HTTP/1.1" 200 -
+172.28.23.1 - - [03/Nov/2026 13:08:15] code 404, message File not found
+172.28.23.1 - - [03/Nov/2026 13:08:15] "GET /favicon.ico HTTP/1.1" 404 -
+172.28.23.1 - - [03/Nov/2026 13:08:18] "GET / HTTP/1.1" 304 -

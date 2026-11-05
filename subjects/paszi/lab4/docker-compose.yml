@@ -1,0 +1,52 @@
+name: paszi-lab4
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?Run make env first}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run make env first}
+      POSTGRES_DB: ${POSTGRES_DB:-lab4}
+    volumes:
+      - db-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  backend:
+    build:
+      context: backend
+      target: runtime
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c 'import os,urllib.request; urllib.request.urlopen(\"http://127.0.0.1:\"+os.environ.get(\"PORT\",\"8000\")+\"/api/health\")'"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  frontend:
+    build: frontend
+    environment:
+      BACKEND_PORT: ${PORT:-8000}
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-8084}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+  tests:
+    profiles: ["test"]
+    build:
+      context: backend
+      target: test
+    env_file: .env
+    environment:
+      APP_ENV: test
+    volumes:
+      - ./verification:/results
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  db-data:

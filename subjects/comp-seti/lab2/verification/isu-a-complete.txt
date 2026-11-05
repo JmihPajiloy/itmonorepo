@@ -1,0 +1,10 @@
+$ nslookup isu.ifmo.ru 172.19.0.2
+Server:		172.19.0.2
+Address:	172.19.0.2#53
+
+Non-authoritative answer:
+Name:	isu.ifmo.ru
+Address: 77.234.212.21
+
+
+exit_code=0

@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-11-04T10:48:52.340597+00:00",
+  "duration_limit_s": 30,
+  "interface": "utun4",
+  "resolver": "172.19.0.2",
+  "saved_names": [
+    "isu.ifmo.ru"
+  ],
+  "dscacheutil_exit_code": 0,
+  "dscacheutil_output": "",
+  "dumpcap_exit_code": 0,
+  "tshark_exit_code": 0,
+  "browser_action": "Chrome Clear host cache, then ISU root opened in a new Incognito window"
+}

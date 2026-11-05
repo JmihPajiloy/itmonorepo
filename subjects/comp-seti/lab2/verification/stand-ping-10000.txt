@@ -1,0 +1,9 @@
+$ ping -n -c 1 -W 2 -M dont -s 10000 172.28.22.10
+PING 172.28.22.10 (172.28.22.10) 10000(10028) bytes of data.
+10008 bytes from 172.28.22.10: icmp_seq=1 ttl=62 time=0.091 ms
+
+--- 172.28.22.10 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.091/0.091/0.091/0.000 ms
+
+exit_code=0

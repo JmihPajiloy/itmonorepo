@@ -1,0 +1,9 @@
+$ ping -n -c 1 -W 1500 -s 1000 77.234.212.21
+PING 77.234.212.21 (77.234.212.21): 1000 data bytes
+1008 bytes from 77.234.212.21: icmp_seq=0 ttl=62 time=3.550 ms
+
+--- 77.234.212.21 ping statistics ---
+1 packets transmitted, 1 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 3.550/3.550/3.550/0.000 ms
+
+exit_code=0

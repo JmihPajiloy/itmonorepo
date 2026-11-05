@@ -1,0 +1,64 @@
+{
+  "phase": "text",
+  "started_utc": "2026-11-02T14:28:22.910244+00:00",
+  "finished_utc": "2026-11-02T14:29:22.915412+00:00",
+  "requested_seconds": 60,
+  "packets": 124,
+  "interface": "utun4",
+  "process": "Telegram",
+  "socket_selection": [
+    [
+      "tcp",
+      "172.19.0.1",
+      56030
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57293
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57358
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57295
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57297
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      56692
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57338
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57308
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57317
+    ],
+    [
+      "tcp",
+      "172.19.0.1",
+      57331
+    ]
+  ],
+  "capture_filter": "ip and ((tcp and ((src host 172.19.0.1 and src port 56030) or (dst host 172.19.0.1 and dst port 56030))) or (tcp and ((src host 172.19.0.1 and src port 56692) or (dst host 172.19.0.1 and dst port 56692))) or (tcp and ((src host 172.19.0.1 and src port 57293) or (dst host 172.19.0.1 and dst port 57293))) or (tcp and ((src host 172.19.0.1 and src port 57295) or (dst host 172.19.0.1 and dst port 57295))) or (tcp and ((src host 172.19.0.1 and src port 57297) or (dst host 172.19.0.1 and dst port 57297))) or (tcp and ((src host 172.19.0.1 and src port 57308) or (dst host 172.19.0.1 and dst port 57308))) or (tcp and ((src host 172.19.0.1 and src port 57317) or (dst host 172.19.0.1 and dst port 57317))) or (tcp and ((src host 172.19.0.1 and src port 57331) or (dst host 172.19.0.1 and dst port 57331))) or (tcp and ((src host 172.19.0.1 and src port 57338) or (dst host 172.19.0.1 and dst port 57338))) or (tcp and ((src host 172.19.0.1 and src port 57358) or (dst host 172.19.0.1 and dst port 57358))))",
+  "payload_saved": false,
+  "capture_stderr": "dumpcap: '-P' is deprecated; use '-F pcap' to set the output format to pcap.\nCapturing on 'utun4'\nFile: -\n\rPackets: 2 \rPackets: 8 \rPackets: 10 \rPackets: 12 \rPackets: 14 \rPackets: 26 \rPackets: 28 \rPackets: 30 \rPackets: 34 \rPackets: 36 \rPackets: 38 \rPackets: 42 \rPackets: 54 \rPackets: 56 \rPackets: 60 \rPackets: 68 \rPackets: 70 \rPackets: 72 \rPackets: 74 \rPackets: 86 \rPackets: 88 \rPackets: 90 \rPackets: 92 \rPackets: 96 \rPackets: 102 \rPackets: 104 \rPackets: 108 \rPackets: 122 \rPackets: 124 \rPackets captured: 124\nPackets received/dropped on interface 'utun4': 124/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)\n"
+}

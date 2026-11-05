@@ -1,0 +1,4 @@
+Capturing on 'utun4'
+File: /Users/ivan/Projects/itmonorepo/subjects/comp-seti/lab2/captures/isu-utilities.pcap
+Packets: 2 Packets: 19 Packets: 43 Packets: 48 Packets: 49 Packets: 50 Packets: 51 Packets: 52 Packets: 53 Packets: 56 Packets captured: 56
+Packets received/dropped on interface 'utun4': 56/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)

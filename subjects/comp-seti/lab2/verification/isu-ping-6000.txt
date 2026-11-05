@@ -1,0 +1,10 @@
+$ ping -n -c 1 -W 1500 -s 6000 77.234.212.21
+PING 77.234.212.21 (77.234.212.21): 6000 data bytes
+1480 bytes from 77.234.212.21: icmp_seq=0 ttl=62 time=6.682 ms
+wrong total length 1500 instead of 6028
+
+--- 77.234.212.21 ping statistics ---
+1 packets transmitted, 1 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 6.682/6.682/6.682/0.000 ms
+
+exit_code=0

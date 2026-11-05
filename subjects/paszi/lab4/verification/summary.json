@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-11-05T12:55:53.495768+00:00",
+  "task_sha256": "f33b16ce50f67c11b974c0ae5f50114a3bd3761b9c72836a468025e0c513d757",
+  "pytest_passed": 30,
+  "pytest_failed": 0,
+  "ui_checks_passed": 14,
+  "ui_executed_at": "2026-11-05T12:50:52.611Z",
+  "screenshots_sha256": {
+    "01-register-form.png": "a5637426e2452cfc9a7f89c366543f9d2e371fac0d0117721cefbf48756a37da",
+    "02-register-success.png": "44289ab69cc64b7d58852de6a393d18108c1a65b2ae735e1e47837a68a31f1f4",
+    "03-register-duplicate.png": "33f0b28244ced2e064bb373971bcdfcaf3b94ff82767bd4bf7888da69a53fc7a",
+    "04-register-validation.png": "874323343a69c7ffd25139964de82290eee4f9b4e8e829cb27a74e8f368653ff",
+    "05-owner-grant.png": "ae189bf90c27845cf8d034793bf6ad94ffeb3ae6095bf0578ff36782e06e0821",
+    "06-reader-allowed.png": "b5face61e540b2c4fbd4e62c314885e8ad740a21f64a3a5f842196114f8658ac",
+    "07-reader-update-denied.png": "5b07a90200ef2a2274eb0a822b4c9bb032889749bb82e0cd4b6f84686b3aa3d8",
+    "08-outsider-denied.png": "420d499d157ccc446cc486491a9338ffa142acacef9cf8db8ca4f8c038f2a125",
+    "09-reader-revoked.png": "ae558a4969d17240c994b09e3550f888072f5b8fdda3768ec7d9b3d234639ef5",
+    "10-mobile.png": "c206d4a2dfdb403dec6bb3bada3abf72edcb0d619cbd0e4fd392cc9b4b0f43c1",
+    "11-git-branch.jpg": "422f5cdeb37bfbfb7d23650684284c56584ad078ccfed207e97a24794a080f3c",
+    "12-register-detail.png": "4f456fe6211e671ae3d72e98b473ec6cf31f75200f851ffce357202ab6d72b4b",
+    "13-grant-detail.png": "ff2c391c995b01482a89007ed0a909a333cc2c5d5a51230962fbaa61621ab237",
+    "14-read-detail.png": "d64056037d57688ac27da26ccdf3a567adf4e96a663a2881b738f34481d2836c",
+    "15-denied-notice.png": "1707ea095febfc36341a255db0266239fdcd9c89926510fe7137d8d2c217f875",
+    "16-denied-detail.png": "f91b116f476e736cb201e1329e45e8961d74f2731b3e485330fdfd667af3617a"
+  }
+}

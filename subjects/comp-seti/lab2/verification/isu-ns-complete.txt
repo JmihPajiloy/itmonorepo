@@ -1,0 +1,19 @@
+$ nslookup -type=NS isu.ifmo.ru 172.19.0.2
+Server:		172.19.0.2
+Address:	172.19.0.2#53
+
+Non-authoritative answer:
+*** Can't find isu.ifmo.ru: No answer
+
+Authoritative answers can be found from:
+ifmo.ru
+	origin = ns.itmo.ru
+	mail addr = hostmaster.itmo.ru
+	serial = 2024100261
+	refresh = 3600
+	retry = 1800
+	expire = 86400
+	minimum = 3600
+
+
+exit_code=0

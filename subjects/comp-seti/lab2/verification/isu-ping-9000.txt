@@ -1,0 +1,8 @@
+$ ping -n -c 1 -W 1500 -s 9000 77.234.212.21
+PING 77.234.212.21 (77.234.212.21): 9000 data bytes
+
+--- 77.234.212.21 ping statistics ---
+1 packets transmitted, 0 packets received, 100.0% packet loss
+ping: sendto: Message too long
+
+exit_code=2

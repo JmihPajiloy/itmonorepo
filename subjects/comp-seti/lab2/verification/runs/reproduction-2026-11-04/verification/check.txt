@@ -1,0 +1,40 @@
+PASS: ping-100: fragmentation matches MTU 1500
+PASS: ping-100: final MF is zero
+PASS: ping-1000: fragmentation matches MTU 1500
+PASS: ping-1000: final MF is zero
+PASS: ping-1472: fragmentation matches MTU 1500
+PASS: ping-1472: final MF is zero
+PASS: ping-1473: fragmentation matches MTU 1500
+PASS: ping-1473: final MF is zero
+PASS: ping-2000: fragmentation matches MTU 1500
+PASS: ping-2000: final MF is zero
+PASS: ping-3000: fragmentation matches MTU 1500
+PASS: ping-3000: final MF is zero
+PASS: ping-4000: fragmentation matches MTU 1500
+PASS: ping-4000: final MF is zero
+PASS: ping-5000: fragmentation matches MTU 1500
+PASS: ping-5000: final MF is zero
+PASS: ping-6000: fragmentation matches MTU 1500
+PASS: ping-6000: final MF is zero
+PASS: ping-7000: fragmentation matches MTU 1500
+PASS: ping-7000: final MF is zero
+PASS: ping-8000: fragmentation matches MTU 1500
+PASS: ping-8000: final MF is zero
+PASS: ping-9000: fragmentation matches MTU 1500
+PASS: ping-9000: final MF is zero
+PASS: ping-10000: fragmentation matches MTU 1500
+PASS: ping-10000: final MF is zero
+PASS: ping: sizes cover 100–10000 bytes
+PASS: traceroute: increasing ICMP TTL starts with 1, 2, 3
+PASS: traceroute: destination sends Echo Reply
+PASS: traceroute: Time Exceeded from both routers
+PASS: HTTP: responses are 200 then 304
+PASS: HTTP: conditional GET contains If-Modified-Since
+PASS: ARP: request and reply observed
+PASS: DNS: authoritative A response
+PASS: DNS: NS response names ns.shibaev.test
+PASS: FTP: data stream contains exactly source-file length
+PASS: FTP: downloaded content is identical
+PASS: FTP: transfer completes with 226
+PASS: DHCP: two actual DORA transactions
+PASS: DHCP: two releases

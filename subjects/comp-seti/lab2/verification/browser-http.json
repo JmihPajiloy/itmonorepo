@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "client": "Google Chrome 156 on macOS",
+  "server": "127.0.0.1:18080, laboratory HTTP server",
+  "capture_interface": "lo0",
+  "capture_filter": "tcp port 18080",
+  "file": "captures/browser-http.pcap",
+  "observations": {
+    "page_get_frame": 5,
+    "page_200_frame": 13,
+    "page_length_bytes": 476,
+    "conditional_get_frame": 37,
+    "conditional_header": "If-Modified-Since: Mon, 02 Nov 2026 14:26:33 GMT",
+    "not_modified_frame": 39,
+    "favicon_get_404_frames": [19, 23]
+  },
+  "privacy": "The browser's local Cookie value was masked in the saved copy; packet lengths and checksums were retained."
+}

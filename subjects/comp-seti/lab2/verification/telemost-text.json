@@ -1,0 +1,73 @@
+{
+  "phase": "text",
+  "source": "telemost-text.pcapng",
+  "summary": {
+    "packets": 59,
+    "duration_s": 44.952695,
+    "frame_bytes": 21017,
+    "mean_frame_bytes": 356.22,
+    "rate_kbit_s": 3.74,
+    "truncated_packets": 28
+  },
+  "interfaces": {
+    "utun4": {
+      "packets": 59,
+      "duration_s": 44.952695,
+      "frame_bytes": 21017,
+      "mean_frame_bytes": 356.22,
+      "rate_kbit_s": 3.74,
+      "truncated_packets": 28
+    }
+  },
+  "outgoing_packets": 28,
+  "incoming_packets": 31,
+  "tcp_payload_bytes": 17961,
+  "displayed_protocol_counts": {
+    "TCP": 29,
+    "TLSv1.2": 30
+  },
+  "capture_filter": "tcp and host 87.250.250.43 and port 443 and port 58364",
+  "verified_websocket": "wss://ws.push.yandex.ru/v2/subscribe",
+  "browser_evidence": "Chrome DevTools showed WebSocket HTTP 101; lsof matched 172.19.0.1:58364 -> 87.250.250.43:443. Two local same-account tabs exchanged and independently displayed two control messages.",
+  "ui_transcript": "verification/telemost-text-ui-repeat.txt",
+  "encapsulation": "Raw IP on utun4; frame.len has no Ethernet header",
+  "privacy_postprocessing": "editcap -s 160 applied to the saved trace; original frame.len and timestamps retained",
+  "observed_max_capture_bytes": 160,
+  "checks": [
+    {
+      "name": "text trace is nonempty and has a nonzero packet timestamp interval",
+      "passed": true
+    },
+    {
+      "name": "all text packets belong to the verified bidirectional TCP 58364 / 443 flow",
+      "passed": true
+    },
+    {
+      "name": "text packets are Raw IP on utun4; IP length equals recorded original frame length",
+      "passed": true
+    },
+    {
+      "name": "text flow has no UDP/RTP and includes encrypted TLS application records",
+      "passed": true
+    },
+    {
+      "name": "text snapshots are limited to 160 bytes after privacy postprocessing",
+      "passed": true
+    },
+    {
+      "name": "saved UI transcript confirms both control messages in two local tabs",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Only the selected encrypted WebSocket notification flow is recorded; this is not all HTTP API or all messaging traffic.",
+    "HTTP 101 and the WebSocket URL were observed in DevTools, not read from encrypted pcap payload.",
+    "Packet timestamps span the observed traffic; the capture process had a separate 60-second upper limit.",
+    "Raw IP text lengths and Ethernet media lengths have different link-layer accounting.",
+    "TLS record labels in a midstream trace do not by themselves prove the negotiated TLS version."
+  ],
+  "capture_duration_limit_seconds": 60,
+  "first_packet_utc": "2026-11-03T13:21:26.409273+00:00",
+  "last_packet_utc": "2026-11-03T13:22:11.361968+00:00",
+  "account_scope": "One account, two local Chrome tabs; no external participants."
+}

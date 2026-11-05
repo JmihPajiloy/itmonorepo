@@ -1,0 +1,200 @@
+{
+  "executed_at": "2026-11-05T12:50:52.611Z",
+  "base_url": "http://127.0.0.1:8084",
+  "browser": "157.0.8103.38",
+  "users": {
+    "owner": "ivan.mw3jnfxi",
+    "reader": "grigory.mw3jnfxi",
+    "outsider": "observer.mw3jnfxi"
+  },
+  "resource_id": 4,
+  "checks": [
+    {
+      "name": "Пользователь создан",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "name": "Пользователь создан",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "name": "Пользователь создан",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "name": "логин уже занят",
+      "status": 409,
+      "passed": true
+    },
+    {
+      "name": "Проверьте данные",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "name": "Ресурс #\\d+ создан",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "name": "Права пользователя .* сохранены",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "Чтение ресурса .* разрешено",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "Доступ запрещён",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "name": "Доступ запрещён",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "name": "отозваны",
+      "status": 204,
+      "passed": true
+    },
+    {
+      "name": "Доступ запрещён",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "name": "сохранены",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "mobile_has_no_horizontal_overflow",
+      "passed": true
+    }
+  ],
+  "network": [
+    {
+      "method": "POST",
+      "path": "/api/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/register",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "/api/register",
+      "status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/resources",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/resources/4/permissions/grigory.mw3jnfxi",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources/4/permissions",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources/4",
+      "status": 200
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/resources/4",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources/4",
+      "status": 403
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/resources/4/permissions/grigory.mw3jnfxi",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources/4/permissions",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources/4",
+      "status": 403
+    },
+    {
+      "method": "PUT",
+      "path": "/api/resources/4/permissions/grigory.mw3jnfxi",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/resources/4/permissions",
+      "status": 200
+    }
+  ],
+  "browser_errors": []
+}

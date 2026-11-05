@@ -1,0 +1,25 @@
+                                                         version                                                          
+--------------------------------------------------------------------------------------------------------------------------
+ PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+(1 row)
+
+      version_num      
+-----------------------
+ 0001_registration_dac
+(1 row)
+
+       login       |  scheme  |   parameters    | has_timestamp 
+-------------------+----------+-----------------+---------------
+ ivan.mw3izy94     | argon2id | m=65536,t=3,p=4 | t
+ grigory.mw3izy94  | argon2id | m=65536,t=3,p=4 | t
+ ivan.mw3j3kr9     | argon2id | m=65536,t=3,p=4 | t
+ grigory.mw3j3kr9  | argon2id | m=65536,t=3,p=4 | t
+ observer.mw3j3kr9 | argon2id | m=65536,t=3,p=4 | t
+ ivan.mw3j7s8b     | argon2id | m=65536,t=3,p=4 | t
+ grigory.mw3j7s8b  | argon2id | m=65536,t=3,p=4 | t
+ observer.mw3j7s8b | argon2id | m=65536,t=3,p=4 | t
+ ivan.mw3jnfxi     | argon2id | m=65536,t=3,p=4 | t
+ grigory.mw3jnfxi  | argon2id | m=65536,t=3,p=4 | t
+ observer.mw3jnfxi | argon2id | m=65536,t=3,p=4 | t
+(11 rows)
+

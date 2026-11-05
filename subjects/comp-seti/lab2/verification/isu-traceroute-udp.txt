@@ -1,0 +1,10 @@
+$ traceroute -n -m 6 -q 1 -w 1 77.234.212.21
+ 1  *
+ 2  *
+ 3  *
+ 4  *
+ 5  *
+ 6  *
+traceroute to 77.234.212.21 (77.234.212.21), 6 hops max, 40 byte packets
+
+exit_code=0

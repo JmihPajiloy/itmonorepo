@@ -1,0 +1,5 @@
+$ traceroute -n -I -m 12 -q 1 -w 1 77.234.212.21
+ 1  77.234.212.21  3.880 ms
+traceroute to 77.234.212.21 (77.234.212.21), 12 hops max, 48 byte packets
+
+exit_code=0

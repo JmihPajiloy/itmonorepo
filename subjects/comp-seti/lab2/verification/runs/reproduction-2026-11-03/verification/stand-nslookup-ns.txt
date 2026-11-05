@@ -1,0 +1,8 @@
+$ nslookup -type=NS shibaev.test 172.28.22.10
+Server:		172.28.22.10
+Address:	172.28.22.10#53
+
+shibaev.test	nameserver = ns.shibaev.test.
+
+
+exit_code=0

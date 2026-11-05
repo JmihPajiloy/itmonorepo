@@ -1,0 +1,38 @@
+name: comp-seti-lab2
+x-base: &base
+  build: ./stand
+  image: comp-seti-lab2:1
+  cap_add: [NET_ADMIN, NET_RAW]
+  volumes: ["./:/lab"]
+services:
+  client:
+    <<: *base
+    networks:
+      left: {ipv4_address: 172.28.20.10}
+  r1:
+    <<: *base
+    sysctls: {net.ipv4.ip_forward: 1}
+    networks:
+      left: {ipv4_address: 172.28.20.254}
+      transit: {ipv4_address: 172.28.21.10}
+  r2:
+    <<: *base
+    sysctls: {net.ipv4.ip_forward: 1}
+    networks:
+      transit: {ipv4_address: 172.28.21.20}
+      right: {ipv4_address: 172.28.22.254}
+  server:
+    <<: *base
+    ports: ["127.0.0.1:18080:8000"]
+    networks:
+      right: {ipv4_address: 172.28.22.10}
+      dhcp: {ipv4_address: 172.28.23.2}
+  dhcp-client:
+    <<: *base
+    networks:
+      dhcp: {ipv4_address: 172.28.23.10}
+networks:
+  left: {ipam: {config: [{subnet: 172.28.20.0/24}]}}
+  transit: {ipam: {config: [{subnet: 172.28.21.0/24}]}}
+  right: {ipam: {config: [{subnet: 172.28.22.0/24}]}}
+  dhcp: {ipam: {config: [{subnet: 172.28.23.0/24}]}}

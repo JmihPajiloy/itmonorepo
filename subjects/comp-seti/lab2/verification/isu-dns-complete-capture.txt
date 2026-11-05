@@ -1,0 +1,4 @@
+Capturing on 'utun4'
+File: -
+Packets: 5 Packets: 6 Packets: 8 Packets: 9 Packets: 10 Packets captured: 10
+Packets received/dropped on interface 'utun4': 10/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)

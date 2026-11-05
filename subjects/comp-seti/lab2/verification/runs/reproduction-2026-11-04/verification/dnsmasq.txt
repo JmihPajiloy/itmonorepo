@@ -1,0 +1,81 @@
+dnsmasq[20]: started, version 2.90 cachesize 150
+dnsmasq[20]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth cryptohash DNSSEC loop-detect inotify dumpfile
+dnsmasq[20]: warning: no upstream servers configured
+dnsmasq-dhcp[20]: DHCP, IP range 172.28.23.100 -- 172.28.23.110, lease time 10m
+dnsmasq-dhcp[20]: DHCP, sockets bound exclusively to interface eth0
+dnsmasq[20]: cleared cache
+dnsmasq[20]: auth[A] shibaev.test from 172.28.20.10
+dnsmasq[20]: config 172.28.22.10 is shibaev.test
+dnsmasq[20]: auth[AAAA] shibaev.test from 172.28.20.10
+dnsmasq[20]: auth[NS] shibaev.test from 172.28.20.10
+dnsmasq[20]: auth shibaev.test is <NS>
+dnsmasq-dhcp[20]: 966622479 available DHCP range: 172.28.23.100 -- 172.28.23.110
+dnsmasq-dhcp[20]: 966622479 client provides name: shibaev-lab2
+dnsmasq-dhcp[20]: 966622479 DHCPDISCOVER(eth0) 5a:fb:77:ff:27:5d 
+dnsmasq-dhcp[20]: 966622479 tags: eth0
+dnsmasq-dhcp[20]: 966622479 DHCPOFFER(eth0) 172.28.23.107 5a:fb:77:ff:27:5d 
+dnsmasq-dhcp[20]: 966622479 requested options: 1:netmask, 3:router, 6:dns-server
+dnsmasq-dhcp[20]: 966622479 next server: 172.28.23.2
+dnsmasq-dhcp[20]: 966622479 sent size:  1 option: 53 message-type  2
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 54 server-identifier  172.28.23.2
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 51 lease-time  10m
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 58 T1  5m
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 59 T2  8m45s
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 28 broadcast  172.28.23.255
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option:  6 dns-server  172.28.23.2
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option:  3 router  172.28.23.2
+dnsmasq-dhcp[20]: 966622479 available DHCP range: 172.28.23.100 -- 172.28.23.110
+dnsmasq-dhcp[20]: 966622479 client provides name: shibaev-lab2
+dnsmasq-dhcp[20]: 966622479 DHCPREQUEST(eth0) 172.28.23.107 5a:fb:77:ff:27:5d 
+dnsmasq-dhcp[20]: 966622479 tags: eth0
+dnsmasq-dhcp[20]: 966622479 DHCPACK(eth0) 172.28.23.107 5a:fb:77:ff:27:5d shibaev-lab2
+dnsmasq-dhcp[20]: 966622479 requested options: 1:netmask, 3:router, 6:dns-server
+dnsmasq-dhcp[20]: 966622479 next server: 172.28.23.2
+dnsmasq-dhcp[20]: 966622479 sent size:  1 option: 53 message-type  5
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 54 server-identifier  172.28.23.2
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 51 lease-time  10m
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 58 T1  5m
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 59 T2  8m45s
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option: 28 broadcast  172.28.23.255
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option:  6 dns-server  172.28.23.2
+dnsmasq-dhcp[20]: 966622479 sent size:  4 option:  3 router  172.28.23.2
+dnsmasq-dhcp[20]: 656991008 available DHCP range: 172.28.23.100 -- 172.28.23.110
+dnsmasq-dhcp[20]: 656991008 client provides name: shibaev-lab2
+dnsmasq-dhcp[20]: 656991008 DHCPRELEASE(eth0) 172.28.23.107 5a:fb:77:ff:27:5d 
+dnsmasq-dhcp[20]: 1564514329 available DHCP range: 172.28.23.100 -- 172.28.23.110
+dnsmasq-dhcp[20]: 1564514329 client provides name: shibaev-lab2
+dnsmasq-dhcp[20]: 1564514329 DHCPDISCOVER(eth0) 5a:fb:77:ff:27:5d 
+dnsmasq-dhcp[20]: 1564514329 tags: eth0
+dnsmasq-dhcp[20]: 1564514329 DHCPOFFER(eth0) 172.28.23.107 5a:fb:77:ff:27:5d 
+dnsmasq-dhcp[20]: 1564514329 requested options: 1:netmask, 3:router, 6:dns-server
+dnsmasq-dhcp[20]: 1564514329 next server: 172.28.23.2
+dnsmasq-dhcp[20]: 1564514329 sent size:  1 option: 53 message-type  2
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 54 server-identifier  172.28.23.2
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 51 lease-time  10m
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 58 T1  5m
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 59 T2  8m45s
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 28 broadcast  172.28.23.255
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option:  6 dns-server  172.28.23.2
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option:  3 router  172.28.23.2
+dnsmasq-dhcp[20]: 1564514329 available DHCP range: 172.28.23.100 -- 172.28.23.110
+dnsmasq-dhcp[20]: 1564514329 client provides name: shibaev-lab2
+dnsmasq-dhcp[20]: 1564514329 DHCPREQUEST(eth0) 172.28.23.107 5a:fb:77:ff:27:5d 
+dnsmasq-dhcp[20]: 1564514329 tags: eth0
+dnsmasq-dhcp[20]: 1564514329 DHCPACK(eth0) 172.28.23.107 5a:fb:77:ff:27:5d shibaev-lab2
+dnsmasq-dhcp[20]: 1564514329 requested options: 1:netmask, 3:router, 6:dns-server
+dnsmasq-dhcp[20]: 1564514329 next server: 172.28.23.2
+dnsmasq-dhcp[20]: 1564514329 sent size:  1 option: 53 message-type  5
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 54 server-identifier  172.28.23.2
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 51 lease-time  10m
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 58 T1  5m
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 59 T2  8m45s
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option: 28 broadcast  172.28.23.255
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option:  6 dns-server  172.28.23.2
+dnsmasq-dhcp[20]: 1564514329 sent size:  4 option:  3 router  172.28.23.2
+dnsmasq-dhcp[20]: 2526400319 available DHCP range: 172.28.23.100 -- 172.28.23.110
+dnsmasq-dhcp[20]: 2526400319 client provides name: shibaev-lab2
+dnsmasq-dhcp[20]: 2526400319 DHCPRELEASE(eth0) 172.28.23.107 5a:fb:77:ff:27:5d 

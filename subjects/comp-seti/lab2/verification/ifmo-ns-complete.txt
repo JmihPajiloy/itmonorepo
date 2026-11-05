@@ -1,0 +1,13 @@
+$ nslookup -type=NS ifmo.ru 172.19.0.2
+Server:		172.19.0.2
+Address:	172.19.0.2#53
+
+Non-authoritative answer:
+ifmo.ru	nameserver = ns3.ifmo.ru.
+ifmo.ru	nameserver = ns.ifmo.ru.
+ifmo.ru	nameserver = ns2.ifmo.ru.
+
+Authoritative answers can be found from:
+
+
+exit_code=0

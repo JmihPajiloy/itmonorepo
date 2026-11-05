@@ -1,0 +1,19 @@
+INFO:     Started server process [8]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+{"time": "2026-11-05T12:50:50.438593+00:00", "level": "INFO", "event": "registration_success", "user_id": 12, "login": "ivan.mw3jnfxi"}
+{"time": "2026-11-05T12:50:50.509350+00:00", "level": "INFO", "event": "registration_success", "user_id": 13, "login": "grigory.mw3jnfxi"}
+{"time": "2026-11-05T12:50:50.575563+00:00", "level": "INFO", "event": "registration_success", "user_id": 14, "login": "observer.mw3jnfxi"}
+{"time": "2026-11-05T12:50:50.748157+00:00", "level": "INFO", "event": "registration_duplicate", "login": "ivan.mw3jnfxi"}
+{"time": "2026-11-05T12:50:50.835056+00:00", "level": "ERROR", "event": "validation_failed", "method": "POST", "fields": ["password"]}
+{"time": "2026-11-05T12:50:51.002482+00:00", "level": "INFO", "event": "login_success", "user_id": 12}
+{"time": "2026-11-05T12:50:51.071769+00:00", "level": "INFO", "event": "resource_created", "user_id": 12, "resource_id": 4}
+{"time": "2026-11-05T12:50:51.173064+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 12, "target_id": 13, "resource_id": 4, "can_read": true, "can_update": false, "can_delete": false}
+{"time": "2026-11-05T12:50:51.517192+00:00", "level": "INFO", "event": "login_success", "user_id": 13}
+{"time": "2026-11-05T12:50:51.781150+00:00", "level": "INFO", "event": "access_denied", "user_id": 13, "resource_id": 4, "action": "update"}
+{"time": "2026-11-05T12:50:52.034162+00:00", "level": "INFO", "event": "login_success", "user_id": 14}
+{"time": "2026-11-05T12:50:52.084385+00:00", "level": "INFO", "event": "access_denied", "user_id": 14, "resource_id": 4, "action": "read"}
+{"time": "2026-11-05T12:50:52.343222+00:00", "level": "INFO", "event": "permissions_revoked", "user_id": 12, "target_id": 13, "resource_id": 4}
+{"time": "2026-11-05T12:50:52.397604+00:00", "level": "INFO", "event": "access_denied", "user_id": 13, "resource_id": 4, "action": "read"}
+{"time": "2026-11-05T12:50:52.506576+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 12, "target_id": 13, "resource_id": 4, "can_read": true, "can_update": false, "can_delete": false}

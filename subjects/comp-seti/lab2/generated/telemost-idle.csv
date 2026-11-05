@@ -1,0 +1,49 @@
+frame.number,frame.time_epoch,frame.len,frame.cap_len,frame.interface_name,eth.src,eth.dst,ip.src,ip.dst,ip.len,ip.hdr_len,ip.id,ip.flags.mf,ip.frag_offset,ip.ttl,ip.proto,icmp.type,icmp.code,tcp.srcport,tcp.dstport,tcp.len,udp.srcport,udp.dstport,udp.length,arp.opcode,arp.src.proto_ipv4,arp.dst.proto_ipv4,http.request.method,http.response.code,http.content_length,http.request.line,dns.id,dns.flags.response,dns.flags.authoritative,dns.qry.name,dns.qry.type,dns.a,dns.ns,dns.soa.mname,dhcp.option.dhcp,dhcp.id,dhcp.ip.your,dhcp.option.dhcp_server_id,ftp.request.command,ftp.request.arg,ftp.response.code,ftp.response.arg,_ws.col.protocol,_ws.col.info
+1,1793633878.969407000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0x09a1,False,0,64,17,,,,,,62091,21473,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: KAsrsVQFnwBBSQLN:y2eR
+2,1793633878.987104000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0xa5a7,False,0,64,17,,,,,,21473,62091,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2359
+3,1793633878.987106000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0xdff3,False,0,64,17,,,,,,21473,62091,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: y2eR:KAsrsVQFnwBBSQLN
+4,1793633878.987381000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0x017e,False,0,64,17,,,,,,62091,21473,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:21473
+5,1793633879.203313000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0x9cae,False,0,64,17,,,,,,58455,22950,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: IXdVAuTAcnSynrdW:iXF/
+6,1793633879.217994000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0x93ee,False,0,64,17,,,,,,22950,58455,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2608
+7,1793633879.217995000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0x5f62,False,0,64,17,,,,,,22950,58455,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: iXF/:IXdVAuTAcnSynrdW
+8,1793633879.218306000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0xa906,False,0,64,17,,,,,,58455,22950,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22950
+9,1793633884.110903000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0x0f2c,False,0,64,17,,,,,,57870,22759,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: uomiiweRCTACNQPv:M/Yj
+10,1793633884.127009000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0x5d87,False,0,64,17,,,,,,22759,57870,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2251
+11,1793633884.127014000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0x0784,False,0,64,17,,,,,,22759,57870,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: M/Yj:uomiiweRCTACNQPv
+12,1793633884.127457000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0x3c35,False,0,64,17,,,,,,57870,22759,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22759
+13,1793633884.140676000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0x17e2,False,0,64,17,,,,,,57049,22207,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: qreVIbsypSepIEHG:mw7a
+14,1793633884.155224000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0x9501,False,0,64,17,,,,,,22207,57049,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2487
+15,1793633884.155225000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0x900e,False,0,64,17,,,,,,22207,57049,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: mw7a:qreVIbsypSepIEHG
+16,1793633884.155604000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0x3885,False,0,64,17,,,,,,57049,22207,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22207
+17,1793633904.203359000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0xcf6b,False,0,64,17,,,,,,62091,21473,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: KAsrsVQFnwBBSQLN:y2eR
+18,1793633904.218250000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0xe184,False,0,64,17,,,,,,21473,62091,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2359
+19,1793633904.218253000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0xd84d,False,0,64,17,,,,,,21473,62091,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: y2eR:KAsrsVQFnwBBSQLN
+20,1793633904.218621000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0xbe69,False,0,64,17,,,,,,62091,21473,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:21473
+21,1793633904.437343000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0x6b91,False,0,64,17,,,,,,58455,22950,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: IXdVAuTAcnSynrdW:iXF/
+22,1793633904.451443000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0x952b,False,0,64,17,,,,,,22950,58455,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2608
+23,1793633904.451445000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0x0b4d,False,0,64,17,,,,,,22950,58455,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: iXF/:IXdVAuTAcnSynrdW
+24,1793633904.451834000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0xdae7,False,0,64,17,,,,,,58455,22950,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22950
+25,1793633909.344002000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0xd91a,False,0,64,17,,,,,,57870,22759,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: uomiiweRCTACNQPv:M/Yj
+26,1793633909.362941000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0xcde9,False,0,64,17,,,,,,22759,57870,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2251
+27,1793633909.362942000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0xd082,False,0,64,17,,,,,,22759,57870,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: M/Yj:uomiiweRCTACNQPv
+28,1793633909.363289000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0xe45b,False,0,64,17,,,,,,57870,22759,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22759
+29,1793633909.375672000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0x25f6,False,0,64,17,,,,,,57049,22207,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: qreVIbsypSepIEHG:mw7a
+30,1793633909.390274000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0x9d84,False,0,64,17,,,,,,22207,57049,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2487
+31,1793633909.390276000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0x368e,False,0,64,17,,,,,,22207,57049,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: mw7a:qreVIbsypSepIEHG
+32,1793633909.390714000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0x4de6,False,0,64,17,,,,,,57049,22207,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22207
+33,1793633929.438771000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0xbff9,False,0,64,17,,,,,,62091,21473,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: KAsrsVQFnwBBSQLN:y2eR
+34,1793633929.453887000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0x4eaf,False,0,64,17,,,,,,21473,62091,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2359
+35,1793633929.453890000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0xb98c,False,0,64,17,,,,,,21473,62091,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: y2eR:KAsrsVQFnwBBSQLN
+36,1793633929.454272000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0x5eb0,False,0,64,17,,,,,,62091,21473,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:21473
+37,1793633929.672341000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0xc9fe,False,0,64,17,,,,,,58455,22950,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: IXdVAuTAcnSynrdW:iXF/
+38,1793633929.688976000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0xdf77,False,0,64,17,,,,,,22950,58455,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2608
+39,1793633929.689002000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0x494e,False,0,64,17,,,,,,22950,58455,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: iXF/:IXdVAuTAcnSynrdW
+40,1793633929.689431000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0x0118,False,0,64,17,,,,,,58455,22950,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22950
+41,1793633934.579417000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0xdd13,False,0,64,17,,,,,,57870,22759,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: uomiiweRCTACNQPv:M/Yj
+42,1793633934.595202000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0xed96,False,0,64,17,,,,,,22759,57870,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2251
+43,1793633934.595204000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0xd541,False,0,64,17,,,,,,22759,57870,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: M/Yj:uomiiweRCTACNQPv
+44,1793633934.595630000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0x656c,False,0,64,17,,,,,,57870,22759,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22759
+45,1793633934.609837000,136,136,utun4,,,172.19.0.1,77.88.42.102,136,20,0xb6d6,False,0,64,17,,,,,,57049,22207,116,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: qreVIbsypSepIEHG:mw7a
+46,1793633934.623984000,92,92,utun4,,,77.88.42.102,172.19.0.1,92,20,0x267b,False,0,64,17,,,,,,22207,57049,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.234.210.207:2487
+47,1793633934.623987000,128,128,utun4,,,77.88.42.102,172.19.0.1,128,20,0x3692,False,0,64,17,,,,,,22207,57049,108,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Request user: mw7a:qreVIbsypSepIEHG
+48,1793633934.624404000,92,92,utun4,,,172.19.0.1,77.88.42.102,92,20,0xf5ee,False,0,64,17,,,,,,57049,22207,72,,,,,,,,,,,,,,,,,,,,,,,,STUN,Binding Success Response XOR-MAPPED-ADDRESS: 77.88.42.102:22207

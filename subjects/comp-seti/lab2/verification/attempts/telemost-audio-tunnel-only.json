@@ -1,0 +1,17 @@
+{
+  "phase": "audio",
+  "started_utc": "2026-11-02T15:43:13.145853+00:00",
+  "finished_utc": "2026-11-02T15:44:13.435834+00:00",
+  "seconds": 60,
+  "snapshot_bytes": 160,
+  "interfaces": [
+    "utun4"
+  ],
+  "verified_media_host": "77.88.42.102",
+  "capture_filter": "ip and udp and host 77.88.42.102",
+  "endpoint_evidence": "WebRTC Internals: first receiver 77.88.42.102:21473; second receiver 77.88.42.102:22207",
+  "text_endpoint_evidence": "Public Telemost configuration: uniproxy.messenger.yandex.ru/uni.ws and backend.messenger.yandex.ru; DNS resolution recorded during setup.",
+  "returncode": 0,
+  "capture_stderr": "Capturing on 'utun4'\nFile: /Users/ivan/Projects/itmonorepo/subjects/comp-seti/lab2/captures/telemost-audio.pcapng\n\nPackets: 5 \nPackets: 8 \nPackets: 16 \nPackets: 20 \nPackets: 24 \nPackets: 32 \nPackets captured: 32\nPackets received/dropped on interface 'utun4': 32/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)\n",
+  "method": "Two local browser sessions in a private test conference; encrypted traffic only."
+}

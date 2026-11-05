@@ -1,0 +1,13 @@
+$ dhclient -4 -v -cf /lab/stand/dhclient.conf -lf /tmp/lab2-leases-1 -pf /tmp/lab2-dhclient-1.pid -r eth0
+Killed old client process
+Internet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/eth0/42:a4:65:a0:9e:59
+Sending on   LPF/eth0/42:a4:65:a0:9e:59
+Sending on   Socket/fallback
+DHCPRELEASE of 172.28.23.101 on eth0 to 172.28.23.2 port 67
+
+exit_code=0

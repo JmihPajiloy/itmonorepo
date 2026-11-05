@@ -1,0 +1,3 @@
+$ ip neigh flush dev eth0
+
+exit_code=0

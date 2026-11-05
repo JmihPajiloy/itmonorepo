@@ -1,0 +1,480 @@
+{
+  "source": "telemost-video.pcapng",
+  "summary": {
+    "packets": 21632,
+    "duration_s": 40.978843,
+    "frame_bytes": 10071426,
+    "mean_frame_bytes": 465.58,
+    "rate_kbit_s": 1966.171,
+    "truncated_packets": 10495
+  },
+  "interfaces": {
+    "en0": {
+      "packets": 21600,
+      "duration_s": 40.978843,
+      "frame_bytes": 10067842,
+      "mean_frame_bytes": 466.104,
+      "rate_kbit_s": 1965.471,
+      "truncated_packets": 10495
+    },
+    "utun4": {
+      "packets": 32,
+      "duration_s": 30.420693,
+      "frame_bytes": 3584,
+      "mean_frame_bytes": 112.0,
+      "rate_kbit_s": 0.943,
+      "truncated_packets": 0
+    }
+  },
+  "rtp_header_packets": 19053,
+  "streams": [
+    {
+      "source": "172.28.133.90:62155",
+      "destination": "77.88.42.102:22950",
+      "ssrc": "0x2e7bcf73",
+      "payload_type": 98,
+      "interpretation": "PT 98 stream during camera-on session; video codec is not established by PT alone",
+      "packets": 5838,
+      "duration_s": 40.930194,
+      "frame_bytes": 5560649,
+      "mean_frame_bytes": 952.492,
+      "rate_kbit_s": 1086.855,
+      "truncated_packets": 5837,
+      "whole_capture_rate_kbit_s": 1085.565,
+      "median_interarrival_ms": 0.0741,
+      "sequence_first": 31331,
+      "sequence_last": 37153,
+      "rtp_timestamp_first": 2628388026,
+      "rtp_timestamp_last": 2632071096,
+      "distinct_rtp_timestamps": 981,
+      "max_packets_per_rtp_timestamp": 19,
+      "sequence_step_counts": {
+        "1": 5834,
+        "65481": 1,
+        "35": 1,
+        "8": 1
+      },
+      "loss_estimate": null,
+      "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+    },
+    {
+      "source": "77.88.42.102:22207",
+      "destination": "172.28.133.90:58539",
+      "ssrc": "0x6444244d",
+      "payload_type": 98,
+      "interpretation": "PT 98 stream during camera-on session; video codec is not established by PT alone",
+      "packets": 5819,
+      "duration_s": 40.921991,
+      "frame_bytes": 2076922,
+      "mean_frame_bytes": 356.921,
+      "rate_kbit_s": 406.026,
+      "truncated_packets": 1824,
+      "whole_capture_rate_kbit_s": 405.462,
+      "median_interarrival_ms": 0.0019,
+      "sequence_first": 13867,
+      "sequence_last": 19685,
+      "rtp_timestamp_first": 8664783,
+      "rtp_timestamp_last": 12345153,
+      "distinct_rtp_timestamps": 981,
+      "max_packets_per_rtp_timestamp": 16,
+      "sequence_step_counts": {
+        "1": 5815,
+        "22": 1,
+        "65491": 1,
+        "26": 1
+      },
+      "loss_estimate": null,
+      "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+    },
+    {
+      "source": "77.88.42.102:22207",
+      "destination": "172.28.133.90:58539",
+      "ssrc": "0x9524d2a8",
+      "payload_type": 49,
+      "interpretation": "Other RTP stream; media/repair function and codec are not established",
+      "packets": 1245,
+      "duration_s": 40.96573,
+      "frame_bytes": 1372578,
+      "mean_frame_bytes": 1102.472,
+      "rate_kbit_s": 268.044,
+      "truncated_packets": 1245,
+      "whole_capture_rate_kbit_s": 267.958,
+      "median_interarrival_ms": 19.0084,
+      "sequence_first": 25784,
+      "sequence_last": 38383,
+      "rtp_timestamp_first": 54243243,
+      "rtp_timestamp_last": 54243243,
+      "distinct_rtp_timestamps": 1,
+      "max_packets_per_rtp_timestamp": 1245,
+      "sequence_step_counts": {
+        "8": 384,
+        "6": 192,
+        "10": 191,
+        "14": 122,
+        "12": 114,
+        "16": 49,
+        "7": 44,
+        "18": 31,
+        "9": 29,
+        "20": 21,
+        "11": 13,
+        "22": 11,
+        "13": 8,
+        "15": 6,
+        "5": 6,
+        "24": 5,
+        "4": 4,
+        "19": 3,
+        "17": 3,
+        "21": 2,
+        "28": 2,
+        "26": 2,
+        "25": 1,
+        "30": 1
+      },
+      "loss_estimate": null,
+      "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+    },
+    {
+      "source": "77.88.42.102:22207",
+      "destination": "172.28.133.90:58539",
+      "ssrc": "0xc62792d7",
+      "payload_type": 111,
+      "interpretation": "PT 111 stream; same conference, exact codec requires its SDP mapping",
+      "packets": 2048,
+      "duration_s": 40.939994,
+      "frame_bytes": 375839,
+      "mean_frame_bytes": 183.515,
+      "rate_kbit_s": 73.442,
+      "truncated_packets": 1431,
+      "whole_capture_rate_kbit_s": 73.372,
+      "median_interarrival_ms": 20.0131,
+      "sequence_first": 36056,
+      "sequence_last": 38103,
+      "rtp_timestamp_first": 34615803,
+      "rtp_timestamp_last": 36580923,
+      "distinct_rtp_timestamps": 2048,
+      "max_packets_per_rtp_timestamp": 1,
+      "sequence_step_counts": {
+        "1": 2047
+      },
+      "loss_estimate": null,
+      "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+    },
+    {
+      "source": "172.28.133.90:62155",
+      "destination": "77.88.42.102:22950",
+      "ssrc": "0xe651f326",
+      "payload_type": 111,
+      "interpretation": "PT 111 stream; same conference, exact codec requires its SDP mapping",
+      "packets": 2054,
+      "duration_s": 40.919421,
+      "frame_bytes": 277429,
+      "mean_frame_bytes": 135.068,
+      "rate_kbit_s": 54.239,
+      "truncated_packets": 157,
+      "whole_capture_rate_kbit_s": 54.16,
+      "median_interarrival_ms": 20.0078,
+      "sequence_first": 43700,
+      "sequence_last": 45746,
+      "rtp_timestamp_first": 269325406,
+      "rtp_timestamp_last": 271289566,
+      "distinct_rtp_timestamps": 2047,
+      "max_packets_per_rtp_timestamp": 2,
+      "sequence_step_counts": {
+        "1": 2050,
+        "65516": 1,
+        "13": 1,
+        "3": 1
+      },
+      "loss_estimate": null,
+      "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+    },
+    {
+      "source": "77.88.42.102:21473",
+      "destination": "172.28.133.90:51859",
+      "ssrc": "0x6fb51938",
+      "payload_type": 111,
+      "interpretation": "Opus audio: SSRC and PT were identified in WebRTC Internals",
+      "packets": 2049,
+      "duration_s": 40.958341,
+      "frame_bytes": 161871,
+      "mean_frame_bytes": 79.0,
+      "rate_kbit_s": 31.617,
+      "truncated_packets": 0,
+      "whole_capture_rate_kbit_s": 31.601,
+      "median_interarrival_ms": 20.0336,
+      "sequence_first": 48918,
+      "sequence_last": 50966,
+      "rtp_timestamp_first": 46963323,
+      "rtp_timestamp_last": 48929403,
+      "distinct_rtp_timestamps": 2049,
+      "max_packets_per_rtp_timestamp": 1,
+      "sequence_step_counts": {
+        "1": 2048
+      },
+      "loss_estimate": null,
+      "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+    }
+  ],
+  "other_traces": {
+    "idle": {
+      "packets": 48,
+      "duration_s": 55.654997,
+      "frame_bytes": 5376,
+      "mean_frame_bytes": 112.0,
+      "rate_kbit_s": 0.773,
+      "truncated_packets": 0
+    },
+    "audio": {
+      "packets": 12220,
+      "duration_s": 59.960023,
+      "frame_bytes": 1307195,
+      "mean_frame_bytes": 106.972,
+      "rate_kbit_s": 174.409,
+      "truncated_packets": 1013
+    },
+    "text": {
+      "packets": 59,
+      "duration_s": 44.952695,
+      "frame_bytes": 21017,
+      "mean_frame_bytes": 356.22,
+      "rate_kbit_s": 3.74,
+      "truncated_packets": 28
+    }
+  },
+  "audio_capture": {
+    "source": "telemost-audio.pcapng",
+    "summary": {
+      "packets": 12220,
+      "duration_s": 59.960023,
+      "frame_bytes": 1307195,
+      "mean_frame_bytes": 106.972,
+      "rate_kbit_s": 174.409,
+      "truncated_packets": 1013
+    },
+    "interfaces": {
+      "en0": {
+        "packets": 12188,
+        "duration_s": 59.960023,
+        "frame_bytes": 1303611,
+        "mean_frame_bytes": 106.959,
+        "rate_kbit_s": 173.931,
+        "truncated_packets": 1013
+      },
+      "utun4": {
+        "packets": 32,
+        "duration_s": 36.063527,
+        "frame_bytes": 3584,
+        "mean_frame_bytes": 112.0,
+        "rate_kbit_s": 0.795,
+        "truncated_packets": 0
+      }
+    },
+    "rtp_header_packets": 8995,
+    "streams": [
+      {
+        "source": "77.88.42.81:22335",
+        "destination": "10.246.154.76:50846",
+        "ssrc": "0xeec9d003",
+        "payload_type": 111,
+        "interpretation": "Opus audio: SSRC and PT were identified in WebRTC Internals",
+        "packets": 2998,
+        "duration_s": 59.940283,
+        "frame_bytes": 412344,
+        "mean_frame_bytes": 137.54,
+        "rate_kbit_s": 55.034,
+        "truncated_packets": 1011,
+        "whole_capture_rate_kbit_s": 55.016,
+        "median_interarrival_ms": 19.999,
+        "sequence_first": 10263,
+        "sequence_last": 13260,
+        "rtp_timestamp_first": 9854523,
+        "rtp_timestamp_last": 12731643,
+        "distinct_rtp_timestamps": 2998,
+        "max_packets_per_rtp_timestamp": 1,
+        "sequence_step_counts": {
+          "1": 2997
+        },
+        "loss_estimate": null,
+        "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+      },
+      {
+        "source": "10.246.154.76:61308",
+        "destination": "77.88.42.81:22556",
+        "ssrc": "0xc33334d1",
+        "payload_type": 111,
+        "interpretation": "PT 111 stream; same conference, exact codec requires its SDP mapping",
+        "packets": 2999,
+        "duration_s": 59.960023,
+        "frame_bytes": 367821,
+        "mean_frame_bytes": 122.648,
+        "rate_kbit_s": 49.075,
+        "truncated_packets": 2,
+        "whole_capture_rate_kbit_s": 49.075,
+        "median_interarrival_ms": 20.0009,
+        "sequence_first": 22447,
+        "sequence_last": 25445,
+        "rtp_timestamp_first": 2687202648,
+        "rtp_timestamp_last": 2690080728,
+        "distinct_rtp_timestamps": 2999,
+        "max_packets_per_rtp_timestamp": 1,
+        "sequence_step_counts": {
+          "1": 2998
+        },
+        "loss_estimate": null,
+        "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+      },
+      {
+        "source": "77.88.42.81:21152",
+        "destination": "10.246.154.76:60593",
+        "ssrc": "0xcad72633",
+        "payload_type": 111,
+        "interpretation": "PT 111 stream; same conference, exact codec requires its SDP mapping",
+        "packets": 2998,
+        "duration_s": 59.940281,
+        "frame_bytes": 236842,
+        "mean_frame_bytes": 79.0,
+        "rate_kbit_s": 31.61,
+        "truncated_packets": 0,
+        "whole_capture_rate_kbit_s": 31.6,
+        "median_interarrival_ms": 19.999,
+        "sequence_first": 5755,
+        "sequence_last": 8752,
+        "rtp_timestamp_first": 5526843,
+        "rtp_timestamp_last": 8403963,
+        "distinct_rtp_timestamps": 2998,
+        "max_packets_per_rtp_timestamp": 1,
+        "sequence_step_counts": {
+          "1": 2997
+        },
+        "loss_estimate": null,
+        "loss_estimate_note": "No loss estimate: capture starts mid-session; repair/padding/reordering and truncation must be accounted for."
+      }
+    ],
+    "checks": [
+      {
+        "name": "independent audio trace contains a sustained interval longer than 30 s",
+        "passed": true
+      },
+      {
+        "name": "audio RTP headers include the browser-confirmed Opus SSRC 4006203395 / PT 111",
+        "passed": true
+      },
+      {
+        "name": "audio RTP payload types are all 111 in the selected conference ports",
+        "passed": true
+      },
+      {
+        "name": "audio trace contains outgoing and incoming RTP at the verified media server",
+        "passed": true
+      }
+    ],
+    "browser_evidence": "Camera disabled; organiser microphone enabled. WebRTC Internals: publisher 77.88.42.81:22556; guest receiver 77.88.42.81:22335, inbound Opus PT111 SSRC4006203395 (0xeec9d003).",
+    "capture_limitation": "dumpcap log reports 49 en0 packets flushed at capture completion; this is not a measured network loss rate."
+  },
+  "text_capture": {
+    "source": "telemost-text.pcapng",
+    "summary": {
+      "packets": 59,
+      "duration_s": 44.952695,
+      "frame_bytes": 21017,
+      "mean_frame_bytes": 356.22,
+      "rate_kbit_s": 3.74,
+      "truncated_packets": 28
+    },
+    "interfaces": {
+      "utun4": {
+        "packets": 59,
+        "duration_s": 44.952695,
+        "frame_bytes": 21017,
+        "mean_frame_bytes": 356.22,
+        "rate_kbit_s": 3.74,
+        "truncated_packets": 28
+      }
+    },
+    "outgoing_packets": 28,
+    "incoming_packets": 31,
+    "tcp_payload_bytes": 17961,
+    "displayed_protocol_counts": {
+      "TCP": 29,
+      "TLSv1.2": 30
+    },
+    "capture_filter": "tcp and host 87.250.250.43 and port 443 and port 58364",
+    "verified_websocket": "wss://ws.push.yandex.ru/v2/subscribe",
+    "browser_evidence": "Chrome DevTools showed WebSocket HTTP 101; lsof matched 172.19.0.1:58364 -> 87.250.250.43:443. Two local same-account tabs exchanged and independently displayed two control messages.",
+    "ui_transcript": "verification/telemost-text-ui-repeat.txt",
+    "encapsulation": "Raw IP on utun4; frame.len has no Ethernet header",
+    "privacy_postprocessing": "editcap -s 160 applied to the saved trace; original frame.len and timestamps retained",
+    "observed_max_capture_bytes": 160,
+    "checks": [
+      {
+        "name": "text trace is nonempty and has a nonzero packet timestamp interval",
+        "passed": true
+      },
+      {
+        "name": "all text packets belong to the verified bidirectional TCP 58364 / 443 flow",
+        "passed": true
+      },
+      {
+        "name": "text packets are Raw IP on utun4; IP length equals recorded original frame length",
+        "passed": true
+      },
+      {
+        "name": "text flow has no UDP/RTP and includes encrypted TLS application records",
+        "passed": true
+      },
+      {
+        "name": "text snapshots are limited to 160 bytes after privacy postprocessing",
+        "passed": true
+      },
+      {
+        "name": "saved UI transcript confirms both control messages in two local tabs",
+        "passed": true
+      }
+    ],
+    "limitations": [
+      "Only the selected encrypted WebSocket notification flow is recorded; this is not all HTTP API or all messaging traffic.",
+      "HTTP 101 and the WebSocket URL were observed in DevTools, not read from encrypted pcap payload.",
+      "Packet timestamps span the observed traffic; the capture process had a separate 60-second upper limit.",
+      "Raw IP text lengths and Ethernet media lengths have different link-layer accounting.",
+      "TLS record labels in a midstream trace do not by themselves prove the negotiated TLS version."
+    ]
+  },
+  "phase_comparison": {
+    "text": {
+      "packets": 59,
+      "duration_s": 44.952695,
+      "frame_bytes": 21017,
+      "mean_frame_bytes": 356.22,
+      "rate_kbit_s": 3.74,
+      "truncated_packets": 28
+    },
+    "audio": {
+      "packets": 12220,
+      "duration_s": 59.960023,
+      "frame_bytes": 1307195,
+      "mean_frame_bytes": 106.972,
+      "rate_kbit_s": 174.409,
+      "truncated_packets": 1013
+    },
+    "video": {
+      "packets": 21632,
+      "duration_s": 40.978843,
+      "frame_bytes": 10071426,
+      "mean_frame_bytes": 465.58,
+      "rate_kbit_s": 1966.171,
+      "truncated_packets": 10495
+    },
+    "video_to_audio_rate_ratio": 11.273,
+    "scope": "Text: selected TCP/TLS WebSocket notification flow, Raw IP. Audio/video: selected conference media UDP, both local browser participants and directions, mainly Ethernet en0. Video includes audio.",
+    "limitation": "Different capture windows, selected services, network conditions, and Raw IP / Ethernet length accounting. Descriptive trace comparison, not full message-service accounting or codec-only bandwidth."
+  },
+  "observations": [
+    "The video trace contains a real mixed audio/video conference; it is not a separate audio-only experiment.",
+    "UDP RTP header fields are read with explicit Decode As; SRTP media payload remains encrypted.",
+    "Dynamic RTP payload type does not identify a codec without SDP or a corresponding browser observation.",
+    "Rates use original frame.len and the actual packet timestamp interval; text snapshots were privacy-truncated to 160 bytes after capture.",
+    "The en0 path carries media; utun4 only contains alternate-candidate STUN traffic in this trace."
+  ]
+}

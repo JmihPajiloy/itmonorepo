@@ -1,0 +1,5 @@
+Capturing on 'utun4' and 'Wi-Fi: en0'
+File: captures/telemost-text.pcapng
+Packets: 2 Packets: 4 Packets: 6 Packets: 8 Packets: 17 Packets: 21 Packets: 26 Packets: 30 Packets: 44 Packets: 52 Packets: 57 Packets: 59 Packets captured: 59
+Packets received/dropped on interface 'utun4': 59/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Packets received/dropped on interface 'Wi-Fi: en0': 0/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (0.0%)

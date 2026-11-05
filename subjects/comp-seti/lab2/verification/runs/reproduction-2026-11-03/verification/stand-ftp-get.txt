@@ -1,0 +1,39 @@
+$ curl --noproxy * -v --disable-epsv ftp://172.28.22.10/index.html -o /lab/verification/runs/reproduction-2026-11-03/verification/ftp-index.html
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 172.28.22.10:21...
+* Connected to 172.28.22.10 (172.28.22.10) port 21 (#0)
+< 220 pyftpdlib 2.1.0 ready.
+> USER anonymous
+< 331 Username ok, send password.
+> PASS ftp@example.com
+< 230 Login successful.
+> PWD
+< 257 "/" is the current directory.
+* Entry path is '/'
+* Request has same path as previous transfer
+> PASV
+* Connect data stream passively
+* ftp_perform ends with SECONDARY: 0
+< 227 Entering passive mode (172,28,22,10,117,56).
+* Skip 172.28.22.10 for data connection, re-use 172.28.22.10 instead
+* Connecting to 172.28.22.10 (172.28.22.10) port 30008
+*   Trying 172.28.22.10:30008...
+* Connected to 172.28.22.10 (172.28.22.10) port 21 (#0)
+> TYPE I
+< 200 Type set to: Binary.
+> SIZE index.html
+< 213 476
+> RETR index.html
+< 125 Data connection already open. Transfer starting.
+* Maxdownload = -1
+* Getting file with size: 476
+{ [476 bytes data]
+* Remembering we are in dir ""
+< 226 Transfer complete.
+
+100   476  100   476    0     0   177k      0 --:--:-- --:--:-- --:--:--  232k
+* Connection #0 to host 172.28.22.10 left intact
+
+exit_code=0
