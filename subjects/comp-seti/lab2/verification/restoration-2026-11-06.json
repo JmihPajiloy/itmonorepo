@@ -1,0 +1,85 @@
+{
+  "reviewed_utc": "2026-11-06T09:56:15.121545+00:00",
+  "operation": "restoration",
+  "report": "report.pdf",
+  "report_pages": 36,
+  "report_sha256": "114082ee66a5da207825bf7028217e321a8a7390743962bbc4ad57565271e398",
+  "build": "make report SUBJECT=comp-seti LAB=lab2",
+  "build_exit_code": 0,
+  "capture_checks": {
+    "core": 48,
+    "audio": 4,
+    "text": 6
+  },
+  "all_capture_checks_passed": true,
+  "restored_sources": {
+    "report.typ": "449fc0eb2345458e17c740e521969924b92af8d7fb573b432acc42482b3b0488",
+    "report-core.typ": "158a75ccb8d4baabc7683d110cdc161d3f49323616c2188066f0fb8f8e7dac5a",
+    "report-media.typ": "37f592f3adbd02edf05b504c0eef99fdfaa2e33aca746e47d0cfe91397af6274",
+    "references.bib": "696f10a3df00f44ce1236e684d3b4a7c2c17de1071cea282a48b31ac9cbb0e43"
+  },
+  "recovery_materials": [
+    "verification/report-text.txt",
+    "report.example.pdf",
+    "../metodichka.pdf",
+    "verification/requirements.md",
+    "captures/",
+    "screenshots/",
+    "generated/"
+  ],
+  "recovery_note": "Содержание восстановлено по сохранённой текстовой выгрузке и материалам опытов; оформление сверено с примером. Новая сборка не является побайтовой копией удалённого PDF. Сохранены даты опытов и обращения к источникам из прежних материалов.",
+  "previous_review": "verification/final-review.json",
+  "text_export": "verification/restored-report-text.txt",
+  "structure": {
+    "tables": 10,
+    "figures": 20,
+    "numbered_equations": 2,
+    "bibliography_entries": 12
+  },
+  "references_checked": {
+    "all_numbered_objects_referenced": true,
+    "all_bibliography_entries_cited": true
+  },
+  "layout_audit": {
+    "font_sizes_pt": [
+      8,
+      11,
+      12,
+      14
+    ],
+    "pages": 36,
+    "text_outside_page": []
+  },
+  "visual_review": {
+    "renderer": "macOS PDFKit",
+    "render_scale": 1.4,
+    "pages_rendered": 36,
+    "pages_reviewed_on_contact_sheets": 36,
+    "contact_sheets": 5,
+    "additional_full_page_review": [
+      5,
+      29,
+      34,
+      36
+    ],
+    "result": "Обрезанного текста, наложений и пропавших подписей не обнаружено. Таблицы не разрываются; основной, табличный и моноширинный текст — 14 pt; отступы ячеек — 0 pt."
+  },
+  "experiments_rerun": false,
+  "captures_sha256": {
+    "browser-dns-isu.pcap": "d617d952a583c6f875b943a17ae72526303023160367091fe04da66f042d0954",
+    "browser-http.pcap": "3c24e130f563ddff39888f531dc25c9774c3305b1472f470474b54b4e415b978",
+    "isu-dns-complete.pcap": "35082d65c9591b5125ea895640636b018c4a1947de3486fc8ed138fd20247de6",
+    "isu-utilities.pcap": "986e1c2a7776acbd77cc6834c68c3f1124068dda148c071831bae4f165655660",
+    "stand-dhcp.pcap": "fd35616d943c511eaf84af024ec83e0dc862304e9121b3ebf80d0a76300b390a",
+    "stand-dns.pcap": "d3db7a4ee3d4c008612d24ebdca95b27e9c3f7bfd22357ebfea509c3aad02190",
+    "stand-ftp.pcap": "26e0bd4e92dfa0ce97fab256e6e52d8a85ef966663d68af8e1fd8f1e177ee6b9",
+    "stand-http-arp.pcap": "0ba992f94a0d290f5b1edadb19ab9a57e3d78fa4e6fa8235aeb19ad24b8cc33e",
+    "stand-ping.pcap": "0dd47bb4ad6eaf7414072d2242be6aa5cc52c915de6e8f3fcea5f938413ff622",
+    "stand-traceroute.pcap": "d066c1098f9ce78bd7470958708a6ae7b7cc0b1e57f657a472c4c08c22b0c770",
+    "telemost-audio.pcapng": "f170777b2a6224c2c879fd1ec29ac78a69a95e64766261d1b68375963cfa84e3",
+    "telemost-idle.pcapng": "b18a26a5d22d5da305d878e2222306096b1537dd9e25ffbf4cbdb228910b0e62",
+    "telemost-text.pcapng": "b73b417bcf73f39055f472040c16f3d62d5569e4c60362eb8ef68e4091f0abd3",
+    "telemost-video.pcapng": "3c6dd634b3ddc91b1a24625c4da5103b54b432aca60b44a753bed138d7fbdead"
+  },
+  "submission_note": "Студенту необходимо поставить собственную подпись на титульном листе."
+}
