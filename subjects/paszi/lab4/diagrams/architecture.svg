@@ -11,7 +11,7 @@
   <g fill="#111" font-family="Times New Roman,serif" font-size="20" text-anchor="middle">
     <text x="122" y="99">React + TypeScript</text><text x="122" y="130">Сборка Vite</text><text x="122" y="161">Раздача Nginx</text><text x="122" y="191">127.0.0.1:8084</text>
     <text x="410" y="99">FastAPI</text><text x="410" y="130">Вход и Argon2id</text><text x="410" y="161">Проверка прав DAC</text><text x="410" y="191">SQLAlchemy / Alembic</text>
-    <text x="697" y="99">PostgreSQL 18</text><text x="697" y="130">users</text><text x="697" y="161">resources</text><text x="697" y="191">resource_permissions</text>
+    <text x="697" y="99">PostgreSQL 18</text><text x="697" y="127">users, resources</text><text x="697" y="158">resource_permissions</text><text x="697" y="189">auth_sessions</text>
   </g>
   <g fill="none" stroke="#222" stroke-width="2">
     <path d="M240 120H286m-9-6 9 6-9 6"/><path d="M527 120H573m-9-6 9 6-9 6"/>

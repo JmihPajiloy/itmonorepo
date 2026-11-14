@@ -2,18 +2,39 @@ INFO:     Started server process [8]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-{"time": "2026-11-05T12:50:50.438593+00:00", "level": "INFO", "event": "registration_success", "user_id": 12, "login": "ivan.mw3jnfxi"}
-{"time": "2026-11-05T12:50:50.509350+00:00", "level": "INFO", "event": "registration_success", "user_id": 13, "login": "grigory.mw3jnfxi"}
-{"time": "2026-11-05T12:50:50.575563+00:00", "level": "INFO", "event": "registration_success", "user_id": 14, "login": "observer.mw3jnfxi"}
-{"time": "2026-11-05T12:50:50.748157+00:00", "level": "INFO", "event": "registration_duplicate", "login": "ivan.mw3jnfxi"}
-{"time": "2026-11-05T12:50:50.835056+00:00", "level": "ERROR", "event": "validation_failed", "method": "POST", "fields": ["password"]}
-{"time": "2026-11-05T12:50:51.002482+00:00", "level": "INFO", "event": "login_success", "user_id": 12}
-{"time": "2026-11-05T12:50:51.071769+00:00", "level": "INFO", "event": "resource_created", "user_id": 12, "resource_id": 4}
-{"time": "2026-11-05T12:50:51.173064+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 12, "target_id": 13, "resource_id": 4, "can_read": true, "can_update": false, "can_delete": false}
-{"time": "2026-11-05T12:50:51.517192+00:00", "level": "INFO", "event": "login_success", "user_id": 13}
-{"time": "2026-11-05T12:50:51.781150+00:00", "level": "INFO", "event": "access_denied", "user_id": 13, "resource_id": 4, "action": "update"}
-{"time": "2026-11-05T12:50:52.034162+00:00", "level": "INFO", "event": "login_success", "user_id": 14}
-{"time": "2026-11-05T12:50:52.084385+00:00", "level": "INFO", "event": "access_denied", "user_id": 14, "resource_id": 4, "action": "read"}
-{"time": "2026-11-05T12:50:52.343222+00:00", "level": "INFO", "event": "permissions_revoked", "user_id": 12, "target_id": 13, "resource_id": 4}
-{"time": "2026-11-05T12:50:52.397604+00:00", "level": "INFO", "event": "access_denied", "user_id": 13, "resource_id": 4, "action": "read"}
-{"time": "2026-11-05T12:50:52.506576+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 12, "target_id": 13, "resource_id": 4, "can_read": true, "can_update": false, "can_delete": false}
+{"time": "2026-11-14T16:20:13.469915+00:00", "level": "INFO", "event": "registration_success", "user_id": 19, "login": "cookie.mwgm3dwn"}
+{"time": "2026-11-14T16:20:13.667429+00:00", "level": "INFO", "event": "login_success", "user_id": 19}
+{"time": "2026-11-14T16:20:32.846213+00:00", "level": "INFO", "event": "registration_success", "user_id": 20, "login": "ivan.mwgm3snl"}
+{"time": "2026-11-14T16:20:32.915568+00:00", "level": "INFO", "event": "registration_success", "user_id": 21, "login": "grigory.mwgm3snl"}
+{"time": "2026-11-14T16:20:32.979268+00:00", "level": "INFO", "event": "registration_success", "user_id": 22, "login": "observer.mwgm3snl"}
+{"time": "2026-11-14T16:20:33.116253+00:00", "level": "INFO", "event": "registration_duplicate", "login": "ivan.mwgm3snl"}
+{"time": "2026-11-14T16:20:33.201674+00:00", "level": "ERROR", "event": "validation_failed", "method": "POST", "fields": ["password"]}
+{"time": "2026-11-14T16:20:33.347912+00:00", "level": "INFO", "event": "login_success", "user_id": 20}
+{"time": "2026-11-14T16:20:33.453743+00:00", "level": "INFO", "event": "resource_created", "user_id": 20, "resource_id": 5}
+{"time": "2026-11-14T16:20:33.542366+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 20, "target_id": 21, "resource_id": 5, "can_read": true, "can_update": false, "can_delete": false}
+{"time": "2026-11-14T16:20:33.957510+00:00", "level": "INFO", "event": "login_success", "user_id": 21}
+{"time": "2026-11-14T16:20:34.258504+00:00", "level": "INFO", "event": "access_denied", "user_id": 21, "resource_id": 5, "action": "update"}
+{"time": "2026-11-14T16:20:34.650701+00:00", "level": "INFO", "event": "login_success", "user_id": 22}
+{"time": "2026-11-14T16:20:34.727092+00:00", "level": "INFO", "event": "access_denied", "user_id": 22, "resource_id": 5, "action": "read"}
+{"time": "2026-11-14T16:20:34.980510+00:00", "level": "INFO", "event": "permissions_revoked", "user_id": 20, "target_id": 21, "resource_id": 5}
+{"time": "2026-11-14T16:20:35.085310+00:00", "level": "INFO", "event": "access_denied", "user_id": 21, "resource_id": 5, "action": "read"}
+{"time": "2026-11-14T16:20:35.213703+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 20, "target_id": 21, "resource_id": 5, "can_read": true, "can_update": false, "can_delete": false}
+{"time": "2026-11-14T16:21:35.363553+00:00", "level": "INFO", "event": "login_success", "user_id": 2}
+{"time": "2026-11-14T16:21:52.318123+00:00", "level": "INFO", "event": "access_denied", "user_id": 2, "resource_id": 1, "action": "delete"}
+{"time": "2026-11-14T16:21:54.562590+00:00", "level": "ERROR", "event": "validation_failed", "method": "PATCH", "fields": ["content"]}
+{"time": "2026-11-14T16:22:04.488439+00:00", "level": "INFO", "event": "resource_updated", "user_id": 2, "resource_id": 1}
+{"time": "2026-11-14T16:33:07.148513+00:00", "level": "INFO", "event": "registration_success", "user_id": 24, "login": "ivan.mwgmjy8d"}
+{"time": "2026-11-14T16:33:07.227790+00:00", "level": "INFO", "event": "registration_success", "user_id": 25, "login": "grigory.mwgmjy8d"}
+{"time": "2026-11-14T16:33:07.293917+00:00", "level": "INFO", "event": "registration_success", "user_id": 26, "login": "observer.mwgmjy8d"}
+{"time": "2026-11-14T16:33:07.451445+00:00", "level": "INFO", "event": "registration_duplicate", "login": "ivan.mwgmjy8d"}
+{"time": "2026-11-14T16:33:07.548255+00:00", "level": "ERROR", "event": "validation_failed", "method": "POST", "fields": ["password"]}
+{"time": "2026-11-14T16:33:07.726286+00:00", "level": "INFO", "event": "login_success", "user_id": 24}
+{"time": "2026-11-14T16:33:07.833881+00:00", "level": "INFO", "event": "resource_created", "user_id": 24, "resource_id": 6}
+{"time": "2026-11-14T16:33:07.933298+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 24, "target_id": 25, "resource_id": 6, "can_read": true, "can_update": false, "can_delete": false}
+{"time": "2026-11-14T16:33:08.285981+00:00", "level": "INFO", "event": "login_success", "user_id": 25}
+{"time": "2026-11-14T16:33:08.545628+00:00", "level": "INFO", "event": "access_denied", "user_id": 25, "resource_id": 6, "action": "update"}
+{"time": "2026-11-14T16:33:08.820474+00:00", "level": "INFO", "event": "login_success", "user_id": 26}
+{"time": "2026-11-14T16:33:08.895261+00:00", "level": "INFO", "event": "access_denied", "user_id": 26, "resource_id": 6, "action": "read"}
+{"time": "2026-11-14T16:33:09.124219+00:00", "level": "INFO", "event": "permissions_revoked", "user_id": 24, "target_id": 25, "resource_id": 6}
+{"time": "2026-11-14T16:33:09.233558+00:00", "level": "INFO", "event": "access_denied", "user_id": 25, "resource_id": 6, "action": "read"}
+{"time": "2026-11-14T16:33:09.339210+00:00", "level": "INFO", "event": "permissions_changed", "user_id": 24, "target_id": 25, "resource_id": 6, "can_read": true, "can_update": false, "can_delete": false}

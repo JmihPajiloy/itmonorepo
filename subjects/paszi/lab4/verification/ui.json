@@ -1,13 +1,13 @@
 {
-  "executed_at": "2026-11-05T12:50:52.611Z",
+  "executed_at": "2026-11-14T16:33:09.449Z",
   "base_url": "http://127.0.0.1:8084",
-  "browser": "157.0.8103.38",
+  "browser": "157.0.8103.40",
   "users": {
-    "owner": "ivan.mw3jnfxi",
-    "reader": "grigory.mw3jnfxi",
-    "outsider": "observer.mw3jnfxi"
+    "owner": "ivan.mwgmjy8d",
+    "reader": "grigory.mwgmjy8d",
+    "outsider": "observer.mwgmjy8d"
   },
-  "resource_id": 4,
+  "resource_id": 6,
   "checks": [
     {
       "name": "Пользователь создан",
@@ -112,6 +112,11 @@
     },
     {
       "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
       "path": "/api/resources",
       "status": 200
     },
@@ -126,13 +131,18 @@
       "status": 200
     },
     {
+      "method": "GET",
+      "path": "/api/resources/6/permissions",
+      "status": 200
+    },
+    {
       "method": "PUT",
-      "path": "/api/resources/4/permissions/grigory.mw3jnfxi",
+      "path": "/api/resources/6/permissions/grigory.mwgmjy8d",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "/api/resources/4/permissions",
+      "path": "/api/resources/6/permissions",
       "status": 200
     },
     {
@@ -142,17 +152,22 @@
     },
     {
       "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
       "path": "/api/resources",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "/api/resources/4",
+      "path": "/api/resources/6",
       "status": 200
     },
     {
       "method": "PATCH",
-      "path": "/api/resources/4",
+      "path": "/api/resources/6",
       "status": 403
     },
     {
@@ -162,37 +177,42 @@
     },
     {
       "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
       "path": "/api/resources",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "/api/resources/4",
+      "path": "/api/resources/6",
       "status": 403
     },
     {
       "method": "DELETE",
-      "path": "/api/resources/4/permissions/grigory.mw3jnfxi",
+      "path": "/api/resources/6/permissions/grigory.mwgmjy8d",
       "status": 204
     },
     {
       "method": "GET",
-      "path": "/api/resources/4/permissions",
+      "path": "/api/resources/6/permissions",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "/api/resources/4",
+      "path": "/api/resources/6",
       "status": 403
     },
     {
       "method": "PUT",
-      "path": "/api/resources/4/permissions/grigory.mw3jnfxi",
+      "path": "/api/resources/6/permissions/grigory.mwgmjy8d",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "/api/resources/4/permissions",
+      "path": "/api/resources/6/permissions",
       "status": 200
     }
   ],
