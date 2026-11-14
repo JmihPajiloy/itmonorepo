@@ -80,13 +80,16 @@ docker compose down
 ```text
 backend/
   app/                     FastAPI, схемы, ORM, вход, проверка DAC, JSON-логи
-  migrations/              Alembic: users, resources, resource_permissions
+  migrations/              Alembic: users, resources, resource_permissions, auth_sessions
   tests/                   pytest на настоящем PostgreSQL
   requirements*.txt        закреплённые прямые зависимости
   constraints.txt          закреплённые транзитивные зависимости backend
   Dockerfile               отдельные стадии runtime и test
 frontend/
-  src/                     React + TypeScript и стили
+  src/main.ts              точка входа
+  src/App.tsx              маршруты и сеанс
+  src/components/          формы, рабочая область и компоненты shadcn/ui в ui/
+  src/api/                 типизированные запросы к FastAPI
   scripts/screenshots.mjs  браузерный сценарий и реальные скриншоты
   package-lock.json        точные зависимости npm
   Dockerfile               сборка Vite и раздача Nginx
@@ -115,12 +118,14 @@ report.typ / report.pdf    отчёт на основе сохранённых �
 
 ## API
 
-JSON передаётся с `Content-Type: application/json`. Для защищённых методов: `Authorization: Bearer <access_token>`.
+JSON передаётся с `Content-Type: application/json`. Браузер передаёт HttpOnly cookies автоматически. Для curl и других клиентов используй `POST /api/login?transport=bearer`, затем `Authorization: Bearer <access_token>` для защищённых методов.
 
 | Метод | Путь | Назначение и успешный статус |
 | --- | --- | --- |
 | POST | /api/register | Регистрация `{login, password}`, 201 |
-| POST | /api/login | Вход `{login, password}`, JWT и безопасные сведения пользователя, 200 |
+| POST | /api/login | Вход `{login, password}`, HttpOnly cookies и сведения пользователя, 200 |
+| POST | /api/auth/refresh | Обновление access cookie, 204 |
+| POST | /api/auth/logout | Отзыв сеанса и очистка cookies, 204 |
 | GET | /api/me | Текущая учётная запись, 200 |
 | GET | /api/health | Проверка подключения к БД, 200 |
 | GET | /api/resources | Список доступных метаданных без содержимого, 200 |
@@ -147,13 +152,13 @@ for LOGIN in owner reader outsider; do
     -d "{\"login\":\"$LOGIN\",\"password\":\"Lab4-DemoPass1!\"}"
 done
 
-OWNER_TOKEN=$(curl -sS "$BASE/api/login" -H 'Content-Type: application/json' \
+OWNER_TOKEN=$(curl -sS "$BASE/api/login?transport=bearer" -H 'Content-Type: application/json' \
   -d '{"login":"owner","password":"Lab4-DemoPass1!"}' \
   | python3 -c 'import json,sys; print(json.load(sys.stdin)["access_token"])')
-READER_TOKEN=$(curl -sS "$BASE/api/login" -H 'Content-Type: application/json' \
+READER_TOKEN=$(curl -sS "$BASE/api/login?transport=bearer" -H 'Content-Type: application/json' \
   -d '{"login":"reader","password":"Lab4-DemoPass1!"}' \
   | python3 -c 'import json,sys; print(json.load(sys.stdin)["access_token"])')
-OUTSIDER_TOKEN=$(curl -sS "$BASE/api/login" -H 'Content-Type: application/json' \
+OUTSIDER_TOKEN=$(curl -sS "$BASE/api/login?transport=bearer" -H 'Content-Type: application/json' \
   -d '{"login":"outsider","password":"Lab4-DemoPass1!"}' \
   | python3 -c 'import json,sys; print(json.load(sys.stdin)["access_token"])')
 
@@ -189,7 +194,7 @@ make check                       # pytest в отдельной случайно
 
 Проверяются регистрация и хэш с солью, валидация, конфликт и гонка логинов, вход и JWT, разрешённые/запрещённые операции, независимость прав, выдача только владельцем, отзыв, каскадное удаление и отсутствие секретов в логах. Фактическое число проверок хранится в JUnit XML и [summary.json](verification/summary.json).
 
-Вручную: зарегистрировать три учётные записи; войти владельцем, создать документ, ввести логин напарника и выдать только чтение. Выйти и войти напарником, открыть документ и попытаться сохранить изменение. Под третьим пользователем ввести известный ID и нажать «Прочитать». Отозвать право владельцем и повторить чтение напарником. Сеансы разных пользователей удобно держать в разных вкладках: токен хранится в памяти конкретной вкладки.
+Вручную: зарегистрировать три учётные записи; войти владельцем, создать документ, ввести логин напарника и выдать только чтение. Выйти и войти напарником, открыть документ и попытаться сохранить изменение. Под третьим пользователем ввести известный ID и нажать «Прочитать». Отозвать право владельцем и повторить чтение напарником. Для параллельного входа под разными пользователями используй отдельные профили браузера или изолированные контексты: вкладки одного профиля используют общие cookies.
 
 Для локальной работы с frontend нужен Node.js 22.16+. `npm ci` устанавливает зависимости из lock-файла, а `npm run lint` проверяет отступы в JavaScript, TypeScript и JSX. Автоисправление запускается командой `npm run lint -- --fix`.
 
@@ -214,14 +219,14 @@ npm run shots
 - Пароли, хэши, JWT, заголовки и тела запросов не логируются. События приложения — JSON с INFO/ERROR. Ошибка БД возвращается без текста SQL и параметров.
 - Все операции с ресурсами проверяются на backend; владельца нельзя передать/изменить через API. Права не копируются в JWT.
 - Запросы ORM параметризованы. Первичные и внешние ключи защищают целостность назначений; удаление ресурса удаляет его права.
-- Токен находится в памяти вкладки, без localStorage, cookie и передачи через URL. React выводит пользовательский текст без HTML-интерпретации; Nginx добавляет CSP и nosniff.
+- Access JWT и случайный refresh-токен хранятся в HttpOnly cookies с SameSite=Strict. В базе хранится SHA-256 хэш refresh-токена, срок сеанса — 7 дней. В production cookie также имеют флаг Secure. React выводит пользовательский текст без HTML-интерпретации; Nginx добавляет CSP и nosniff.
 - Backend запускается непривилегированным пользователем контейнера. БД и backend не публикуют порт на хост; frontend слушает только 127.0.0.1.
 
 ### Ограничения учебного прототипа
 
 Локальный запуск использует HTTP; для сетевого развёртывания нужны HTTPS и отдельная конфигурация доступа. Нет подтверждения почты, восстановления/смены пароля, MFA, ограничения частоты запросов, пагинации, защиты от перебора и централизованного неизменяемого аудита. Начальная роль PostgreSQL, создаваемая официальным образом, имеет административные права: для эксплуатации её нужно разделить с ролью приложения.
 
-Выход удаляет токен из вкладки, но серверного списка отозванных JWT нет: скопированный JWT действителен до истечения срока. Перезагрузка страницы требует нового входа. Отзыв права запрещает следующие запросы, но не стирает уже прочитанную копию из памяти пользователя. Пользователь с правом удаления может окончательно удалить ресурс; UI запрашивает подтверждение, а API выполняет авторизованный DELETE напрямую. Управление владельцем и передача права дальнейшего делегирования не реализованы.
+Выход отзывает браузерный сеанс в БД. Bearer-токен, полученный отдельно через API, действителен до истечения срока. После перезагрузки фронтенд вызывает `GET /api/me` и при необходимости обновляет access cookie через `POST /api/auth/refresh`. Отзыв права запрещает следующие запросы, но не стирает уже прочитанную копию из памяти пользователя. Пользователь с правом удаления может окончательно удалить ресурс; UI запрашивает подтверждение, а API выполняет авторизованный DELETE напрямую. Управление владельцем и передача права дальнейшего делегирования не реализованы.
 
 ## Отчёт и архив
 

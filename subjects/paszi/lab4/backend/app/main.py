@@ -1,3 +1,5 @@
+from typing import Literal
+
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
@@ -10,9 +12,24 @@ from .db import get_db
 from .logging_config import event
 from .models import Resource, ResourcePermission, User
 from .schemas import Credentials, PermissionInput, Registration, ResourceInput
-from .security import current_user, dummy_hash, hasher, issue_token, verify_password
+from .security import (
+    ACCESS_COOKIE, ACCESS_PATH, COOKIE_OPTIONS, REFRESH_COOKIE, REFRESH_PATH,
+    current_user, dummy_hash, end_session, hasher, issue_token, refresh_session,
+    start_session, verify_password,
+)
 
 app = FastAPI(title="ПАСЗИ · Дискреционный доступ", version="1.0.0")
+
+
+@app.middleware("http")
+async def protect_cookie_requests(request: Request, call_next):
+    if (request.method not in {"GET", "HEAD", "OPTIONS"}
+            and request.headers.get("sec-fetch-site") in {"cross-site", "same-site"}):
+        return JSONResponse(status_code=403, content={"message": "Запрос с другого сайта запрещён"})
+    response = await call_next(request)
+    if request.url.path.startswith("/api/"):
+        response.headers["Cache-Control"] = "no-store"
+    return response
 
 
 @app.exception_handler(RequestValidationError)
@@ -64,14 +81,31 @@ def register(body: Registration, db: Session = Depends(get_db)):
 
 
 @app.post("/api/login")
-def login(body: Credentials, db: Session = Depends(get_db)):
+def login(body: Credentials, response: Response, transport: Literal["cookie", "bearer"] = "cookie",
+          db: Session = Depends(get_db)):
     user = db.scalar(select(User).where(User.login == body.login))
     valid = verify_password(body.password.get_secret_value(), user.password_hash if user else dummy_hash)
     if not valid or user is None:
         event("login_failed")
         raise HTTPException(401, "Неверный логин или пароль")
     event("login_success", user_id=user.id)
-    return {"access_token": issue_token(user), "token_type": "bearer", "user": public_user(user)}
+    if transport == "bearer":
+        return {"access_token": issue_token(user), "token_type": "bearer", "user": public_user(user)}
+    start_session(response, user, db)
+    return {"user": public_user(user)}
+
+
+@app.post("/api/auth/refresh", status_code=204)
+def refresh(request: Request, response: Response, db: Session = Depends(get_db)):
+    refresh_session(request, response, db)
+
+
+@app.post("/api/auth/logout", status_code=204)
+def logout(request: Request, response: Response, db: Session = Depends(get_db)):
+    end_session(request, db)
+    db.commit()
+    response.delete_cookie(ACCESS_COOKIE, path=ACCESS_PATH, **COOKIE_OPTIONS)
+    response.delete_cookie(REFRESH_COOKIE, path=REFRESH_PATH, **COOKIE_OPTIONS)
 
 
 @app.get("/api/me")

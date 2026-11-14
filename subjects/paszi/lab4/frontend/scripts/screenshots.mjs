@@ -48,7 +48,7 @@ async function status(page, expected, message) {
 async function login(page, user) {
     await page.goto(baseURL + '/login');
     await submitCredentials(page, user, password, 'Войти в систему');
-    await page.getByRole('heading', { name: 'Ваши ресурсы. Ваши правила.' }).waitFor();
+    await page.getByRole('heading', { name: 'Ресурсы и права', exact: true }).waitFor();
 }
 async function shot(page, file) {
     await page.screenshot({ path: resolve(shots, file), fullPage: true });

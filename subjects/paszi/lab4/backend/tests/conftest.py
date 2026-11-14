@@ -61,7 +61,7 @@ PASSWORD = "Lab4-DemoPass1!"
 def account(client, login):
     response = client.post("/api/register", json={"login": login, "password": PASSWORD})
     assert response.status_code == 201, response.text
-    response = client.post("/api/login", json={"login": login, "password": PASSWORD})
+    response = client.post("/api/login?transport=bearer", json={"login": login, "password": PASSWORD})
     assert response.status_code == 200, response.text
     return {"Authorization": "Bearer " + response.json()["access_token"]}
 

@@ -33,3 +33,12 @@ class ResourcePermission(Base):
     can_read: Mapped[bool] = mapped_column(Boolean, default=False, server_default="false")
     can_update: Mapped[bool] = mapped_column(Boolean, default=False, server_default="false")
     can_delete: Mapped[bool] = mapped_column(Boolean, default=False, server_default="false")
+
+
+class AuthSession(Base):
+    __tablename__ = "auth_sessions"
+
+    id: Mapped[str] = mapped_column(String(32), primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
+    refresh_hash: Mapped[str] = mapped_column(String(64), unique=True)
+    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
